@@ -1,15 +1,23 @@
-name: Actualizar actividades CEP
+name: Scraper + Deploy CEP
 
 on:
   schedule:
     - cron: "0 3 * * *"   # Cada día a las 03:00
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  update:
+  scrape:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,12 +37,30 @@ jobs:
         run: |
           python scraper/scraper.py
 
-      - name: Commit y push si hay cambios
+      - name: Commit si hay cambios
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git pull --rebase
           git add actividades.json
           git diff --cached --quiet || git commit -m "Actualiza actividades CEP"
           git push
 
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Subir artefacto para Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

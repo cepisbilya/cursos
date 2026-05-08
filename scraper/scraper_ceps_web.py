@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import re
 
 CEPS = {
     "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/convocatorias-abiertas",
@@ -12,51 +13,35 @@ CEPS = {
 }
 
 def scrape_cep(nombre, url):
-    print(f"Scraping {nombre}...")
+    print(f"Scraping CEP {nombre}…")
 
     r = requests.get(url, timeout=20)
     soup = BeautifulSoup(r.text, "html.parser")
 
     actividades = []
 
-    tarjetas = soup.select(".asset-full-content, .asset-content, .portlet-body .journal-content-article")
-    if not tarjetas:
-        print(f"⚠ No se encontraron tarjetas en {nombre}")
-        return []
+    # 1) Buscar enlaces a cursos (muy fiable)
+    enlaces = soup.select("a[href*='/actividad/'], a[href*='actividad'], a[href*='formacion']")
+    enlaces = list({a["href"]: a for a in enlaces}.values())  # eliminar duplicados
 
-    for t in tarjetas:
-        titulo_el = t.find("h2") or t.find("h3")
-        if not titulo_el:
+    for a in enlaces:
+        titulo = a.get_text(strip=True)
+        if len(titulo) < 5:
             continue
 
-        titulo = titulo_el.get_text(strip=True)
+        url_curso = a["href"]
+        if url_curso.startswith("/"):
+            url_curso = "https://www.juntadeandalucia.es" + url_curso
 
-        # Buscar enlace
-        enlace = titulo_el.find("a")
-        url_curso = enlace["href"] if enlace else ""
+        # 2) Buscar fechas en el texto cercano
+        bloque = a.find_parent()
+        texto = bloque.get_text(" ", strip=True).upper() if bloque else titulo.upper()
 
-        # Buscar fechas y estado dentro del texto
-        texto = t.get_text(" ", strip=True).upper()
-
-        inicio = ""
-        fin = ""
-        estado = ""
-
-        # Detectar fechas
-        import re
         fechas = re.findall(r"\d{2}/\d{2}/\d{4}", texto)
-        if len(fechas) >= 1:
-            inicio = fechas[0]
-        if len(fechas) >= 2:
-            fin = fechas[1]
+        inicio = fechas[0] if len(fechas) >= 1 else ""
+        fin = fechas[1] if len(fechas) >= 2 else ""
 
-        # Detectar estado
-        if "ABIERTO" in texto:
-            estado = "ABIERTO"
-        elif "CERRADO" in texto:
-            estado = "CERRADO"
-        else:
-            estado = "DESCONOCIDO"
+        estado = "ABIERTO" if "ABIERTO" in texto or "PLAZO" in texto else "DESCONOCIDO"
 
         actividades.append({
             "titulo": titulo,
@@ -64,7 +49,8 @@ def scrape_cep(nombre, url):
             "inicio": inicio,
             "fin": fin,
             "estado": estado,
-            "url": url_curso
+            "url": url_curso,
+            "fuente": "WEB"
         })
 
     return actividades
@@ -73,13 +59,12 @@ def main():
     todas = []
 
     for nombre, url in CEPS.items():
-        actividades = scrape_cep(nombre, url)
-        todas.extend(actividades)
+        todas.extend(scrape_cep(nombre, url))
 
-    with open("actividades.json", "w", encoding="utf-8") as f:
+    with open("actividades_web.json", "w", encoding="utf-8") as f:
         json.dump(todas, f, ensure_ascii=False, indent=2)
 
-    print(f"Guardado actividades.json con {len(todas)} cursos.")
+    print(f"Scraper Web CEPs: {len(todas)} cursos encontrados.")
 
 if __name__ == "__main__":
     main()

@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import json
 import re
 
-# -----------------------------
-# 1. SECRETARÍA VIRTUAL (SV)
-# -----------------------------
+# ============================================
+# 1) SECRETARÍA VIRTUAL (OFICIAL)
+# ============================================
 
 BASE_URL = "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP"
 SEARCH_URL = f"{BASE_URL}/buscar/"
@@ -85,9 +85,9 @@ def parsear_sv(html, cep_nombre):
     return actividades
 
 
-# -----------------------------
-# 2. WEBS DE LOS CEPS
-# -----------------------------
+# ============================================
+# 2) SCRAPER WEB CEPS (VERSIÓN REAL)
+# ============================================
 
 CEPS_WEB = {
     "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/convocatorias-abiertas",
@@ -99,33 +99,34 @@ CEPS_WEB = {
 }
 
 def scrape_web(nombre, url):
-    print(f"Scraping web CEP {nombre}...")
+    print(f"Scraping CEP {nombre}…")
 
     r = requests.get(url, timeout=20)
     soup = BeautifulSoup(r.text, "html.parser")
 
     actividades = []
 
-    tarjetas = soup.select(".asset-full-content, .asset-content, .portlet-body .journal-content-article")
-    if not tarjetas:
-        return []
+    # Buscar enlaces a actividades (muy fiable)
+    enlaces = soup.select("a[href*='/actividad/'], a[href*='actividad'], a[href*='formacion']")
+    enlaces = list({a["href"]: a for a in enlaces}.values())  # eliminar duplicados
 
-    for t in tarjetas:
-        titulo_el = t.find("h2") or t.find("h3")
-        if not titulo_el:
+    for a in enlaces:
+        titulo = a.get_text(strip=True)
+        if len(titulo) < 5:
             continue
 
-        titulo = titulo_el.get_text(strip=True)
-        enlace = titulo_el.find("a")
-        url_curso = enlace["href"] if enlace else ""
+        url_curso = a["href"]
+        if url_curso.startswith("/"):
+            url_curso = "https://www.juntadeandalucia.es" + url_curso
 
-        texto = t.get_text(" ", strip=True).upper()
+        bloque = a.find_parent()
+        texto = bloque.get_text(" ", strip=True).upper() if bloque else titulo.upper()
 
         fechas = re.findall(r"\d{2}/\d{2}/\d{4}", texto)
         inicio = fechas[0] if len(fechas) >= 1 else ""
         fin = fechas[1] if len(fechas) >= 2 else ""
 
-        estado = "ABIERTO" if "ABIERTO" in texto else "DESCONOCIDO"
+        estado = "ABIERTO" if "ABIERTO" in texto or "PLAZO" in texto else "DESCONOCIDO"
 
         actividades.append({
             "titulo": titulo,
@@ -140,9 +141,9 @@ def scrape_web(nombre, url):
     return actividades
 
 
-# -----------------------------
-# 3. FUSIÓN DE RESULTADOS
-# -----------------------------
+# ============================================
+# 3) FUSIÓN DE RESULTADOS
+# ============================================
 
 def fusionar(sv, web):
     fusion = {}
@@ -152,16 +153,15 @@ def fusionar(sv, web):
         if clave not in fusion:
             fusion[clave] = a
         else:
-            # Si existe en SV, priorizar SV
             if a["fuente"] == "SV":
                 fusion[clave] = a
 
     return list(fusion.values())
 
 
-# -----------------------------
-# 4. MAIN
-# -----------------------------
+# ============================================
+# 4) MAIN
+# ============================================
 
 def main():
     # 1. Secretaría Virtual
@@ -171,7 +171,7 @@ def main():
         html = buscar_sv(s, centro_id)
         actividades_sv.extend(parsear_sv(html, nombre))
 
-    # 2. Webs de los CEPs
+    # 2. Web CEPs
     actividades_web = []
     for nombre, url in CEPS_WEB.items():
         actividades_web.extend(scrape_web(nombre, url))
@@ -183,7 +183,7 @@ def main():
     with open("actividades.json", "w", encoding="utf-8") as f:
         json.dump(actividades, f, ensure_ascii=False, indent=2)
 
-    print(f"Guardado actividades.json con {len(actividades)} cursos híbridos.")
+    print(f"Scraper híbrido: {len(actividades)} cursos encontrados.")
 
 if __name__ == "__main__":
     main()

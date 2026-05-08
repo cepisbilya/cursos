@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Radar CEP Sevilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <div id="sidebar">
+    <header>
+      <h1>Radar CEP Sevilla</h1>
+      <p>Actividades formativas de los CEP de Sevilla</p>
+    </header>
+
+    <section class="filtros">
+      <h2>Filtros</h2>
+      <div class="filtro-bloque">
+        <label for="buscador">Buscar</label>
+        <input type="text" id="buscador" placeholder="Título o código...">
+      </div>
+      <div class="filtro-bloque">
+        <p><strong>CEP</strong></p>
+        <label><input type="checkbox" class="filtro-cep" value="CEP SEVILLA" checked> CEP Sevilla</label>
+        <label><input type="checkbox" class="filtro-cep" value="CEP CASTILLEJA DE LA CUESTA" checked> CEP Castilleja</label>
+        <label><input type="checkbox" class="filtro-cep" value="CEP OSUNA - ÉCIJA" checked> CEP Osuna</label>
+        <label><input type="checkbox" class="filtro-cep" value="CEP MAIRENA DEL ALCOR" checked> CEP Mairena</label>
+        <label><input type="checkbox" class="filtro-cep" value="CEP LEBRIJA" checked> CEP Lebrija</label>
+        <label><input type="checkbox" class="filtro-cep" value="CEP LORA DEL RÍO" checked> CEP Lora del Río</label>
+      </div>
+      <button id="btnReset">Quitar filtros</button>
+    </section>
+
+    <section class="lista">
+      <h2>Actividades</h2>
+      <div id="listaActividades"></div>
+    </section>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

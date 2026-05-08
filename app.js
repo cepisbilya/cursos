@@ -1,4 +1,4 @@
-const ENDPOINT_ACTIVIDADES = "../actividades.json";
+const ENDPOINT_ACTIVIDADES = "actividades.json";
 
 const map = L.map("map").setView([37.39, -5.99], 8);
 

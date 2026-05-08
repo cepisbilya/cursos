@@ -256,3 +256,32 @@ footer {
     background: #000;
   }
 }
+
+.brand {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 42px;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#filtroCEP {
+  width: 90%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}

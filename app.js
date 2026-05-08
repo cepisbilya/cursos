@@ -5,20 +5,41 @@ async function cargarDatos() {
   // Ordenar por fecha de inicio descendente
   datos.sort((a, b) => new Date(b.inicio) - new Date(a.inicio));
 
-  renderizar(datos);
-  actualizarContadores(datos);
+  // Estado inicial
+  let filtrados = [...datos];
 
-  // Buscador
-  document.getElementById("buscador").addEventListener("input", e => {
-    const q = e.target.value.toLowerCase();
-    const filtrados = datos.filter(x =>
-      x.titulo.toLowerCase().includes(q) ||
-      x.cep.toLowerCase().includes(q)
-    );
+  renderizar(filtrados);
+  actualizarContadores(filtrados);
+
+  const buscador = document.getElementById("buscador");
+  const filtroCEP = document.getElementById("filtroCEP");
+
+  function aplicarFiltros() {
+    const q = buscador.value.toLowerCase();
+    const cep = filtroCEP.value;
+
+    filtrados = datos.filter(x => {
+      const coincideTexto =
+        x.titulo.toLowerCase().includes(q) ||
+        x.cep.toLowerCase().includes(q);
+
+      const coincideCEP =
+        cep === "TODOS" || x.cep === cep;
+
+      return coincideTexto && coincideCEP;
+    });
+
     renderizar(filtrados);
     actualizarContadores(filtrados);
-  });
+  }
+
+  // Buscador
+  buscador.addEventListener("input", aplicarFiltros);
+
+  // Filtro por CEP
+  filtroCEP.addEventListener("change", aplicarFiltros);
 }
+
 
 function renderizar(lista) {
   const cont = document.getElementById("contenedor");
@@ -48,10 +69,6 @@ function renderizar(lista) {
 
 function actualizarContadores(lista) {
   document.getElementById("totalCursos").textContent = lista.length;
-  document.getElementById("cursosAbiertos").textContent =
-    lista.filter(x => x.estado.includes("ABIERTO")).length;
-  document.getElementById("cursosCerrados").textContent =
-    lista.filter(x => !x.estado.includes("ABIERTO")).length;
 }
 
 cargarDatos();

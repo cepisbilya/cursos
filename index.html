@@ -10,21 +10,17 @@
 <body>
 
   <header class="topbar">
+  <div class="brand">
+  <img src="logo_isbilya.png" alt="IES Isbilya" class="logo">
+  <span class="brand-name">IES Isbilya</span>
+</div>
   <h1>📚 Actividades Formativas CEP Sevilla</h1>
   <div class="stats">
-    <div class="stat">
-      <span id="totalCursos">0</span>
-      <label>Total cursos</label>
-    </div>
-    <div class="stat">
-      <span id="cursosAbiertos">0</span>
-      <label>Abiertos</label>
-    </div>
-    <div class="stat">
-      <span id="cursosCerrados">0</span>
-      <label>Cerrados</label>
-    </div>
+  <div class="stat">
+    <span id="totalCursos">0</span>
+    <label>Total cursos</label>
   </div>
+</div>
 </header>
 
 
@@ -32,14 +28,15 @@
     <input id="buscador" type="text" placeholder="Buscar curso por título…">
 
     <select id="filtroCEP">
-      <option value="TODOS">Todos los CEP</option>
-      <option value="SEVILLA">Sevilla</option>
-      <option value="CASTILLEJA">Castilleja</option>
-      <option value="OSUNA">Osuna</option>
-      <option value="MAIRENA">Mairena</option>
-      <option value="LEBRIJA">Lebrija</option>
-      <option value="LORA DEL RÍO">Lora del Río</option>
-    </select>
+  <option value="TODOS">Todos los CEPs</option>
+  <option value="SEVILLA">CEP Sevilla</option>
+  <option value="CASTILLEJA">CEP Castilleja</option>
+  <option value="OSUNA">CEP Osuna</option>
+  <option value="MAIRENA">CEP Mairena</option>
+  <option value="LEBRIJA">CEP Lebrija</option>
+  <option value="LORA DEL RÍO">CEP Lora del Río</option>
+</select>
+
   </section>
 
   <main id="contenedor"></main>

@@ -1,72 +1,163 @@
-const ENDPOINT_ACTIVIDADES = "actividades.json";
+// =====================================
+//  CONFIGURACIÓN
+// =====================================
+const PAGE_SIZE = 10; // cursos por bloque para scroll infinito
 
-// Normalización universal de CEPs
-function normalizarCEP(cepRaw) {
-  if (!cepRaw) return "";
-  const t = cepRaw.toUpperCase();
-  if (t.includes("SEVILLA")) return "SEVILLA";
-  if (t.includes("CASTILLEJA")) return "CASTILLEJA";
-  if (t.includes("OSUNA")) return "OSUNA";
-  if (t.includes("MAIRENA")) return "MAIRENA";
-  if (t.includes("LEBRIJA")) return "LEBRIJA";
-  if (t.includes("LORA")) return "LORA DEL RÍO";
-  return t.trim();
-}
+let actividadesOriginal = [];
+let actividadesFiltradas = [];
+let actividadesAgrupadas = {};
+let paginaActual = 0;
 
-let actividades = [];
-const lista = document.getElementById("listaActividades");
+const contenedor = document.getElementById("contenedor");
+const filtroCEP = document.getElementById("filtroCEP");
+const buscador = document.getElementById("buscador");
 
-async function cargarActividades() {
-  try {
-    const resp = await fetch(ENDPOINT_ACTIVIDADES);
-    const datos = await resp.json();
+// =====================================
+//  CARGAR JSON
+// =====================================
+fetch("actividades.json")
+  .then(r => r.json())
+  .then(datos => {
+    actividadesOriginal = datos.map(a => ({
+      ...a,
+      estado: (a.estado || "").toUpperCase(),
+      cep: (a.cep || "").toUpperCase(),
+      inicio: a.inicio || "",
+      fin: a.fin || "",
+      fuente: a.fuente || "WEB"
+    }));
 
-    actividades = datos
-  .map(a => ({
-    ...a,
-    cep: normalizarCEP(a.cep),
-    estado: (a.estado || "").toUpperCase()
-  }))
-  .filter(a => {
-    const e = a.estado;
-    return (
-      e.includes("ABIERTO") ||
-      e.includes("PLAZO") ||
-      e.includes("SOLICITUD")
-    );
+    aplicarFiltros();
+    inicializarScroll();
   });
 
+// =====================================
+//  APLICAR FILTROS (CEP + BUSCADOR)
+// =====================================
+function aplicarFiltros() {
+  const texto = buscador.value.toUpperCase();
+  const cepSeleccionado = filtroCEP.value.toUpperCase();
 
-    pintarLista();
-  } catch (e) {
-    console.error(e);
-    lista.innerHTML = "<p>Error cargando datos.</p>";
-  }
+  actividadesFiltradas = actividadesOriginal
+    .filter(a => {
+      const estado = a.estado;
+      const abierto =
+        estado.includes("ABIERTO") ||
+        estado.includes("PLAZO") ||
+        estado.includes("SOLICITUD");
+
+      const coincideCEP =
+        cepSeleccionado === "TODOS" || a.cep === cepSeleccionado;
+
+      const coincideTexto =
+        a.titulo.toUpperCase().includes(texto);
+
+      return abierto && coincideCEP && coincideTexto;
+    })
+    .sort((a, b) => {
+      const fa = a.inicio.split("/").reverse().join("-");
+      const fb = b.inicio.split("/").reverse().join("-");
+      return fa < fb ? 1 : -1;
+    });
+
+  agruparPorCEP();
+  paginaActual = 0;
+  contenedor.innerHTML = "";
+  cargarMas();
 }
 
-function pintarLista() {
-  lista.innerHTML = "";
+// =====================================
+//  AGRUPAR POR CEP
+// =====================================
+function agruparPorCEP() {
+  actividadesAgrupadas = {};
 
-  if (actividades.length === 0) {
-    lista.innerHTML = "<p>No hay cursos con el plazo abierto.</p>";
-    return;
-  }
-
-  actividades.forEach(a => {
-    const div = document.createElement("div");
-    div.className = "item-actividad";
-    div.innerHTML = `
-      <h3>${a.titulo}</h3>
-      <div class="meta">
-        <span><b>CEP:</b> ${a.cep}</span><br>
-        <span><b>Inicio:</b> ${a.inicio}</span><br>
-        <span><b>Fin:</b> ${a.fin}</span><br>
-        <span><b>Estado:</b> ${a.estado}</span><br>
-        <a href="${a.url}" target="_blank" rel="noopener">Apuntarse al curso</a>
-      </div>
-    `;
-    lista.appendChild(div);
+  actividadesFiltradas.forEach(a => {
+    if (!actividadesAgrupadas[a.cep]) {
+      actividadesAgrupadas[a.cep] = [];
+    }
+    actividadesAgrupadas[a.cep].push(a);
   });
 }
 
-cargarActividades();
+// =====================================
+//  RENDERIZAR BLOQUES (SCROLL INFINITO)
+// =====================================
+function cargarMas() {
+  const ceps = Object.keys(actividadesAgrupadas);
+
+  let cursosMostrados = 0;
+  let cursosNecesarios = PAGE_SIZE;
+
+  for (const cep of ceps) {
+    const lista = actividadesAgrupadas[cep];
+
+    // Crear encabezado del CEP si no existe
+    if (!document.getElementById("titulo-" + cep)) {
+      const h2 = document.createElement("h2");
+      h2.id = "titulo-" + cep;
+      h2.textContent = "CEP " + cep;
+      contenedor.appendChild(h2);
+    }
+
+    // Renderizar cursos de este CEP
+    for (let i = 0; i < lista.length; i++) {
+      const indexGlobal = cursosMostrados;
+
+      if (indexGlobal >= paginaActual * PAGE_SIZE &&
+          indexGlobal < (paginaActual + 1) * PAGE_SIZE) {
+        renderCard(lista[i]);
+      }
+
+      cursosMostrados++;
+      if (cursosMostrados >= (paginaActual + 1) * PAGE_SIZE) break;
+    }
+  }
+
+  paginaActual++;
+}
+
+// =====================================
+//  RENDERIZAR UNA TARJETA
+// =====================================
+function renderCard(a) {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  card.innerHTML = `
+    <h3>${a.titulo}</h3>
+
+    <p><strong>CEP:</strong> ${a.cep}</p>
+    <p><strong>Inicio:</strong> ${a.inicio || "—"}</p>
+    <p><strong>Fin:</strong> ${a.fin || "—"}</p>
+
+    <p class="estado ${a.estado.includes("ABIERTO") ? "abierto" : "otro"}">
+      <strong>Estado:</strong> ${a.estado}
+    </p>
+
+    <a class="btn" href="${a.url}" target="_blank" rel="noopener">
+      Apuntarse al curso
+    </a>
+
+    <p class="fuente">Fuente: ${a.fuente}</p>
+  `;
+
+  contenedor.appendChild(card);
+}
+
+// =====================================
+//  SCROLL INFINITO
+// =====================================
+function inicializarScroll() {
+  window.addEventListener("scroll", () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+      cargarMas();
+    }
+  });
+}
+
+// =====================================
+//  EVENTOS
+// =====================================
+filtroCEP.addEventListener("change", aplicarFiltros);
+buscador.addEventListener("input", aplicarFiltros);

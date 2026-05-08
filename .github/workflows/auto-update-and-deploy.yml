@@ -1,4 +1,4 @@
-name: Scraper + Deploy CEP
+name: Scraper Híbrido + Deploy CEP
 
 on:
   schedule:
@@ -33,16 +33,16 @@ jobs:
         run: |
           pip install -r scraper/requirements.txt
 
-      - name: Ejecutar scraper
+      - name: Ejecutar scraper híbrido
         run: |
-          python scraper/scraper.py
+          python scraper/scraper_hibrido.py
 
       - name: Commit si hay cambios
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add actividades.json
-          git diff --cached --quiet || git commit -m "Actualiza actividades CEP"
+          git diff --cached --quiet || git commit -m "Actualiza actividades CEP (scraper híbrido)"
           git push
 
   deploy:

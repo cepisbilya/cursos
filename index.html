@@ -9,15 +9,31 @@
 
 <body>
 
-<header>
-  <h1>Cursos CEP Sevilla</h1>
-  <p>Solo cursos con plazo abierto</p>
-</header>
+  <header>
+    <h1>Cursos CEP Sevilla</h1>
+    <p>Solo cursos con plazo abierto</p>
+  </header>
 
-<main class="contenedor">
-  <div id="listaActividades"></div>
-</main>
+  <section id="filtros">
+    <input id="buscador" type="text" placeholder="Buscar curso por título…">
 
-<script src="app.js"></script>
+    <select id="filtroCEP">
+      <option value="TODOS">Todos los CEP</option>
+      <option value="SEVILLA">Sevilla</option>
+      <option value="CASTILLEJA">Castilleja</option>
+      <option value="OSUNA">Osuna</option>
+      <option value="MAIRENA">Mairena</option>
+      <option value="LEBRIJA">Lebrija</option>
+      <option value="LORA DEL RÍO">Lora del Río</option>
+    </select>
+  </section>
+
+  <main id="contenedor"></main>
+
+  <footer>
+    <p>Actualizado automáticamente cada día · Datos de Secretaría Virtual y webs de los CEPs</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

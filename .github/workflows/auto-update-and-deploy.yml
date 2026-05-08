@@ -33,9 +33,10 @@ jobs:
         run: |
           pip install -r scraper/requirements.txt
 
-      - name: Ejecutar scraper híbrido AJAX autodetectable
+      - name: Ejecutar scraper SV final
         run: |
-          python scraper/scraper_hibrido.py
+            python scraper/scraper_sv_final.py
+
 
       - name: Commit si hay cambios
         run: |

@@ -1,7 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
 import json
 import re
+from bs4 import BeautifulSoup
 
 # ============================================
 # 1) SECRETARÍA VIRTUAL (OFICIAL)
@@ -86,68 +86,40 @@ def parsear_sv(html, cep_nombre):
 
 
 # ============================================
-# 2) SCRAPER WEB CEPS (PATRÓN REAL)
+# 2) SCRAPER AJAX DE LOS CEPS
 # ============================================
 
-CEPS_WEB = {
-    "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/convocatorias-abiertas",
-    "CASTILLEJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja/convocatorias-abiertas",
-    "OSUNA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna/convocatorias-abiertas",
-    "MAIRENA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena/convocatorias-abiertas",
-    "LEBRIJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/convocatorias-abiertas",
-    "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-loradelrio/convocatorias-abiertas"
+CEPS_AJAX = {
+    "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
+    "CASTILLEJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
+    "OSUNA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
+    "MAIRENA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
+    "LEBRIJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
+    "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-loradelrio/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador"
 }
 
-PATRON_ACTIVIDAD = re.compile(r"/educacion/portales/web/cep-[a-z]+/actividad", re.IGNORECASE)
+def scrape_ajax(nombre, url):
+    print(f"Scraping AJAX CEP {nombre}…")
 
-def scrape_web(nombre, url):
-    print(f"Scraping CEP {nombre}…")
-
-    r = requests.get(url, timeout=20)
+    r = requests.post(url, data={"estado": "Abierto plazo solicitudes"}, timeout=20)
     r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
+
+    try:
+        data = r.json()
+    except:
+        return []
 
     actividades = []
 
-    enlaces = soup.find_all("a", href=True)
-    enlaces_validos = [a for a in enlaces if PATRON_ACTIVIDAD.search(a["href"])]
-
-    vistos = set()
-
-    for a in enlaces_validos:
-        href = a["href"]
-        if href in vistos:
-            continue
-        vistos.add(href)
-
-        titulo = a.get_text(strip=True)
-        if len(titulo) < 5:
-            continue
-
-        url_curso = href
-        if url_curso.startswith("/"):
-            url_curso = "https://www.juntadeandalucia.es" + url_curso
-
-        bloque = a.find_parent()
-        texto = bloque.get_text(" ", strip=True).upper() if bloque else titulo.upper()
-
-        fechas = re.findall(r"\d{2}/\d{2}/\d{4}", texto)
-        inicio = fechas[0] if len(fechas) >= 1 else ""
-        fin = fechas[1] if len(fechas) >= 2 else ""
-
-        if "ABIERTO" in texto or "PLAZO" in texto:
-            estado = "ABIERTO"
-        else:
-            estado = "DESCONOCIDO"
-
+    for item in data.get("data", []):
         actividades.append({
-            "titulo": titulo,
+            "titulo": item.get("titulo", "").strip(),
             "cep": nombre,
-            "inicio": inicio,
-            "fin": fin,
-            "estado": estado,
-            "url": url_curso,
-            "fuente": "WEB"
+            "inicio": item.get("fechaInicio", ""),
+            "fin": item.get("fechaFin", ""),
+            "estado": "ABIERTO PLAZO SOLICITUDES",
+            "url": item.get("url", ""),
+            "fuente": "CEP-AJAX"
         })
 
     return actividades
@@ -157,10 +129,10 @@ def scrape_web(nombre, url):
 # 3) FUSIÓN DE RESULTADOS
 # ============================================
 
-def fusionar(sv, web):
+def fusionar(sv, ajax):
     fusion = {}
 
-    for a in web + sv:
+    for a in ajax + sv:
         clave = (a["titulo"].upper(), a["cep"].upper())
         if clave not in fusion:
             fusion[clave] = a
@@ -186,23 +158,23 @@ def main():
         except Exception as e:
             print(f"Error SV {nombre}: {e}")
 
-    # 2. Web CEPs
-    actividades_web = []
-    for nombre, url in CEPS_WEB.items():
+    # 2. AJAX CEPs
+    actividades_ajax = []
+    for nombre, url in CEPS_AJAX.items():
         try:
-            actividades_web.extend(scrape_web(nombre, url))
+            actividades_ajax.extend(scrape_ajax(nombre, url))
         except Exception as e:
-            print(f"Error WEB {nombre}: {e}")
+            print(f"Error AJAX {nombre}: {e}")
 
     # 3. Fusionar
-    actividades = fusionar(actividades_sv, actividades_web)
+    actividades = fusionar(actividades_sv, actividades_ajax)
 
     # 4. Guardar JSON
     with open("actividades.json", "w", encoding="utf-8") as f:
         json.dump(actividades, f, ensure_ascii=False, indent=2)
 
-    print(f"Scraper híbrido: {len(actividades)} cursos encontrados.")
-    print(f"SV: {len(actividades_sv)} · WEB: {len(actividades_web)}")
+    print(f"Scraper híbrido AJAX: {len(actividades)} cursos encontrados.")
+    print(f"SV: {len(actividades_sv)} · AJAX: {len(actividades_ajax)}")
 
 if __name__ == "__main__":
     main()

@@ -24,25 +24,18 @@ const btnReset = document.getElementById("btnReset");
 function normalizarCEP(cepRaw) {
   if (!cepRaw) return "";
 
-  return cepRaw
-    .toUpperCase()
-    .replace(/^\d+\s*-\s*/, "")              // elimina "41200029 - "
-    .replace("CEP DE ", "")                  // elimina "CEP DE "
-    .replace("CEP ", "")                     // elimina "CEP "
-    .replace("DE LA CUESTA", "CASTILLEJA")   // Castilleja
-    .replace("CASTILLEJA DE LA CUESTA", "CASTILLEJA")
-    .replace("DE OSUNA", "OSUNA")
-    .replace("OSUNA", "OSUNA")
-    .replace("DE MAIRENA", "MAIRENA")
-    .replace("MAIRENA DEL ALJARAFE", "MAIRENA")
-    .replace("DE LEBRIJA", "LEBRIJA")
-    .replace("LEBRIJA", "LEBRIJA")
-    .replace("DE LORA DEL RÍO", "LORA DEL RÍO")
-    .replace("LORA DEL RIO", "LORA DEL RÍO")
-    .replace("DE SEVILLA", "SEVILLA")
-    .replace("SEVILLA", "SEVILLA")
-    .trim();
+  const texto = cepRaw.toUpperCase();
+
+  if (texto.includes("SEVILLA")) return "SEVILLA";
+  if (texto.includes("CASTILLEJA")) return "CASTILLEJA";
+  if (texto.includes("OSUNA")) return "OSUNA";
+  if (texto.includes("MAIRENA")) return "MAIRENA";
+  if (texto.includes("LEBRIJA")) return "LEBRIJA";
+  if (texto.includes("LORA")) return "LORA DEL RÍO";
+
+  return texto.trim();
 }
+
 
 // Cargar actividades
 async function cargarActividades() {

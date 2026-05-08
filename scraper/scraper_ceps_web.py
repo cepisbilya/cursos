@@ -12,6 +12,8 @@ CEPS = {
     "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-loradelrio/convocatorias-abiertas"
 }
 
+PATRON = re.compile(r"/educacion/portales/web/cep-[a-z]+/actividad")
+
 def scrape_cep(nombre, url):
     print(f"Scraping CEP {nombre}…")
 
@@ -20,11 +22,11 @@ def scrape_cep(nombre, url):
 
     actividades = []
 
-    # 1) Buscar enlaces a cursos (muy fiable)
-    enlaces = soup.select("a[href*='/actividad/'], a[href*='actividad'], a[href*='formacion']")
-    enlaces = list({a["href"]: a for a in enlaces}.values())  # eliminar duplicados
+    # Buscar enlaces que coincidan con el patrón real
+    enlaces = soup.find_all("a", href=True)
+    enlaces_validos = [a for a in enlaces if PATRON.search(a["href"])]
 
-    for a in enlaces:
+    for a in enlaces_validos:
         titulo = a.get_text(strip=True)
         if len(titulo) < 5:
             continue
@@ -33,7 +35,7 @@ def scrape_cep(nombre, url):
         if url_curso.startswith("/"):
             url_curso = "https://www.juntadeandalucia.es" + url_curso
 
-        # 2) Buscar fechas en el texto cercano
+        # Buscar fechas en el texto cercano
         bloque = a.find_parent()
         texto = bloque.get_text(" ", strip=True).upper() if bloque else titulo.upper()
 
@@ -54,17 +56,3 @@ def scrape_cep(nombre, url):
         })
 
     return actividades
-
-def main():
-    todas = []
-
-    for nombre, url in CEPS.items():
-        todas.extend(scrape_cep(nombre, url))
-
-    with open("actividades_web.json", "w", encoding="utf-8") as f:
-        json.dump(todas, f, ensure_ascii=False, indent=2)
-
-    print(f"Scraper Web CEPs: {len(todas)} cursos encontrados.")
-
-if __name__ == "__main__":
-    main()

@@ -1,129 +1,64 @@
-// Ruta correcta del JSON
 const ENDPOINT_ACTIVIDADES = "actividades.json";
-
-// Inicializar mapa
-const map = L.map("map").setView([37.39, -5.99], 8);
-
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution: "&copy; OpenStreetMap"
-}).addTo(map);
-
-// Variables globales
-let actividades = [];
-let marcadores = [];
-const capaMarcadores = L.layerGroup().addTo(map);
-
-// Elementos del DOM
-const buscador = document.getElementById("buscador");
-const checkCEPs = Array.from(document.querySelectorAll(".filtro-cep"));
-const listaActividades = document.getElementById("listaActividades");
-const btnReset = document.getElementById("btnReset");
 
 // Normalización universal de CEPs
 function normalizarCEP(cepRaw) {
   if (!cepRaw) return "";
-
-  const texto = cepRaw.toUpperCase();
-
-  if (texto.includes("SEVILLA")) return "SEVILLA";
-  if (texto.includes("CASTILLEJA")) return "CASTILLEJA";
-  if (texto.includes("OSUNA")) return "OSUNA";
-  if (texto.includes("MAIRENA")) return "MAIRENA";
-  if (texto.includes("LEBRIJA")) return "LEBRIJA";
-  if (texto.includes("LORA")) return "LORA DEL RÍO";
-
-  return texto.trim();
+  const t = cepRaw.toUpperCase();
+  if (t.includes("SEVILLA")) return "SEVILLA";
+  if (t.includes("CASTILLEJA")) return "CASTILLEJA";
+  if (t.includes("OSUNA")) return "OSUNA";
+  if (t.includes("MAIRENA")) return "MAIRENA";
+  if (t.includes("LEBRIJA")) return "LEBRIJA";
+  if (t.includes("LORA")) return "LORA DEL RÍO";
+  return t.trim();
 }
 
+let actividades = [];
+const lista = document.getElementById("listaActividades");
 
-// Cargar actividades
 async function cargarActividades() {
   try {
     const resp = await fetch(ENDPOINT_ACTIVIDADES);
-    if (!resp.ok) throw new Error("No se pudo cargar actividades.json");
-
     const datos = await resp.json();
 
-    actividades = datos.map(a => ({
-      ...a,
-      cep: normalizarCEP(a.cep)
-    }));
+    actividades = datos
+      .map(a => ({
+        ...a,
+        cep: normalizarCEP(a.cep),
+        estado: (a.estado || "").toUpperCase()
+      }))
+      .filter(a => a.estado.includes("ABIERTO PLAZO SOLICITUDES"));
 
-    pintarTodo();
+    pintarLista();
   } catch (e) {
-    console.error("Error cargando datos:", e);
-    listaActividades.innerHTML = "<p>Error cargando datos.</p>";
+    console.error(e);
+    lista.innerHTML = "<p>Error cargando datos.</p>";
   }
 }
 
-// Pintar lista + marcadores
-function pintarTodo() {
-  capaMarcadores.clearLayers();
-  marcadores = [];
-  listaActividades.innerHTML = "";
+function pintarLista() {
+  lista.innerHTML = "";
 
-  const texto = buscador.value.trim().toLowerCase();
-  const cepsActivos = checkCEPs
-    .filter(c => c.checked)
-    .map(c => c.value.toUpperCase());
+  if (actividades.length === 0) {
+    lista.innerHTML = "<p>No hay cursos con el plazo abierto.</p>";
+    return;
+  }
 
-  const filtradas = actividades.filter(a => {
-    if (!cepsActivos.includes(a.cep)) return false;
-
-    if (texto) {
-      const blob = (a.titulo + " " + a.codigo).toLowerCase();
-      if (!blob.includes(texto)) return false;
-    }
-
-    return true;
-  });
-
-  filtradas.forEach(a => {
-    // Marcador en el mapa
-    if (a.lat && a.lon) {
-      const marker = L.marker([a.lat, a.lon]).addTo(capaMarcadores);
-      marker.bindPopup(`
-        <strong>${a.titulo}</strong><br>
-        <span>${a.lugar || ""}</span><br>
+  actividades.forEach(a => {
+    const div = document.createElement("div");
+    div.className = "item-actividad";
+    div.innerHTML = `
+      <h3>${a.titulo}</h3>
+      <div class="meta">
         <span><b>CEP:</b> ${a.cep}</span><br>
         <span><b>Inicio:</b> ${a.inicio}</span><br>
         <span><b>Fin:</b> ${a.fin}</span><br>
         <span><b>Estado:</b> ${a.estado}</span><br>
-        <a href="${a.url}" target="_blank" rel="noopener">Ver ficha</a>
-      `);
-      marcadores.push({ id: a.codigo, marker });
-    }
-
-    // Tarjeta en la lista
-    const div = document.createElement("div");
-    div.className = "item-actividad";
-    div.dataset.id = a.codigo;
-    div.innerHTML = `
-      <h3>${a.titulo}</h3>
-      <div class="meta">
-        <span class="cep">${a.cep}</span><br>
-        <span>${a.inicio}${a.fin ? " - " + a.fin : ""}</span><br>
-        ${a.lugar ? `<span>${a.lugar}</span><br>` : ""}
-        ${a.estado ? `<span>${a.estado}</span>` : ""}
+        <a href="${a.url}" target="_blank" rel="noopener">Apuntarse al curso</a>
       </div>
     `;
-    listaActividades.appendChild(div);
+    lista.appendChild(div);
   });
-
-  if (filtradas.length === 0) {
-    listaActividades.innerHTML = "<p>No hay actividades con los filtros actuales.</p>";
-  }
 }
 
-// Eventos
-buscador.addEventListener("input", pintarTodo);
-checkCEPs.forEach(c => c.addEventListener("change", pintarTodo));
-btnReset.addEventListener("click", () => {
-  buscador.value = "";
-  checkCEPs.forEach(c => (c.checked = true));
-  pintarTodo();
-});
-
-// Iniciar
 cargarActividades();

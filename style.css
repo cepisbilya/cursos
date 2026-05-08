@@ -1,166 +1,41 @@
-/* ------------------------------
-   RESET BÁSICO
------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
-  color: #222;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
 }
 
-/* ------------------------------
-   CABECERA
------------------------------- */
 header {
   background: #004aad;
   color: white;
-  padding: 15px 20px;
-  text-align: center;
-  border-bottom: 3px solid #003a87;
-}
-
-header h1 {
-  font-size: 1.8rem;
-  margin-bottom: 5px;
-}
-
-/* ------------------------------
-   CONTENEDOR PRINCIPAL
------------------------------- */
-.contenedor {
-  display: flex;
-  flex: 1;
-  height: calc(100vh - 90px);
-  overflow: hidden;
-}
-
-/* ------------------------------
-   PANEL LATERAL
------------------------------- */
-.panel {
-  width: 320px;
-  background: white;
   padding: 20px;
-  border-right: 2px solid #ddd;
-  overflow-y: auto;
+  text-align: center;
 }
 
-.panel h2 {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-  color: #004aad;
-}
-
-.panel h3 {
-  margin-top: 20px;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-  color: #004aad;
-}
-
-#buscador {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-}
-
-/* Checkbox */
-.filtro-cep {
-  margin-right: 6px;
-}
-
-.panel label {
-  display: block;
-  margin-bottom: 6px;
-  cursor: pointer;
-}
-
-/* Botón reset */
-.btn-reset {
-  background: #d9534f;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 4px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-.btn-reset:hover {
-  background: #c9302c;
-}
-
-/* ------------------------------
-   LISTA DE ACTIVIDADES
------------------------------- */
-.lista {
-  margin-top: 20px;
+.contenedor {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .item-actividad {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 12px;
+  background: white;
+  padding: 15px;
   border-radius: 6px;
-  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
 }
 
 .item-actividad h3 {
-  font-size: 1rem;
-  margin-bottom: 6px;
+  margin: 0 0 10px 0;
   color: #004aad;
 }
 
-.item-actividad .meta {
+.meta {
   font-size: 0.9rem;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
-.item-actividad .cep {
+a {
+  color: #004aad;
   font-weight: bold;
-  color: #333;
-}
-
-/* ------------------------------
-   MAPA
------------------------------- */
-.mapa {
-  flex: 1;
-  position: relative;
-}
-
-#map {
-  width: 100%;
-  height: 100%;
-}
-
-/* ------------------------------
-   RESPONSIVE
------------------------------- */
-@media (max-width: 900px) {
-  .contenedor {
-    flex-direction: column;
-  }
-
-  .panel {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 2px solid #ddd;
-  }
-
-  .mapa {
-    height: 60vh;
-  }
 }

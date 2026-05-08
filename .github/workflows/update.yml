@@ -2,7 +2,7 @@ name: Actualizar actividades CEP
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 3 * * *"   # Cada día a las 03:00
   workflow_dispatch:
 
 env:
@@ -13,21 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout (Node24)
+      - name: Checkout del repositorio
         uses: actions/checkout@v4
 
-      - name: Setup Python (Node24)
+      - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Instalar dependencias
         run: |
-          pip install requests beautifulsoup4
+          pip install -r scraper/requirements.txt
 
-      - name: Generar actividades.json
+      - name: Ejecutar scraper
         run: |
-          python scraper/generar_json.py
+          python scraper/scraper.py
 
       - name: Commit y push si hay cambios
         run: |
@@ -37,3 +37,4 @@ jobs:
           git add actividades.json
           git diff --cached --quiet || git commit -m "Actualiza actividades CEP"
           git push
+

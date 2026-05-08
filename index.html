@@ -3,59 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radar CEP Sevilla</title>
-
-  <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-  <!-- Estilos -->
+  <title>Cursos CEP Sevilla</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>CEPs Sevilla</h1>
-    <p>Actividades formativas de los CEP de Sevilla</p>
-  </header>
+<header>
+  <h1>Cursos CEP Sevilla</h1>
+  <p>Solo cursos con plazo abierto</p>
+</header>
 
-  <main class="contenedor">
+<main class="contenedor">
+  <div id="listaActividades"></div>
+</main>
 
-    <!-- Panel lateral -->
-    <aside class="panel">
-
-      <h2>Filtros</h2>
-
-      <label for="buscador">Buscar</label>
-      <input type="text" id="buscador" placeholder="Título o código...">
-
-      <h3>CEP</h3>
-
-      <label><input type="checkbox" class="filtro-cep" value="SEVILLA" checked> CEP Sevilla</label>
-      <label><input type="checkbox" class="filtro-cep" value="CASTILLEJA" checked> CEP Castilleja</label>
-      <label><input type="checkbox" class="filtro-cep" value="OSUNA" checked> CEP Osuna</label>
-      <label><input type="checkbox" class="filtro-cep" value="MAIRENA" checked> CEP Mairena</label>
-      <label><input type="checkbox" class="filtro-cep" value="LEBRIJA" checked> CEP Lebrija</label>
-      <label><input type="checkbox" class="filtro-cep" value="LORA DEL RÍO" checked> CEP Lora del Río</label>
-
-      <button id="btnReset" class="btn-reset">Quitar filtros</button>
-
-      <h2>Actividades</h2>
-      <div id="listaActividades" class="lista"></div>
-
-    </aside>
-
-    <!-- Mapa -->
-    <section class="mapa">
-      <div id="map"></div>
-    </section>
-
-  </main>
-
-  <!-- Script principal -->
-  <script src="app.js"></script>
-
+<script src="app.js"></script>
 </body>
 </html>
-

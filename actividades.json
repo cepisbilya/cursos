@@ -1,23 +1,5 @@
 [
   {
-    "titulo": "Actividades formativas",
-    "cep": "SEVILLA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/actividades-formativas",
-    "fuente": "WEB"
-  },
-  {
-    "titulo": "Actividades formativas",
-    "cep": "LEBRIJA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/actividades-formativas",
-    "fuente": "WEB"
-  },
-  {
     "titulo": "INTRODUCCIÓN A LA INTELIGENCIA ARTIFICIAL CON COPILOT",
     "cep": "OSUNA",
     "inicio": "18/05/2026",

@@ -22,12 +22,20 @@ async function cargarActividades() {
     const datos = await resp.json();
 
     actividades = datos
-      .map(a => ({
-        ...a,
-        cep: normalizarCEP(a.cep),
-        estado: (a.estado || "").toUpperCase()
-      }))
-      .filter(a => a.estado.includes("ABIERTO PLAZO SOLICITUDES"));
+  .map(a => ({
+    ...a,
+    cep: normalizarCEP(a.cep),
+    estado: (a.estado || "").toUpperCase()
+  }))
+  .filter(a => {
+    const e = a.estado;
+    return (
+      e.includes("ABIERTO") ||
+      e.includes("PLAZO") ||
+      e.includes("SOLICITUD")
+    );
+  });
+
 
     pintarLista();
   } catch (e) {

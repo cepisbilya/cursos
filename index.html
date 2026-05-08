@@ -9,10 +9,24 @@
 
 <body>
 
-  <header>
-    <h1>Cursos CEP Sevilla</h1>
-    <p>Solo cursos con plazo abierto</p>
-  </header>
+  <header class="topbar">
+  <h1>📚 Actividades Formativas CEP Sevilla</h1>
+  <div class="stats">
+    <div class="stat">
+      <span id="totalCursos">0</span>
+      <label>Total cursos</label>
+    </div>
+    <div class="stat">
+      <span id="cursosAbiertos">0</span>
+      <label>Abiertos</label>
+    </div>
+    <div class="stat">
+      <span id="cursosCerrados">0</span>
+      <label>Cerrados</label>
+    </div>
+  </div>
+</header>
+
 
   <section id="filtros">
     <input id="buscador" type="text" placeholder="Buscar curso por título…">

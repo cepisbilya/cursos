@@ -86,89 +86,92 @@ def parsear_sv(html, cep_nombre):
 
 
 # ============================================
-# 2) AUTODETECTOR AJAX PARA TODOS LOS CEPS
+# 2) CEPS — SCRAPING HTML DE ACTIVIDADES-FORMATIVAS
 # ============================================
 
-CEPS = {
+CEPS_HTML = {
     "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/actividades-formativas",
-    "CASTILLEJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja/actividades-formativas",
-    "OSUNA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna/actividades-formativas",
-    "MAIRENA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena/actividades-formativas",
+    "CASTILLEJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja-cuesta/actividades-formativas",
+    "OSUNA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna-ecija/actividades-formativas",
+    "MAIRENA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena-alcor/actividades-formativas",
     "LEBRIJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/actividades-formativas",
-    "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-loradelrio/actividades-formativas"
+    "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lora-rio/actividades-formativas"
 }
 
-def detectar_endpoint_ajax(url_base):
-    r = requests.get(url_base, timeout=20)
+PATRON_ACTIVIDAD = re.compile(r"/educacion/portales/web/cep-[a-z\-]+/actividad", re.IGNORECASE)
+
+def scrape_cep_html(nombre, url):
+    print(f"Scraping HTML CEP {nombre}…")
+
+    r = requests.get(url, timeout=20)
     r.raise_for_status()
-    html = r.text
-
-    patron = re.compile(r"createResourceURL\((.*?)\)", re.DOTALL)
-    match = patron.search(html)
-
-    if not match:
-        return None
-
-    bloque = match.group(1)
-    params = {}
-
-    for clave in ["p_p_id", "p_p_lifecycle", "p_p_state", "p_p_mode", "p_p_resource_id"]:
-        m = re.search(rf"{clave}['\"]?\s*:\s*['\"]([^'\"]+)", bloque)
-        if m:
-            params[clave] = m.group(1)
-
-    endpoint = (
-        f"{url_base}"
-        f"?p_p_id={params.get('p_p_id')}"
-        f"&p_p_lifecycle={params.get('p_p_lifecycle')}"
-        f"&p_p_state={params.get('p_p_state')}"
-        f"&p_p_mode={params.get('p_p_mode')}"
-        f"&p_p_resource_id={params.get('p_p_resource_id')}"
-    )
-
-    return endpoint
-
-
-def scrape_ajax_autodetect(nombre, url_base):
-    print(f"Autodetectando AJAX para CEP {nombre}…")
-
-    endpoint = detectar_endpoint_ajax(url_base)
-    if not endpoint:
-        print(f"No se pudo detectar AJAX para {nombre}")
-        return []
-
-    payload = {"estado": "Abierto plazo solicitudes"}
-
-    r = requests.post(endpoint, data=payload, timeout=20)
-    try:
-        data = r.json()
-    except:
-        return []
+    soup = BeautifulSoup(r.text, "html.parser")
 
     actividades = []
+    vistos = set()
 
-    for item in data.get("data", []):
+    # 1. Buscar cualquier enlace que apunte a una actividad
+    enlaces = soup.find_all("a", href=True)
+
+    for a in enlaces:
+        href = a["href"]
+
+        # Detectar cualquier patrón de actividad
+        if not re.search(r"/actividad", href, re.IGNORECASE):
+            continue
+
+        # Evitar duplicados
+        if href in vistos:
+            continue
+        vistos.add(href)
+
+        # Construir URL absoluta
+        url_curso = href
+        if url_curso.startswith("/"):
+            url_curso = "https://www.juntadeandalucia.es" + url_curso
+
+        # Título
+        titulo = a.get_text(strip=True)
+        if len(titulo) < 4:
+            continue
+
+        # Buscar bloque padre para extraer fechas y estado
+        bloque = a.find_parent()
+        texto = bloque.get_text(" ", strip=True).upper() if bloque else titulo.upper()
+
+        # Fechas
+        fechas = re.findall(r"\d{2}/\d{2}/\d{4}", texto)
+        inicio = fechas[0] if len(fechas) >= 1 else ""
+        fin = fechas[1] if len(fechas) >= 2 else ""
+
+        # Estado
+        if "ABIERTO" in texto or "PLAZO" in texto:
+            estado = "ABIERTO PLAZO SOLICITUDES"
+        else:
+            estado = "DESCONOCIDO"
+
         actividades.append({
-            "titulo": item.get("titulo", "").strip(),
+            "titulo": titulo,
             "cep": nombre,
-            "inicio": item.get("fechaInicio", ""),
-            "fin": item.get("fechaFin", ""),
-            "estado": "ABIERTO PLAZO SOLICITUDES",
-            "url": item.get("url", ""),
-            "fuente": "CEP-AJAX"
+            "inicio": inicio,
+            "fin": fin,
+            "estado": estado,
+            "url": url_curso,
+            "fuente": "CEP-HTML"
         })
 
     return actividades
+
 
 
 # ============================================
 # 3) FUSIÓN DE RESULTADOS
 # ============================================
 
-def fusionar(sv, ajax):
+def fusionar(sv, ceps_html):
     fusion = {}
 
-    for a in ajax + sv:
+    for a in ceps_html + sv:
         clave = (a["titulo"].upper(), a["cep"].upper())
         if clave not in fusion:
             fusion[clave] = a
@@ -194,23 +197,23 @@ def main():
         except Exception as e:
             print(f"Error SV {nombre}: {e}")
 
-    # 2. AJAX autodetectable
-    actividades_ajax = []
-    for nombre, url in CEPS.items():
+    # 2. CEPS HTML
+    actividades_ceps = []
+    for nombre, url in CEPS_HTML.items():
         try:
-            actividades_ajax.extend(scrape_ajax_autodetect(nombre, url))
+            actividades_ceps.extend(scrape_cep_html(nombre, url))
         except Exception as e:
-            print(f"Error AJAX {nombre}: {e}")
+            print(f"Error CEP HTML {nombre}: {e}")
 
     # 3. Fusionar
-    actividades = fusionar(actividades_sv, actividades_ajax)
+    actividades = fusionar(actividades_sv, actividades_ceps)
 
     # 4. Guardar JSON
     with open("actividades.json", "w", encoding="utf-8") as f:
         json.dump(actividades, f, ensure_ascii=False, indent=2)
 
-    print(f"Scraper híbrido AJAX autodetectable: {len(actividades)} cursos encontrados.")
-    print(f"SV: {len(actividades_sv)} · AJAX: {len(actividades_ajax)}")
+    print(f"Scraper HTML híbrido: {len(actividades)} cursos encontrados.")
+    print(f"SV: {len(actividades_sv)} · CEP-HTML: {len(actividades_ceps)}")
 
 if __name__ == "__main__":
     main()

@@ -147,3 +147,112 @@ footer {
     flex-direction: column;
   }
 }
+
+/* CABECERA */
+.topbar {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #4caf50;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* CONTENEDOR DE TARJETAS */
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* TARJETAS */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.card .meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.abierto {
+  background: #4caf50;
+}
+
+.badge.cerrado {
+  background: #d32f2f;
+}
+
+/* BUSCADOR */
+#buscador {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #eee;
+  }
+  .card {
+    background: #1e1e1e;
+    color: #eee;
+  }
+  .topbar {
+    background: #000;
+  }
+}

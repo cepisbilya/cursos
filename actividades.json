@@ -1,57 +1,39 @@
 [
   {
-    "titulo": "Actividades formativas",
+    "titulo": "RPAS-DRONES IV. ADQUISICIÓN Y PROCESAMIENTO DE DATOS FOTOGRAMÉTRICOS MEDIANTE UAS/DRONES",
     "cep": "SEVILLA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/actividades-formativas",
-    "fuente": "CEP-HTML"
+    "inicio": "18/05/2026",
+    "fin": "02/06/2026",
+    "estado": "ABIERTO PLAZO SOLICITUDES",
+    "url": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/264127AFP050/",
+    "fuente": "SV"
   },
   {
-    "titulo": "Actividades formativas",
-    "cep": "CASTILLEJA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja-cuesta/actividades-formativas",
-    "fuente": "CEP-HTML"
+    "titulo": "ESTRATEGIAS DE LIDERAZGO PARA DINAMIZAR LA AUTOFORMACIÓN DOCENTE: PRESENTACIÓN DE BUENAS PRÁCTICAS",
+    "cep": "SEVILLA",
+    "inicio": "27/05/2026",
+    "fin": "02/06/2026",
+    "estado": "ABIERTO PLAZO SOLICITUDES",
+    "url": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/264127ALI014/",
+    "fuente": "SV"
   },
   {
-    "titulo": "Actividades formativas",
-    "cep": "OSUNA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna-ecija/actividades-formativas",
-    "fuente": "CEP-HTML"
+    "titulo": "IX JORNADAS EDUCATIVAS POLÍGONO NORTE",
+    "cep": "SEVILLA",
+    "inicio": "20/05/2026",
+    "fin": "21/05/2026",
+    "estado": "ABIERTO PLAZO SOLICITUDES",
+    "url": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/264127INF003/",
+    "fuente": "SV"
   },
   {
-    "titulo": "Actividades formativas",
-    "cep": "MAIRENA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena-alcor/actividades-formativas",
-    "fuente": "CEP-HTML"
-  },
-  {
-    "titulo": "Actividades formativas",
-    "cep": "LEBRIJA",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/actividades-formativas",
-    "fuente": "CEP-HTML"
-  },
-  {
-    "titulo": "Actividades formativas",
-    "cep": "LORA DEL RÍO",
-    "inicio": "",
-    "fin": "",
-    "estado": "DESCONOCIDO",
-    "url": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lora-rio/actividades-formativas",
-    "fuente": "CEP-HTML"
+    "titulo": "JORNADAS DE INCLUSIÓN EN EL POLÍGONO SUR",
+    "cep": "SEVILLA",
+    "inicio": "18/05/2026",
+    "fin": "19/05/2026",
+    "estado": "ABIERTO PLAZO SOLICITUDES",
+    "url": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/264127PRI025/",
+    "fuente": "SV"
   },
   {
     "titulo": "INTRODUCCIÓN A LA INTELIGENCIA ARTIFICIAL CON COPILOT",

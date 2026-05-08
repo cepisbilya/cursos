@@ -1,7 +1,7 @@
 import requests
+from bs4 import BeautifulSoup
 import json
 import re
-from bs4 import BeautifulSoup
 
 # ============================================
 # 1) SECRETARÍA VIRTUAL (OFICIAL)
@@ -86,24 +86,60 @@ def parsear_sv(html, cep_nombre):
 
 
 # ============================================
-# 2) SCRAPER AJAX DE LOS CEPS
+# 2) AUTODETECTOR AJAX PARA TODOS LOS CEPS
 # ============================================
 
-CEPS_AJAX = {
-    "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
-    "CASTILLEJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
-    "OSUNA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
-    "MAIRENA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
-    "LEBRIJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador",
-    "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-loradelrio/actividades-formativas?p_p_id=buscador_WAR_buscadorportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=buscador"
+CEPS = {
+    "SEVILLA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-sevilla/actividades-formativas",
+    "CASTILLEJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-castilleja/actividades-formativas",
+    "OSUNA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-osuna/actividades-formativas",
+    "MAIRENA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-mairena/actividades-formativas",
+    "LEBRIJA": "https://www.juntadeandalucia.es/educacion/portales/web/cep-lebrija/actividades-formativas",
+    "LORA DEL RÍO": "https://www.juntadeandalucia.es/educacion/portales/web/cep-loradelrio/actividades-formativas"
 }
 
-def scrape_ajax(nombre, url):
-    print(f"Scraping AJAX CEP {nombre}…")
-
-    r = requests.post(url, data={"estado": "Abierto plazo solicitudes"}, timeout=20)
+def detectar_endpoint_ajax(url_base):
+    r = requests.get(url_base, timeout=20)
     r.raise_for_status()
+    html = r.text
 
+    patron = re.compile(r"createResourceURL\((.*?)\)", re.DOTALL)
+    match = patron.search(html)
+
+    if not match:
+        return None
+
+    bloque = match.group(1)
+    params = {}
+
+    for clave in ["p_p_id", "p_p_lifecycle", "p_p_state", "p_p_mode", "p_p_resource_id"]:
+        m = re.search(rf"{clave}['\"]?\s*:\s*['\"]([^'\"]+)", bloque)
+        if m:
+            params[clave] = m.group(1)
+
+    endpoint = (
+        f"{url_base}"
+        f"?p_p_id={params.get('p_p_id')}"
+        f"&p_p_lifecycle={params.get('p_p_lifecycle')}"
+        f"&p_p_state={params.get('p_p_state')}"
+        f"&p_p_mode={params.get('p_p_mode')}"
+        f"&p_p_resource_id={params.get('p_p_resource_id')}"
+    )
+
+    return endpoint
+
+
+def scrape_ajax_autodetect(nombre, url_base):
+    print(f"Autodetectando AJAX para CEP {nombre}…")
+
+    endpoint = detectar_endpoint_ajax(url_base)
+    if not endpoint:
+        print(f"No se pudo detectar AJAX para {nombre}")
+        return []
+
+    payload = {"estado": "Abierto plazo solicitudes"}
+
+    r = requests.post(endpoint, data=payload, timeout=20)
     try:
         data = r.json()
     except:
@@ -158,11 +194,11 @@ def main():
         except Exception as e:
             print(f"Error SV {nombre}: {e}")
 
-    # 2. AJAX CEPs
+    # 2. AJAX autodetectable
     actividades_ajax = []
-    for nombre, url in CEPS_AJAX.items():
+    for nombre, url in CEPS.items():
         try:
-            actividades_ajax.extend(scrape_ajax(nombre, url))
+            actividades_ajax.extend(scrape_ajax_autodetect(nombre, url))
         except Exception as e:
             print(f"Error AJAX {nombre}: {e}")
 
@@ -173,7 +209,7 @@ def main():
     with open("actividades.json", "w", encoding="utf-8") as f:
         json.dump(actividades, f, ensure_ascii=False, indent=2)
 
-    print(f"Scraper híbrido AJAX: {len(actividades)} cursos encontrados.")
+    print(f"Scraper híbrido AJAX autodetectable: {len(actividades)} cursos encontrados.")
     print(f"SV: {len(actividades_sv)} · AJAX: {len(actividades_ajax)}")
 
 if __name__ == "__main__":

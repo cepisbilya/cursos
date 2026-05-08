@@ -1,4 +1,4 @@
-name: Scraper Híbrido AJAX + Deploy CEP
+name: Scraper Híbrido AJAX Autodetectable + Deploy CEP
 
 on:
   schedule:
@@ -33,7 +33,7 @@ jobs:
         run: |
           pip install -r scraper/requirements.txt
 
-      - name: Ejecutar scraper híbrido AJAX
+      - name: Ejecutar scraper híbrido AJAX autodetectable
         run: |
           python scraper/scraper_hibrido.py
 
@@ -42,7 +42,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add actividades.json
-          git diff --cached --quiet || git commit -m "Actualiza actividades CEP (scraper híbrido AJAX)"
+          git diff --cached --quiet || git commit -m "Actualiza actividades CEP (scraper híbrido AJAX autodetectable)"
           git push
 
   deploy:

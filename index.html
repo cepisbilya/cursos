@@ -3,47 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cursos CEP Sevilla</title>
+  <title>Cursos CEP – IES Isbilya</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- CABECERA REDUCIDA -->
   <header class="topbar">
-  <div class="brand">
-  <img src="logo_isbilya.png" alt="IES Isbilya" class="logo">
-  <span class="brand-name">IES Isbilya</span>
-</div>
-  <h1>📚 Actividades Formativas CEPs de Sevilla</h1>
-  <div class="stats">
-  <div class="stat">
-    <span id="totalCursos">0</span>
-    <label>Total cursos</label>
-  </div>
-</div>
-</header>
+    <div class="top-left">
+      <img src="logo_isbilya.png" class="logo">
+      <span class="titulo">IES Isbilya – Actividades CEP</span>
+    </div>
 
+    <div class="top-right">
+      <a href="https://educacionadistancia.juntadeandalucia.es/profesorado/" 
+         target="_blank" class="aula-btn">
+        Aula Virtual del Profesorado
+      </a>
+    </div>
+  </header>
 
-  <section id="filtros">
-    <input id="buscador" type="text" placeholder="Buscar curso por título…">
-
+  <!-- FILTROS -->
+  <section class="filtros">
+    <input id="buscador" type="text" placeholder="Buscar actividad…">
     <select id="filtroCEP">
-  <option value="TODOS">Todos los CEPs</option>
-  <option value="SEVILLA">CEP Sevilla</option>
-  <option value="CASTILLEJA">CEP Castilleja</option>
-  <option value="OSUNA">CEP Osuna</option>
-  <option value="MAIRENA">CEP Mairena</option>
-  <option value="LEBRIJA">CEP Lebrija</option>
-  <option value="LORA DEL RÍO">CEP Lora del Río</option>
-</select>
-
+      <option value="TODOS">Todos los CEPs</option>
+      <option value="SEVILLA">CEP Sevilla</option>
+      <option value="CASTILLEJA">CEP Castilleja</option>
+      <option value="OSUNA">CEP Osuna</option>
+      <option value="MAIRENA">CEP Mairena</option>
+      <option value="LEBRIJA">CEP Lebrija</option>
+      <option value="LORA DEL RÍO">CEP Lora del Río</option>
+    </select>
   </section>
 
-  <main id="contenedor"></main>
+  <!-- CONTADOR -->
+  <div class="contador">
+    Total actividades: <span id="totalCursos">0</span>
+  </div>
 
-  <footer>
-    <p>Actualizado automáticamente cada día · Datos de Secretaría Virtual y webs de los CEPs</p>
-  </footer>
+  <!-- CONTENEDOR DE TARJETAS -->
+  <div id="contenedor"></div>
 
   <script src="app.js"></script>
 </body>

@@ -1,339 +1,122 @@
-/* ===========================
-   ESTILOS GENERALES
-   =========================== */
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-  color: #222;
+  background: #f4f4f4;
 }
 
-header {
-  background: #005a9e;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-header p {
-  margin: 5px 0 0;
-  font-size: 16px;
-}
-
-/* ===========================
-   FILTROS
-   =========================== */
-
-#filtros {
-  display: flex;
-  gap: 10px;
-  padding: 15px;
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid #ddd;
-}
-
-#filtros input,
-#filtros select {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-}
-
-/* ===========================
-   CONTENEDOR Y CEP
-   =========================== */
-
-#contenedor {
-  padding: 20px;
-}
-
-#contenedor h2 {
-  margin-top: 40px;
-  font-size: 22px;
-  color: #005a9e;
-  border-left: 5px solid #005a9e;
-  padding-left: 10px;
-}
-
-/* ===========================
-   TARJETAS
-   =========================== */
-
-.card {
-  background: white;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.card h3 {
-  margin-top: 0;
-  font-size: 20px;
-  color: #333;
-}
-
-.card p {
-  margin: 6px 0;
-}
-
-.card .btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 14px;
-  background: #005a9e;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.card .btn:hover {
-  background: #004a82;
-}
-
-/* ===========================
-   ESTADOS
-   =========================== */
-
-.estado.abierto {
-  color: #0a7a00;
-  font-weight: bold;
-}
-
-.estado.otro {
-  color: #b30000;
-}
-
-/* ===========================
-   FUENTE
-   =========================== */
-
-.fuente {
-  margin-top: 10px;
-  font-size: 13px;
-  color: #666;
-}
-
-/* ===========================
-   FOOTER
-   =========================== */
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #eee;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-/* ===========================
-   RESPONSIVE
-   =========================== */
-
-@media (max-width: 600px) {
-  #filtros {
-    flex-direction: column;
-  }
-}
-
-/* CABECERA */
+/* CABECERA REDUCIDA */
 .topbar {
-  background: #1e1e1e;
+  background: #004d2c;
   color: white;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 3px solid #4caf50;
+  padding: 8px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.topbar h1 {
-  margin: 0;
-  font-size: 28px;
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.titulo {
+  font-size: 18px;
   font-weight: 600;
 }
 
-.stats {
+.aula-btn {
+  background: #ffffff22;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.aula-btn:hover {
+  background: #ffffff44;
+}
+
+/* FILTROS */
+.filtros {
   display: flex;
+  gap: 10px;
+  padding: 10px;
   justify-content: center;
-  gap: 30px;
-  margin-top: 15px;
 }
 
-.stat {
+#buscador, #filtroCEP {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* CONTADOR */
+.contador {
   text-align: center;
-}
-
-.stat span {
-  font-size: 26px;
-  font-weight: bold;
-  color: #4caf50;
-}
-
-/* CONTENEDOR DE TARJETAS */
-#contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
 }
 
 /* TARJETAS */
 .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  background: white;
+  margin: 10px auto;
+  width: 92%;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #0002;
+  font-size: 13px;
 }
 
 .card h3 {
-  margin: 0 0 10px;
-  font-size: 20px;
-  color: #222;
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #004d2c;
 }
 
-.card .meta {
-  font-size: 14px;
-  color: #555;
+.meta {
+  line-height: 1.4;
   margin-bottom: 10px;
+}
+
+.meta strong {
+  color: #222;
 }
 
 .badge {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;
-  font-weight: bold;
-  color: white;
+  margin-bottom: 10px;
 }
 
-.badge.abierto {
-  background: #4caf50;
+.abierto {
+  background: #c8f7c5;
+  color: #0a6b00;
 }
 
-.badge.cerrado {
-  background: #d32f2f;
-}
-
-/* BUSCADOR */
-#buscador {
-  width: 90%;
-  max-width: 500px;
-  margin: 20px auto;
-  display: block;
-  padding: 12px;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-  font-size: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #121212;
-    color: #eee;
-  }
-  .card {
-    background: #1e1e1e;
-    color: #eee;
-  }
-  .topbar {
-    background: #000;
-  }
-}
-
-.brand {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  height: 42px;
-  width: auto;
-}
-
-.brand-name {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-#filtroCEP {
-  width: 90%;
-  max-width: 300px;
-  margin: 10px auto;
-  display: block;
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-  font-size: 16px;
+.cerrado {
+  background: #f2dede;
+  color: #a94442;
 }
 
 .btn-actividad {
   display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  background: #4caf50;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background .2s ease;
-}
-
-.btn-actividad:hover {
-  background: #43a047;
-}
-
-.meta {
-  margin-bottom: 14px;
-  line-height: 1.45;
-  font-size: 14px;
-}
-
-.meta strong {
-  color: #222;
-  font-weight: 600;
-}
-
-.meta {
-  margin-bottom: 14px;
-  line-height: 1.45;
-  font-size: 14px;
-}
-
-.meta strong {
-  color: #222;
-  font-weight: 600;
-}
-
-.btn-actividad {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
+  padding: 8px 12px;
   background: #006e3c;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background .2s ease;
+  border-radius: 6px;
+  font-size: 13px;
 }
 
 .btn-actividad:hover {

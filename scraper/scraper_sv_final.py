@@ -150,6 +150,12 @@ def main():
     with open("actividades.json", "w", encoding="utf-8") as f:
         json.dump(actividades, f, ensure_ascii=False, indent=2)
 
+    # Guardar fecha de actualización
+    from datetime import datetime
+    fecha = datetime.now().strftime("%d/%m/%Y %H:%M")
+    with open("ultima_actualizacion.txt", "w", encoding="utf-8") as f:
+        f.write(fecha)
+
     print(f"Scraper SV final: {len(actividades)} cursos abiertos encontrados (con detalle).")
 
 if __name__ == "__main__":

@@ -32,22 +32,30 @@ jobs:
       - name: Ejecutar scraper
         run: python scraper/scraper_sv_final.py
 
-      - name: Generar fecha de actualización
+      - name: Verificar resultado del scraper
         run: |
-          export TZ="Europe/Madrid"
-          date +"%d/%m/%Y %H:%M" > ultima_actualizacion.txt
+          echo "=== Actividades encontradas ==="
+          python3 -c "
+          import json
+          with open('actividades.json') as f:
+              d = json.load(f)
+          print(f'✅ {len(d)} actividades')
+          if d: print('Primera:', d[0].get('titulo','?'))
+          "
+          echo "=== Última actualización ==="
+          cat ultima_actualizacion.txt
 
-      - name: Listar archivos generados
+      - name: Preparar carpeta para Pages
         run: |
-          echo "=== Raíz del proyecto ==="
-          ls -la
-          echo "=== Archivos JSON/datos ==="
-          find . -name "*.json" -not -path "./.git/*" | head -20
+          mkdir -p _site
+          cp index.html style.css app.js actividades.json ultima_actualizacion.txt _site/
+          # Copia el logo si existe
+          cp logo_isbilya.png _site/ 2>/dev/null || true
 
-      - name: Preparar artefacto para Pages
+      - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: _site/
 
   deploy:
     runs-on: ubuntu-latest

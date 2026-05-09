@@ -2,7 +2,7 @@ name: Scraper Híbrido AJAX Autodetectable + Deploy CEP
 
 on:
   schedule:
-    - cron: "0 * * * *"   # Cada hora/día
+    - cron: "0 * * * *"   # Cada hora
   push:
     branches:
       - main
@@ -35,19 +35,22 @@ jobs:
 
       - name: Ejecutar scraper SV final
         run: |
-            python scraper/scraper_sv_final.py
+          python scraper/scraper_sv_final.py
 
       - name: Guardar fecha y hora de actualización
         run: |
-            export TZ="Europe/Madrid"
-            date +"%d/%m/%Y %H:%M" > ultima_actualizacion.txt
+          export TZ="Europe/Madrid"
+          date +"%d/%m/%Y %H:%M" > ultima_actualizacion.txt
 
+      - name: Keep-alive para GitHub Actions
+        run: |
+          echo "Ping: $(date)" > keepalive.txt
 
       - name: Commit si hay cambios
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add actividades.json ultima_actualizacion.txt
+          git add actividades.json ultima_actualizacion.txt keepalive.txt
           git diff --cached --quiet || git commit -m "Actualiza actividades CEP (scraper híbrido AJAX autodetectable)"
           git push
 

@@ -2,14 +2,14 @@ name: Actualizar y desplegar CEP
 
 on:
   schedule:
-    - cron: "0 * * * *"   # Cada hora
+    - cron: "17 * * * *"   # Cada hora
   workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 

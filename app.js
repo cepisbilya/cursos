@@ -10,6 +10,14 @@ async function cargarDatos() {
 
   datos.sort((a, b) => new Date(b.inicio) - new Date(a.inicio));
 
+  // Después (funciona con DD/MM/YYYY):
+function parseFecha(str) {
+  if (!str) return 0;
+  const [d, m, y] = str.split("/");
+  return new Date(`${y}-${m}-${d}`).getTime() || 0;
+}
+datos.sort((a, b) => parseFecha(b.inicio) - parseFecha(a.inicio));
+
   aplicarFiltros();
   activarScrollInfinito();
 }

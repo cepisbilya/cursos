@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import os
+from datetime import datetime
+import pytz
 
 BASE_URL = "https://secretariavirtual.juntadeandalucia.es"
 SEARCH_URL = f"{BASE_URL}/secretariavirtual/consultaCEP/buscar/"
@@ -25,19 +28,17 @@ def buscar_sv(session, centro_id):
         "modalidad": "-1",
         "_modalidad": "1",
         "dirigido": "-1",
-        "estado": "6",   # Abierto plazo solicitudes
+        "estado": "6",
         "fechaI": "",
         "fechaF": "",
         "titulo": "",
         "codigoEdicion": "",
         "descriptor": "-1",
     }
-
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "Referer": BASE_URL + "/secretariavirtual/consultaCEP/",
     }
-
     r = session.post(SEARCH_URL, data=payload, headers=headers, timeout=60)
     r.raise_for_status()
     return r.text
@@ -80,16 +81,11 @@ def parsear_sv(html, cep_nombre):
     return actividades
 
 def extraer_detalle(url):
-    """Extrae SOLO los campos necesarios: código, modalidad, lugar,
-    fechas actividad, fechas inscripción y horas totales."""
     try:
         r = requests.get(url, timeout=20)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
-
         detalle = {}
-
-        # Todas las listas de datos están en <ul class="list-group">
         listas = soup.find_all("ul", class_="list-group")
 
         for ul in listas:
@@ -98,65 +94,67 @@ def extraer_detalle(url):
 
                 if texto.startswith("Código:"):
                     detalle["codigo"] = texto.replace("Código:", "").strip()
-
                 if texto.startswith("Modalidad:"):
                     detalle["modalidad"] = texto.replace("Modalidad:", "").strip()
-
                 if texto.startswith("Lugar de realización:"):
                     detalle["lugar"] = texto.replace("Lugar de realización:", "").strip()
-
                 if texto.startswith("Fecha actividad:"):
                     fechas = texto.replace("Fecha actividad:", "").strip()
                     if "hasta" in fechas:
                         ini, fin = fechas.split("hasta")
                         detalle["inicio"] = ini.strip()
                         detalle["fin"] = fin.strip()
-
                 if texto.startswith("Fecha inscripción:"):
                     fechas = texto.replace("Fecha inscripción:", "").strip()
                     if "hasta" in fechas:
                         ini, fin = fechas.split("hasta")
                         detalle["inicio_inscripcion"] = ini.strip()
                         detalle["fin_inscripcion"] = fin.strip()
-
                 if texto.startswith("Horas totales:"):
                     detalle["horas"] = texto.replace("Horas totales:", "").strip()
 
         return detalle
 
     except Exception as e:
-        print("Error en detalle:", e)
+        print(f"Error en detalle {url}: {e}")
         return {}
 
 def main():
     s = crear_sesion()
     actividades = []
+    errores = 0
 
     for centro_id, nombre in CENTROS_SV.items():
         try:
             html = buscar_sv(s, centro_id)
             lista = parsear_sv(html, nombre)
 
-            # Añadir detalle a cada actividad
             for act in lista:
                 detalle = extraer_detalle(act["url"])
                 act.update(detalle)
 
             actividades.extend(lista)
+            print(f"✅ {nombre}: {len(lista)} actividades")
 
         except Exception as e:
-            print(f"Error SV {nombre}: {e}")
+            print(f"❌ Error SV {nombre}: {e}")
+            errores += 1
+
+    # Protección: no sobreescribir si todos los centros fallaron
+    if errores == len(CENTROS_SV):
+        print("⚠️  Todos los centros fallaron. No se sobreescribe actividades.json.")
+        return
 
     with open("actividades.json", "w", encoding="utf-8") as f:
         json.dump(actividades, f, ensure_ascii=False, indent=2)
 
-    # Guardar fecha de actualización
-    from datetime import datetime
-    fecha = datetime.now().strftime("%d/%m/%Y %H:%M")
+    # Fecha en hora de Madrid (no UTC)
+    tz_madrid = pytz.timezone("Europe/Madrid")
+    fecha = datetime.now(tz_madrid).strftime("%d/%m/%Y %H:%M")
     with open("ultima_actualizacion.txt", "w", encoding="utf-8") as f:
         f.write(fecha)
 
-    print(f"Scraper SV final: {len(actividades)} cursos abiertos encontrados (con detalle).")
+    print(f"\n✅ Total: {len(actividades)} cursos abiertos encontrados.")
 
 if __name__ == "__main__":
     main()

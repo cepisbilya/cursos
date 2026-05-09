@@ -1,9 +1,9 @@
 let datos = [];
 let pagina = 0;
-const TAM_PAGINA = 10;
+const TAM_PAGINA = 12;
 
 async function cargarDatos() {
-	cargarFechaActualizacion();
+  cargarFechaActualizacion();
 
   const res = await fetch("actividades.json");
   datos = await res.json();
@@ -12,6 +12,16 @@ async function cargarDatos() {
 
   aplicarFiltros();
   activarScrollInfinito();
+}
+
+async function cargarFechaActualizacion() {
+  try {
+    const res = await fetch("ultima_actualizacion.txt");
+    const texto = await res.text();
+    document.getElementById("ultimaActualizacion").textContent = texto.trim();
+  } catch {
+    document.getElementById("ultimaActualizacion").textContent = "—";
+  }
 }
 
 function aplicarFiltros() {
@@ -49,11 +59,10 @@ function cargarPagina() {
         <strong>🔢 Código:</strong> ${a.codigo || "—"}<br>
         <strong>📚 Modalidad:</strong> ${a.modalidad || "—"}<br>
         <strong>📌 Lugar:</strong> ${a.lugar || "—"}<br>
-        <strong>🗓 Inicio actividad:</strong> ${a.inicio || "—"}<br>
-        <strong>🗓 Fin actividad:</strong> ${a.fin || "—"}<br>
-        <strong>📝 Inicio inscripción:</strong> ${a.inicio_inscripcion || "—"}<br>
-        <strong>📝 Fin inscripción:</strong> ${a.fin_inscripcion || "—"}<br>
-        <strong>⏱ Horas totales:</strong> ${a.horas || "—"}
+        <strong>🗓 Inicio:</strong> ${a.inicio || "—"}<br>
+        <strong>🗓 Fin:</strong> ${a.fin || "—"}<br>
+        <strong>📝 Inscripción:</strong> ${a.inicio_inscripcion || "—"} → ${a.fin_inscripcion || "—"}<br>
+        <strong>⏱ Horas:</strong> ${a.horas || "—"}
       </div>
 
       <span class="badge ${a.estado.includes("ABIERTO") ? "abierto" : "cerrado"}">
@@ -61,7 +70,7 @@ function cargarPagina() {
       </span>
 
       <a class="btn-actividad" href="${a.url}" target="_blank">
-        Ver actividad completa →
+        Ver actividad →
       </a>
     `;
 
@@ -77,16 +86,6 @@ function activarScrollInfinito() {
       cargarPagina();
     }
   });
-}
-
-async function cargarFechaActualizacion() {
-  try {
-    const res = await fetch("ultima_actualizacion.txt");
-    const texto = await res.text();
-    document.getElementById("ultimaActualizacion").textContent = texto.trim();
-  } catch {
-    document.getElementById("ultimaActualizacion").textContent = "—";
-  }
 }
 
 document.getElementById("buscador").addEventListener("input", aplicarFiltros);

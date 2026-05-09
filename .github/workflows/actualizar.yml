@@ -1,4 +1,4 @@
-name: Actualizar y desplegar CEP Radar
+name: Actualizar y desplegar CEP
 
 on:
   schedule:

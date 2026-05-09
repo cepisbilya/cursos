@@ -80,7 +80,8 @@ def parsear_sv(html, cep_nombre):
     return actividades
 
 def extraer_detalle(url):
-    """Scrapea la ficha individual de la actividad con todos los campos posibles."""
+    """Extrae SOLO los campos necesarios: código, modalidad, lugar,
+    fechas actividad, fechas inscripción y horas totales."""
     try:
         r = requests.get(url, timeout=20)
         r.raise_for_status()
@@ -88,84 +89,44 @@ def extraer_detalle(url):
 
         detalle = {}
 
-        # 1. Código y edición (aparecen en el encabezado)
-        encabezado = soup.find("h3")
-        if encabezado:
-            texto = encabezado.get_text(" ", strip=True)
-            if "Código" in texto:
-                partes = texto.split(" - ")
-                if len(partes) >= 2:
-                    detalle["codigo"] = partes[0].replace("Código", "").strip()
-                    detalle["edicion"] = partes[1].strip()
+        # Todas las listas de datos están en <ul class="list-group">
+        listas = soup.find_all("ul", class_="list-group")
 
-        # 2. Campos generales (Modalidad, Dirigido a, Lugar, Horas, etc.)
-        bloques = soup.find_all("div", class_="col-md-12")
-        for b in bloques:
-            texto = b.get_text(" ", strip=True)
+        for ul in listas:
+            for li in ul.find_all("li", class_="list-group-item"):
+                texto = li.get_text(" ", strip=True)
 
-            if "Modalidad" in texto:
-                detalle["modalidad"] = texto.replace("Modalidad", "").strip()
+                if texto.startswith("Código:"):
+                    detalle["codigo"] = texto.replace("Código:", "").strip()
 
-            if "Dirigido a" in texto:
-                detalle["dirigido"] = texto.replace("Dirigido a", "").strip()
+                if texto.startswith("Modalidad:"):
+                    detalle["modalidad"] = texto.replace("Modalidad:", "").strip()
 
-            if "Lugar" in texto:
-                detalle["lugar"] = texto.replace("Lugar", "").strip()
+                if texto.startswith("Lugar de realización:"):
+                    detalle["lugar"] = texto.replace("Lugar de realización:", "").strip()
 
-            if "Horas" in texto:
-                detalle["horas"] = texto.replace("Horas", "").strip()
+                if texto.startswith("Fecha actividad:"):
+                    fechas = texto.replace("Fecha actividad:", "").strip()
+                    if "hasta" in fechas:
+                        ini, fin = fechas.split("hasta")
+                        detalle["inicio"] = ini.strip()
+                        detalle["fin"] = fin.strip()
 
-            if "Plazas" in texto:
-                detalle["plazas"] = texto.replace("Plazas", "").strip()
+                if texto.startswith("Fecha inscripción:"):
+                    fechas = texto.replace("Fecha inscripción:", "").strip()
+                    if "hasta" in fechas:
+                        ini, fin = fechas.split("hasta")
+                        detalle["inicio_inscripcion"] = ini.strip()
+                        detalle["fin_inscripcion"] = fin.strip()
 
-            if "Criterios de selección" in texto:
-                detalle["criterios"] = texto.replace("Criterios de selección", "").strip()
-
-            if "Observaciones" in texto:
-                detalle["observaciones"] = texto.replace("Observaciones", "").strip()
-
-        # 3. Descripción larga
-        desc = soup.find("div", class_="descripcion")
-        if desc:
-            detalle["descripcion"] = desc.get_text(" ", strip=True)
-
-        # 4. Ponentes
-        ponentes = soup.find("div", id="ponentes")
-        if ponentes:
-            detalle["ponentes"] = ponentes.get_text(" ", strip=True)
-
-        # 5. Sesiones (tabla)
-        sesiones = []
-        tabla_sesiones = soup.find("table", id="tablaSesiones")
-        if tabla_sesiones:
-            for fila in tabla_sesiones.find("tbody").find_all("tr"):
-                celdas = [td.get_text(" ", strip=True) for td in fila.find_all("td")]
-                if len(celdas) >= 3:
-                    sesiones.append({
-                        "fecha": celdas[0],
-                        "hora_inicio": celdas[1],
-                        "hora_fin": celdas[2]
-                    })
-        if sesiones:
-            detalle["sesiones"] = sesiones
-
-        # 6. Documentos adjuntos
-        docs = []
-        adjuntos = soup.find("div", id="documentos")
-        if adjuntos:
-            for a in adjuntos.find_all("a", href=True):
-                docs.append({
-                    "nombre": a.get_text(strip=True),
-                    "url": BASE_URL + a["href"] if a["href"].startswith("/") else a["href"]
-                })
-        if docs:
-            detalle["documentos"] = docs
+                if texto.startswith("Horas totales:"):
+                    detalle["horas"] = texto.replace("Horas totales:", "").strip()
 
         return detalle
 
-    except Exception:
+    except Exception as e:
+        print("Error en detalle:", e)
         return {}
-
 
 def main():
     s = crear_sesion()

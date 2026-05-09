@@ -49,34 +49,34 @@ function renderizar(lista) {
     const card = document.createElement("div");
     card.className = "card";
 
-card.innerHTML = `
-  <h3>${a.titulo}</h3>
+    card.innerHTML = `
+      <h3>${a.titulo}</h3>
 
-  <div class="meta">
-    <strong>CEP:</strong> ${a.cep}<br>
-    <strong>Código:</strong> ${a.codigo || "—"}<br>
-    <strong>Modalidad:</strong> ${a.modalidad || "—"}<br>
-    <strong>Lugar:</strong> ${a.lugar || "—"}<br>
-    <strong>Inicio actividad:</strong> ${a.inicio || "—"}<br>
-    <strong>Fin actividad:</strong> ${a.fin || "—"}<br>
-    <strong>Inicio inscripción:</strong> ${a.inicio_inscripcion || "—"}<br>
-    <strong>Fin inscripción:</strong> ${a.fin_inscripcion || "—"}<br>
-    <strong>Horas totales:</strong> ${a.horas || "—"}
-  </div>
+      <div class="meta">
+        <strong>CEP:</strong> ${a.cep}<br>
+        <strong>Código:</strong> ${a.codigo || "—"}<br>
+        <strong>Modalidad:</strong> ${a.modalidad || "—"}<br>
+        <strong>Lugar:</strong> ${a.lugar || "—"}<br>
+        <strong>Inicio actividad:</strong> ${a.inicio || "—"}<br>
+        <strong>Fin actividad:</strong> ${a.fin || "—"}<br>
+        <strong>Inicio inscripción:</strong> ${a.inicio_inscripcion || "—"}<br>
+        <strong>Fin inscripción:</strong> ${a.fin_inscripcion || "—"}<br>
+        <strong>Horas totales:</strong> ${a.horas || "—"}
+      </div>
 
-  <span class="badge ${a.estado.includes("ABIERTO") ? "abierto" : "cerrado"}">
-    ${a.estado}
-  </span>
+      <span class="badge ${a.estado.includes("ABIERTO") ? "abierto" : "cerrado"}">
+        ${a.estado}
+      </span>
 
-  <a class="btn-actividad" href="${a.url}" target="_blank">
-    Ver actividad completa →
-  </a>
-`;
-
+      <a class="btn-actividad" href="${a.url}" target="_blank">
+        Ver actividad completa →
+      </a>
+    `;
 
     cont.appendChild(card);
   });
 }
+
 
 function actualizarContadores(lista) {
   document.getElementById("totalCursos").textContent = lista.length;

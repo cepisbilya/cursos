@@ -1,0 +1,44 @@
+name: Deploy CEP (post-scraper)
+
+on:
+  workflow_run:
+    workflows: ["Scraper CEP (cron)"]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Descargar artefactos del scraper
+        uses: actions/download-artifact@v4
+        with:
+          name: datos-cep
+
+      - name: Commit de datos actualizados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add actividades.json ultima_actualizacion.txt
+          git diff --cached --quiet || git commit -m "Actualiza actividades CEP (deploy automático)"
+          git push
+
+      - name: Subir artefacto para Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -39,7 +39,9 @@ jobs:
 
       - name: Guardar fecha y hora de actualización
         run: |
-          date +"%d/%m/%Y %H:%M" > ultima_actualizacion.txt
+            export TZ="Europe/Madrid"
+            date +"%d/%m/%Y %H:%M" > ultima_actualizacion.txt
+
 
       - name: Commit si hay cambios
         run: |

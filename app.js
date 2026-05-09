@@ -1,6 +1,6 @@
 let datos = [];
 let pagina = 0;
-const TAM_PAGINA = 12;
+const TAM_PAGINA = 15;
 
 async function cargarDatos() {
   cargarFechaActualizacion();

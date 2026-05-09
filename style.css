@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f5f6f7;
+  font-family: "Inter", Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
 }
 
 /* CABECERA */
@@ -21,25 +22,25 @@ body {
 }
 
 .logo {
-  height: 28px;
+  height: 26px;
 }
 
 .titulo {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
 
 .aula-btn {
   background: #ffffff22;
-  padding: 6px 10px;
-  border-radius: 6px;
+  padding: 5px 10px;
+  border-radius: 4px;
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .aula-btn:hover {
-  background: #ffffff44;
+  background: #ffffff33;
 }
 
 /* FILTROS */
@@ -51,85 +52,81 @@ body {
 }
 
 #buscador, #filtroCEP {
-  padding: 7px;
+  padding: 6px;
   font-size: 13px;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid #ccc;
 }
 
 /* INFO PANEL */
 .info-panel {
   text-align: center;
-  font-size: 13px;
-  color: #444;
+  font-size: 12px;
+  color: #555;
   margin-bottom: 8px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-/* TARJETAS MODERNAS */
+/* TARJETAS MINIMALISTAS */
 .card {
   background: white;
   margin: 8px auto;
   width: 92%;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px #0001;
-  font-size: 13px;
-  border-left: 4px solid #006e3c;
-  transition: transform .15s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  font-size: 12px;
 }
 
 .card h3 {
   margin: 0 0 6px 0;
-  font-size: 14px;
-  color: #004d2c;
+  font-size: 13px;
+  font-weight: 600;
+  color: #003d24;
 }
 
 .meta {
   line-height: 1.35;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .meta strong {
-  color: #222;
+  color: #111;
 }
 
 /* BADGES */
 .badge {
   display: inline-block;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 3px 6px;
+  border-radius: 4px;
   font-size: 11px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .abierto {
-  background: #d8f8d5;
+  background: #dfffe0;
   color: #0a6b00;
 }
 
 .cerrado {
-  background: #f7d4d4;
+  background: #ffe0e0;
   color: #a94442;
 }
 
 /* BOTÓN */
 .btn-actividad {
   display: inline-block;
-  padding: 7px 10px;
+  padding: 6px 10px;
   background: #006e3c;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 12px;
 }
 
 .btn-actividad:hover {
   background: #005a32;
 }
+

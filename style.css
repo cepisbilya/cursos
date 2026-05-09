@@ -69,12 +69,26 @@ body {
   gap: 20px;
 }
 
+/* GRID DE TARJETAS */
+#contenedor {
+  width: 92%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Móvil */
+  gap: 12px;
+}
+
+/* Escritorio: 2 columnas */
+@media (min-width: 900px) {
+  #contenedor {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* TARJETAS MINIMALISTAS */
 .card {
   background: white;
-  margin: 8px auto;
-  width: 92%;
-  padding: 10px 12px;
+  padding: 12px;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
   font-size: 12px;

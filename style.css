@@ -122,3 +122,10 @@ body {
 .btn-actividad:hover {
   background: #005a32;
 }
+
+.actualizacion {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}

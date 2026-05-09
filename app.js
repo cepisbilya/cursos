@@ -3,6 +3,8 @@ let pagina = 0;
 const TAM_PAGINA = 10;
 
 async function cargarDatos() {
+	cargarFechaActualizacion();
+
   const res = await fetch("actividades.json");
   datos = await res.json();
 
@@ -75,6 +77,16 @@ function activarScrollInfinito() {
       cargarPagina();
     }
   });
+}
+
+async function cargarFechaActualizacion() {
+  try {
+    const res = await fetch("ultima_actualizacion.txt");
+    const texto = await res.text();
+    document.getElementById("ultimaActualizacion").textContent = texto.trim();
+  } catch {
+    document.getElementById("ultimaActualizacion").textContent = "—";
+  }
 }
 
 document.getElementById("buscador").addEventListener("input", aplicarFiltros);

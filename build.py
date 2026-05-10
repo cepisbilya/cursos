@@ -1,13 +1,11 @@
 """
 Genera docs/index.html desde data/actividades.json
-Tarjetas estilo CEP Isbilya (como la imagen enviada)
-- 2 tarjetas por fila en escritorio
-- 1 tarjeta por fila en móvil
-- Iconos alineados
-- Badges ABIERTO/CERRADO
-- Filtro CEP dinámico
+- Sin borde/sombra izquierda en las tarjetas
+- 2 tarjetas por fila
+- Campos: CEP, Código, Modalidad, Lugar, Inicio, Fin, Inscripción, Horas
+- Filtro CEP solo muestra los que tienen cursos
+- Fecha de actualización solo en la barra de controles
 """
-
 import json
 import os
 from datetime import datetime, timezone
@@ -26,12 +24,12 @@ CEP_ORDEN = [
 ]
 
 CEP_LABELS = {
-    "CEP Sevilla": "CEP Sevilla",
+    "CEP Sevilla":               "CEP Sevilla",
     "CEP Castilleja de la Cuesta": "CEP Castilleja",
-    "CEP Osuna - Écija": "CEP Osuna",
-    "CEP Mairena del Alcor": "CEP Mairena",
-    "CEP Lebrija": "CEP Lebrija",
-    "CEP Lora del Río": "CEP Lora del Río",
+    "CEP Osuna - Écija":         "CEP Osuna",
+    "CEP Mairena del Alcor":     "CEP Mairena",
+    "CEP Lebrija":               "CEP Lebrija",
+    "CEP Lora del Río":          "CEP Lora del Río",
 }
 
 
@@ -43,46 +41,36 @@ def fecha_sort(fecha_str):
 
 
 def v(val):
+    """Devuelve el valor o '—' si está vacío."""
     return val.strip() if val and val.strip() else "—"
 
 
 def card_html(a):
     url = a.get("URL", "")
-    btn = (
-        f'<a class="btn-ver" href="{url}" target="_blank" rel="noopener">Ver actividad →</a>'
-        if url else ""
-    )
-
-    estado = a.get("Estado", "").upper()
-    badge = ""
-    if "ABIERTO" in estado:
-        badge = '<span class="badge abierto">ABIERTO PLAZO SOLICITUDES</span>'
-    elif "CERRADO" in estado:
-        badge = '<span class="badge cerrado">PLAZO CERRADO</span>'
+    btn = (f'<a class="btn-actividad" href="{url}" target="_blank" rel="noopener">'
+           f'Ver actividad →</a>') if url else ""
 
     insc_ini = v(a.get("Inicio inscripción", ""))
     insc_fin = v(a.get("Fin inscripción", ""))
-    insc = f"{insc_ini} → {insc_fin}" if insc_ini != "—" or insc_fin != "—" else "—"
+    if insc_ini != "—" or insc_fin != "—":
+        insc = f"{insc_ini} → {insc_fin}"
+    else:
+        insc = "—"
 
-    return f"""
-    <div class="card" data-cep="{a.get('CEP','')}">
+    return f"""    <div class="card" data-cep="{a.get('CEP','')}">
       <h3>{a.get('Título','')}</h3>
-
       <div class="meta">
-        <div class="row"><span class="icon">📍</span><span class="label">CEP</span><span>{v(a.get('CEP',''))}</span></div>
-        <div class="row"><span class="icon">🧾</span><span class="label">Código</span><span>{v(a.get('Código',''))}</span></div>
-        <div class="row"><span class="icon">📚</span><span class="label">Modalidad</span><span>{v(a.get('Modalidad',''))}</span></div>
-        <div class="row"><span class="icon">📌</span><span class="label">Lugar</span><span>{v(a.get('Lugar',''))}</span></div>
-        <div class="row"><span class="icon">📅</span><span class="label">Inicio</span><span>{v(a.get('Inicio',''))}</span></div>
-        <div class="row"><span class="icon">📅</span><span class="label">Fin</span><span>{v(a.get('Fin',''))}</span></div>
-        <div class="row"><span class="icon">🖋️</span><span class="label">Inscripción</span><span>{insc}</span></div>
-        <div class="row"><span class="icon">⏱️</span><span class="label">Horas</span><span>{v(a.get('Horas',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">CEP</span><span>{v(a.get('CEP',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Código</span><span>{v(a.get('Código',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Modalidad</span><span>{v(a.get('Modalidad',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Lugar</span><span>{v(a.get('Lugar',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Inicio</span><span>{v(a.get('Inicio',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Fin</span><span>{v(a.get('Fin',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Inscripción</span><span>{insc}</span></div>
+        <div class="meta-row"><span class="meta-label">Horas</span><span>{v(a.get('Horas',''))}</span></div>
       </div>
-
-      {badge}
       {btn}
-    </div>
-    """
+    </div>"""
 
 
 def opciones_cep_html(actividades):
@@ -107,12 +95,10 @@ def generar_html(actividades, generado):
     opciones_cep = opciones_cep_html(actividades)
     total = len(actividades)
 
-    dt = (
-        datetime.fromisoformat(generado)
-        .replace(tzinfo=timezone.utc)
-        .astimezone(ZoneInfo("Europe/Madrid"))
-        .strftime("%d/%m/%Y %H:%M")
-    )
+    dt = (datetime.fromisoformat(generado)
+          .replace(tzinfo=timezone.utc)
+          .astimezone(ZoneInfo("Europe/Madrid"))
+          .strftime("%d/%m/%Y %H:%M"))
 
     return f"""<!DOCTYPE html>
 <html lang="es">
@@ -120,7 +106,6 @@ def generar_html(actividades, generado):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cursos CEP – IES Isbilya</title>
-
   <style>
     * {{ box-sizing: border-box; margin: 0; padding: 0; }}
     body {{
@@ -138,8 +123,22 @@ def generar_html(actividades, generado):
       gap: 1rem;
       flex-wrap: wrap;
     }}
-    header img {{ height: 48px; border-radius: 8px; }}
+    header img {{
+      height: 48px;
+      border-radius: 8px;
+    }}
     header .titulo {{ flex: 1; }}
+    header h1 {{ font-size: 1.2rem; font-weight: 700; }}
+    header a {{
+      color: #7dd3fc;
+      font-size: 0.82rem;
+      text-decoration: none;
+      border: 1px solid rgba(125,211,252,0.4);
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      transition: background 0.15s;
+    }}
+    header a:hover {{ background: rgba(125,211,252,0.15); }}
 
     .controles {{
       background: white;
@@ -154,6 +153,30 @@ def generar_html(actividades, generado):
       top: 0;
       z-index: 10;
     }}
+    .controles input[type="search"] {{
+      flex: 1;
+      min-width: 160px;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      outline-color: #1a1a2e;
+    }}
+    .controles select {{
+      padding: 0.45rem 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      background: white;
+      cursor: pointer;
+      outline-color: #1a1a2e;
+    }}
+    .stats {{
+      font-size: 0.78rem;
+      color: #64748b;
+      white-space: nowrap;
+      margin-left: auto;
+    }}
 
     #contenedor {{
       max-width: 1100px;
@@ -164,102 +187,89 @@ def generar_html(actividades, generado):
       gap: 1rem;
     }}
 
-    /* === TARJETAS NUEVAS === */
-
     .card {{
       background: white;
-      border-radius: 12px;
-      padding: 1.2rem 1.4rem;
+      border-radius: 10px;
+      padding: 1.1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
       display: flex;
       flex-direction: column;
-      gap: 0.9rem;
-      border: 1px solid #e5e7eb;
+      gap: 0.75rem;
+      transition: transform 0.15s, box-shadow 0.15s;
     }}
-
+    .card:hover {{
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }}
     .card h3 {{
-      font-size: 1rem;
-      font-weight: 700;
+      font-size: 0.92rem;
+      line-height: 1.45;
       color: #1a1a2e;
-      margin-bottom: 0.4rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid #e2e8f0;
     }}
-
     .meta {{
       display: flex;
       flex-direction: column;
-      gap: 0.35rem;
-      font-size: 0.85rem;
-    }}
-
-    .row {{
-      display: grid;
-      grid-template-columns: 22px 90px 1fr;
-      align-items: center;
       gap: 0.3rem;
+      font-size: 0.8rem;
     }}
-
-    .icon {{ font-size: 1rem; }}
-
-    .label {{
-      font-weight: 600;
-      color: #475569;
-      text-transform: uppercase;
-      font-size: 0.75rem;
+    .meta-row {{
+      display: flex;
+      gap: 0.5rem;
     }}
-
-    .badge {{
-      padding: 0.35rem 0.6rem;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      width: fit-content;
+    .meta-label {{
+      color: #64748b;
+      min-width: 80px;
+      flex-shrink: 0;
+      font-weight: 500;
     }}
-
-    .badge.abierto {{
-      background: #d1fae5;
-      color: #065f46;
-    }}
-
-    .badge.cerrado {{
-      background: #fee2e2;
-      color: #991b1b;
-    }}
-
-    .btn-ver {{
+    .btn-actividad {{
       align-self: flex-end;
-      font-size: 0.85rem;
+      margin-top: auto;
+      font-size: 0.82rem;
       font-weight: 600;
-      color: white;
-      background: #065f46;
-      padding: 0.45rem 0.9rem;
-      border-radius: 6px;
+      color: #1a1a2e;
       text-decoration: none;
-      transition: opacity 0.15s;
+      padding: 0.35rem 0.8rem;
+      border: 1.5px solid #1a1a2e;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }}
+    .btn-actividad:hover {{
+      background: #1a1a2e;
+      color: white;
     }}
 
-    .btn-ver:hover {{ opacity: 0.8; }}
+    #sin-resultados {{
+      display: none;
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 3rem;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }}
 
-    /* === MÓVIL === */
+    footer {{
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }}
+
     @media (max-width: 700px) {{
       #contenedor {{
         grid-template-columns: 1fr;
         padding: 0 1rem;
       }}
-
-      .card {{
-        padding: 1rem;
-      }}
-
-      .row {{
-        grid-template-columns: 20px 80px 1fr;
-      }}
-
-      .label {{
-        font-size: 0.7rem;
-      }}
+      header {{ padding: 0.75rem 1rem; }}
+      header img {{ height: 36px; }}
+      header h1 {{ font-size: 1rem; }}
+      .controles {{ padding: 0.6rem 1rem; }}
+      .stats {{ display: none; }}
     }}
   </style>
 </head>
-
 <body>
 
   <header>
@@ -267,6 +277,9 @@ def generar_html(actividades, generado):
     <div class="titulo">
       <h1>IES Isbilya · Actividades CEP</h1>
     </div>
+    <a href="https://educacionadistancia.juntadeandalucia.es/profesorado/" target="_blank" rel="noopener">
+      Aula Virtual
+    </a>
   </header>
 
   <div class="controles">

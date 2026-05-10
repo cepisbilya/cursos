@@ -1,10 +1,10 @@
 """
-Lee data/actividades.json y genera docs/index.html
-con el diseño original de CEP Isbilya:
-- Solo filtro por CEP (selector desplegable)
-- Solo muestra actividades con plazo abierto
-- Buscador de texto
-- Cards con scroll infinito
+Genera docs/index.html desde data/actividades.json
+- Sin borde/sombra izquierda en las tarjetas
+- 2 tarjetas por fila
+- Campos: CEP, Código, Modalidad, Lugar, Inicio, Fin, Inscripción, Horas
+- Filtro CEP solo muestra los que tienen cursos
+- Fecha de actualización solo en la barra de controles
 """
 import json
 import os
@@ -13,6 +13,15 @@ from zoneinfo import ZoneInfo
 
 DATA_DIR = "data"
 DOCS_DIR = "docs"
+
+CEP_ORDEN = [
+    "CEP Sevilla",
+    "CEP Castilleja de la Cuesta",
+    "CEP Osuna - Écija",
+    "CEP Mairena del Alcor",
+    "CEP Lebrija",
+    "CEP Lora del Río",
+]
 
 CEP_LABELS = {
     "CEP Sevilla":               "CEP Sevilla",
@@ -23,8 +32,6 @@ CEP_LABELS = {
     "CEP Lora del Río":          "CEP Lora del Río",
 }
 
-CEP_ORDEN = list(CEP_LABELS.keys())
-
 
 def fecha_sort(fecha_str):
     if not fecha_str:
@@ -33,21 +40,35 @@ def fecha_sort(fecha_str):
     return (p[2] + p[1] + p[0]) if len(p) == 3 else "00000000"
 
 
+def v(val):
+    """Devuelve el valor o '—' si está vacío."""
+    return val.strip() if val and val.strip() else "—"
+
+
 def card_html(a):
     url = a.get("URL", "")
     btn = (f'<a class="btn-actividad" href="{url}" target="_blank" rel="noopener">'
            f'Ver actividad →</a>') if url else ""
+
+    insc_ini = v(a.get("Inicio inscripción", ""))
+    insc_fin = v(a.get("Fin inscripción", ""))
+    if insc_ini != "—" or insc_fin != "—":
+        insc = f"{insc_ini} → {insc_fin}"
+    else:
+        insc = "—"
+
     return f"""    <div class="card" data-cep="{a.get('CEP','')}">
       <h3>{a.get('Título','')}</h3>
       <div class="meta">
-        <strong>📍 CEP:</strong> {a.get('CEP','')}<br>
-        <strong>🔢 Código:</strong> {a.get('Código','') or '—'}<br>
-        <strong>📚 Modalidad:</strong> {a.get('Modalidad','') or '—'}<br>
-        <strong>👥 Dirigido a:</strong> {a.get('Dirigido a','') or '—'}<br>
-        <strong>🗓 Inicio:</strong> {a.get('Inicio','') or '—'}<br>
-        <strong>🗓 Fin:</strong> {a.get('Fin','') or '—'}
+        <div class="meta-row"><span class="meta-label">CEP</span><span>{v(a.get('CEP',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Código</span><span>{v(a.get('Código',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Modalidad</span><span>{v(a.get('Modalidad',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Lugar</span><span>{v(a.get('Lugar',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Inicio</span><span>{v(a.get('Inicio',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Fin</span><span>{v(a.get('Fin',''))}</span></div>
+        <div class="meta-row"><span class="meta-label">Inscripción</span><span>{insc}</span></div>
+        <div class="meta-row"><span class="meta-label">Horas</span><span>{v(a.get('Horas',''))}</span></div>
       </div>
-      <span class="badge abierto">ABIERTO PLAZO SOLICITUDES</span>
       {btn}
     </div>"""
 
@@ -65,7 +86,11 @@ def opciones_cep_html(actividades):
 
 
 def generar_html(actividades, generado):
-    actividades_ord = sorted(actividades, key=lambda a: fecha_sort(a.get("Inicio", "")), reverse=True)
+    actividades_ord = sorted(
+        actividades,
+        key=lambda a: fecha_sort(a.get("Inicio", "")),
+        reverse=True
+    )
     cards = "\n".join(card_html(a) for a in actividades_ord)
     opciones_cep = opciones_cep_html(actividades)
     total = len(actividades)
@@ -102,18 +127,8 @@ def generar_html(actividades, generado):
       height: 48px;
       border-radius: 8px;
     }}
-    header .titulo {{
-      flex: 1;
-    }}
-    header h1 {{
-      font-size: 1.2rem;
-      font-weight: 700;
-    }}
-    header p {{
-      font-size: 0.78rem;
-      opacity: 0.7;
-      margin-top: 0.2rem;
-    }}
+    header .titulo {{ flex: 1; }}
+    header h1 {{ font-size: 1.2rem; font-weight: 700; }}
     header a {{
       color: #7dd3fc;
       font-size: 0.82rem;
@@ -160,6 +175,7 @@ def generar_html(actividades, generado):
       font-size: 0.78rem;
       color: #64748b;
       white-space: nowrap;
+      margin-left: auto;
     }}
 
     #contenedor {{
@@ -167,7 +183,7 @@ def generar_html(actividades, generado):
       margin: 1.5rem auto;
       padding: 0 1.5rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }}
 
@@ -175,40 +191,38 @@ def generar_html(actividades, generado):
       background: white;
       border-radius: 10px;
       padding: 1.1rem;
-      border-left: 4px solid #1a1a2e;
       box-shadow: 0 1px 4px rgba(0,0,0,0.07);
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
+      gap: 0.75rem;
       transition: transform 0.15s, box-shadow 0.15s;
     }}
     .card:hover {{
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-      border-left-color: #e76f51;
     }}
     .card h3 {{
       font-size: 0.92rem;
       line-height: 1.45;
       color: #1a1a2e;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid #e2e8f0;
     }}
     .meta {{
-      font-size: 0.78rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      font-size: 0.8rem;
+    }}
+    .meta-row {{
+      display: flex;
+      gap: 0.5rem;
+    }}
+    .meta-label {{
       color: #64748b;
-      line-height: 1.7;
-    }}
-    .badge {{
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 0.2rem 0.6rem;
-      border-radius: 20px;
-      letter-spacing: 0.03em;
-      align-self: flex-start;
-    }}
-    .badge.abierto {{
-      background: #dcfce7;
-      color: #166534;
+      min-width: 80px;
+      flex-shrink: 0;
+      font-weight: 500;
     }}
     .btn-actividad {{
       align-self: flex-end;
@@ -243,12 +257,16 @@ def generar_html(actividades, generado):
       color: #94a3b8;
     }}
 
-    @media (max-width: 600px) {{
+    @media (max-width: 700px) {{
+      #contenedor {{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+      }}
       header {{ padding: 0.75rem 1rem; }}
       header img {{ height: 36px; }}
       header h1 {{ font-size: 1rem; }}
       .controles {{ padding: 0.6rem 1rem; }}
-      #contenedor {{ padding: 0 1rem; margin-top: 1rem; }}
+      .stats {{ display: none; }}
     }}
   </style>
 </head>
@@ -258,7 +276,6 @@ def generar_html(actividades, generado):
     <img src="logo_isbilya.png" alt="Logo IES Isbilya">
     <div class="titulo">
       <h1>IES Isbilya · Actividades CEP</h1>
-      <p>Plazo abierto de solicitudes · Actualizado: {dt}</p>
     </div>
     <a href="https://educacionadistancia.juntadeandalucia.es/profesorado/" target="_blank" rel="noopener">
       Aula Virtual
@@ -271,8 +288,7 @@ def generar_html(actividades, generado):
       {opciones_cep}
     </select>
     <span class="stats">
-      Total: <strong id="totalCursos">{total}</strong> &nbsp;·&nbsp;
-      Actualizado: <strong>{dt}</strong>
+      <strong id="totalCursos">{total}</strong> actividades · Actualizado: <strong>{dt}</strong>
     </span>
   </div>
 
@@ -282,7 +298,7 @@ def generar_html(actividades, generado):
   </div>
 
   <footer>
-    Datos obtenidos de la Secretaría Virtual de la Junta de Andalucía · Actualización automática cada hora
+    Datos de la Secretaría Virtual de la Junta de Andalucía · Actualización automática cada hora
   </footer>
 
   <script>
@@ -292,9 +308,8 @@ def generar_html(actividades, generado):
       const cards = document.querySelectorAll('.card');
       let visibles = 0;
       cards.forEach(card => {{
-        const titulo = card.querySelector('h3').textContent.toLowerCase();
-        const cardCep = card.dataset.cep;
-        const ok = (cep === 'TODOS' || cardCep === cep) && (!q || titulo.includes(q) || card.textContent.toLowerCase().includes(q));
+        const ok = (cep === 'TODOS' || card.dataset.cep === cep)
+                && (!q || card.textContent.toLowerCase().includes(q));
         card.style.display = ok ? '' : 'none';
         if (ok) visibles++;
       }});

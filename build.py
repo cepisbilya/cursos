@@ -60,16 +60,19 @@ def card_html(a):
     return f"""    <div class="card" data-cep="{a.get('CEP','')}">
       <h3>{a.get('Título','')}</h3>
       <div class="meta">
-        <div class="meta-row"><span class="meta-label">CEP</span><span>{v(a.get('CEP',''))}</span></div>
-        <div class="meta-row"><span class="meta-label">Código</span><span>{v(a.get('Código',''))}</span></div>
-        <div class="meta-row"><span class="meta-label">Modalidad</span><span>{v(a.get('Modalidad',''))}</span></div>
-        <div class="meta-row"><span class="meta-label">Lugar</span><span>{v(a.get('Lugar',''))}</span></div>
-        <div class="meta-row"><span class="meta-label">Inicio</span><span>{v(a.get('Inicio',''))}</span></div>
-        <div class="meta-row"><span class="meta-label">Fin</span><span>{v(a.get('Fin',''))}</span></div>
-        <div class="meta-row"><span class="meta-label">Inscripción</span><span>{insc}</span></div>
-        <div class="meta-row"><span class="meta-label">Horas</span><span>{v(a.get('Horas',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">📍</span><span><strong>CEP:</strong> {v(a.get('CEP',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">🔢</span><span><strong>Código:</strong> {v(a.get('Código',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">📚</span><span><strong>Modalidad:</strong> {v(a.get('Modalidad',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">📌</span><span><strong>Lugar:</strong> {v(a.get('Lugar',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Inicio:</strong> {v(a.get('Inicio',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Fin:</strong> {v(a.get('Fin',''))}</span></div>
+        <div class="meta-row"><span class="meta-icon">📝</span><span><strong>Inscripción:</strong> {insc}</span></div>
+        <div class="meta-row"><span class="meta-icon">⏱</span><span><strong>Horas:</strong> {v(a.get('Horas',''))}</span></div>
       </div>
-      {btn}
+      <div class="card-footer">
+        <span class="badge-abierto">ABIERTO PLAZO SOLICITUDES</span>
+        {btn}
+      </div>
     </div>"""
 
 
@@ -106,6 +109,7 @@ def generar_html(actividades, generado):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cursos CEP – IES Isbilya</title>
+  <link rel="icon" type="image/png" href="logo_isbilya.png">
   <style>
     * {{ box-sizing: border-box; margin: 0; padding: 0; }}
     body {{
@@ -187,58 +191,77 @@ def generar_html(actividades, generado):
       gap: 1rem;
     }}
 
+    /* ── Tarjeta estilo imagen de referencia ── */
     .card {{
       background: white;
-      border-radius: 10px;
-      padding: 1.1rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      border-radius: 8px;
+      padding: 1rem 1.1rem 0.9rem;
+      border: 1px solid #d1d5db;
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
-      transition: transform 0.15s, box-shadow 0.15s;
+      gap: 0.6rem;
+      transition: box-shadow 0.15s;
     }}
     .card:hover {{
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.10);
     }}
     .card h3 {{
-      font-size: 0.92rem;
-      line-height: 1.45;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.4;
       color: #1a1a2e;
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid #e5e7eb;
     }}
     .meta {{
       display: flex;
       flex-direction: column;
-      gap: 0.3rem;
-      font-size: 0.8rem;
+      gap: 0.28rem;
+      font-size: 0.82rem;
+      color: #374151;
     }}
     .meta-row {{
       display: flex;
-      gap: 0.5rem;
+      align-items: baseline;
+      gap: 0.4rem;
     }}
-    .meta-label {{
-      color: #64748b;
-      min-width: 80px;
+    .meta-icon {{
+      font-size: 0.9rem;
       flex-shrink: 0;
-      font-weight: 500;
+      width: 1.2rem;
+      text-align: center;
+    }}
+    .card-footer {{
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 0.3rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid #e5e7eb;
+      flex-wrap: wrap;
+    }}
+    .badge-abierto {{
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #166534;
+      background: #dcfce7;
+      border: 1px solid #bbf7d0;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      letter-spacing: 0.02em;
     }}
     .btn-actividad {{
-      align-self: flex-end;
-      margin-top: auto;
       font-size: 0.82rem;
       font-weight: 600;
-      color: #1a1a2e;
+      color: white;
+      background: #166534;
       text-decoration: none;
-      padding: 0.35rem 0.8rem;
-      border: 1.5px solid #1a1a2e;
-      border-radius: 6px;
-      transition: background 0.15s, color 0.15s;
+      padding: 0.3rem 0.75rem;
+      border-radius: 5px;
+      transition: background 0.15s;
     }}
     .btn-actividad:hover {{
-      background: #1a1a2e;
-      color: white;
+      background: #14532d;
     }}
 
     #sin-resultados {{

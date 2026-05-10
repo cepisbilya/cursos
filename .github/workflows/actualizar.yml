@@ -2,7 +2,7 @@ name: Actualizar y desplegar CEP
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -32,30 +32,25 @@ jobs:
       - name: Ejecutar scraper
         run: python scraper/scraper_sv_final.py
 
-      - name: Verificar resultado del scraper
+      - name: Verificar resultado
         run: |
-          echo "=== Actividades encontradas ==="
           python3 -c "
           import json
-          with open('actividades.json') as f:
+          with open('data/actividades.json') as f:
               d = json.load(f)
-          print(f'✅ {len(d)} actividades')
-          if d: print('Primera:', d[0].get('titulo','?'))
+          print(f'✅ {d[\"total\"]} actividades con plazo abierto')
           "
-          echo "=== Última actualización ==="
-          cat ultima_actualizacion.txt
 
-      - name: Preparar carpeta para Pages
-        run: |
-          mkdir -p _site
-          cp index.html style.css app.js actividades.json ultima_actualizacion.txt _site/
-          # Copia el logo si existe
-          cp logo_isbilya.png _site/ 2>/dev/null || true
+      - name: Generar HTML
+        run: python build.py
+
+      - name: Copiar logo
+        run: cp logo_isbilya.png docs/ 2>/dev/null || echo "Sin logo"
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site/
+          path: docs/
 
   deploy:
     runs-on: ubuntu-latest

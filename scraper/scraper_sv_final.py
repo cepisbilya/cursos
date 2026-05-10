@@ -1,26 +1,34 @@
-import requests
-from bs4 import BeautifulSoup
+"""
+Descarga actividades con plazo abierto de los 6 CEPs de Sevilla
+y guarda data/actividades.json
+"""
 import json
 import os
-from datetime import datetime
-import pytz
+from datetime import datetime, timezone
+
+import requests
+from bs4 import BeautifulSoup
 
 BASE_URL = "https://secretariavirtual.juntadeandalucia.es"
 SEARCH_URL = f"{BASE_URL}/secretariavirtual/consultaCEP/buscar/"
 
 CENTROS_SV = {
-    "5265": "SEVILLA",
-    "5266": "CASTILLEJA",
-    "5267": "OSUNA",
-    "5268": "MAIRENA",
-    "5269": "LEBRIJA",
-    "5270": "LORA DEL RÍO",
+    "5265": "CEP Sevilla",
+    "5266": "CEP Castilleja de la Cuesta",
+    "5267": "CEP Osuna - Écija",
+    "5268": "CEP Mairena del Alcor",
+    "5269": "CEP Lebrija",
+    "5270": "CEP Lora del Río",
 }
+
+DATA_DIR = "data"
+
 
 def crear_sesion():
     s = requests.Session()
     s.get(BASE_URL + "/secretariavirtual/consultaCEP/", timeout=15)
     return s
+
 
 def buscar_sv(session, centro_id):
     payload = {
@@ -28,7 +36,7 @@ def buscar_sv(session, centro_id):
         "modalidad": "-1",
         "_modalidad": "1",
         "dirigido": "-1",
-        "estado": "6",
+        "estado": "6",   # Solo "Abierto plazo solicitudes"
         "fechaI": "",
         "fechaF": "",
         "titulo": "",
@@ -42,6 +50,7 @@ def buscar_sv(session, centro_id):
     r = session.post(SEARCH_URL, data=payload, headers=headers, timeout=60)
     r.raise_for_status()
     return r.text
+
 
 def parsear_sv(html, cep_nombre):
     soup = BeautifulSoup(html, "html.parser")
@@ -58,103 +67,63 @@ def parsear_sv(html, cep_nombre):
             continue
 
         a = dict(zip(cabeceras, celdas))
-        estado = (a.get("Estado", "") or "").upper()
-
-        if "ABIERTO" not in estado:
-            continue
-
         enlace = fila.find("a", href=True)
         url = enlace["href"] if enlace else ""
         if url.startswith("/"):
             url = BASE_URL + url
 
         actividades.append({
-            "titulo": a.get("Título", ""),
-            "cep": cep_nombre,
-            "inicio": a.get("Inicio", ""),
-            "fin": a.get("Fin", ""),
-            "estado": estado,
-            "url": url,
-            "fuente": "SV"
+            "Código":     a.get("Código", ""),
+            "Título":     a.get("Título", ""),
+            "CEP":        cep_nombre,
+            "Modalidad":  a.get("Modalidad", ""),
+            "Dirigido a": a.get("Dirigido a", ""),
+            "Inicio":     a.get("Inicio", ""),
+            "Fin":        a.get("Fin", ""),
+            "Estado":     "Abierto plazo solicitudes",
+            "URL":        url,
         })
 
     return actividades
 
-def extraer_detalle(url):
-    try:
-        r = requests.get(url, timeout=20)
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
-        detalle = {}
-        listas = soup.find_all("ul", class_="list-group")
-
-        for ul in listas:
-            for li in ul.find_all("li", class_="list-group-item"):
-                texto = li.get_text(" ", strip=True)
-
-                if texto.startswith("Código:"):
-                    detalle["codigo"] = texto.replace("Código:", "").strip()
-                if texto.startswith("Modalidad:"):
-                    detalle["modalidad"] = texto.replace("Modalidad:", "").strip()
-                if texto.startswith("Lugar de realización:"):
-                    detalle["lugar"] = texto.replace("Lugar de realización:", "").strip()
-                if texto.startswith("Fecha actividad:"):
-                    fechas = texto.replace("Fecha actividad:", "").strip()
-                    if "hasta" in fechas:
-                        ini, fin = fechas.split("hasta")
-                        detalle["inicio"] = ini.strip()
-                        detalle["fin"] = fin.strip()
-                if texto.startswith("Fecha inscripción:"):
-                    fechas = texto.replace("Fecha inscripción:", "").strip()
-                    if "hasta" in fechas:
-                        ini, fin = fechas.split("hasta")
-                        detalle["inicio_inscripcion"] = ini.strip()
-                        detalle["fin_inscripcion"] = fin.strip()
-                if texto.startswith("Horas totales:"):
-                    detalle["horas"] = texto.replace("Horas totales:", "").strip()
-
-        return detalle
-
-    except Exception as e:
-        print(f"Error en detalle {url}: {e}")
-        return {}
 
 def main():
+    print("=== Scraper CEP Isbilya — solo plazo abierto ===\n")
     s = crear_sesion()
-    actividades = []
+    todas = {}
     errores = 0
 
-    for centro_id, nombre in CENTROS_SV.items():
+    for centro_id, cep_nombre in CENTROS_SV.items():
         try:
             html = buscar_sv(s, centro_id)
-            lista = parsear_sv(html, nombre)
-
+            lista = parsear_sv(html, cep_nombre)
             for act in lista:
-                detalle = extraer_detalle(act["url"])
-                act.update(detalle)
-
-            actividades.extend(lista)
-            print(f"✅ {nombre}: {len(lista)} actividades")
-
+                cod = act.get("Código", "")
+                if cod:
+                    todas[cod] = act
+            print(f"  ✅ {cep_nombre}: {len(lista)} actividades")
         except Exception as e:
-            print(f"❌ Error SV {nombre}: {e}")
+            print(f"  ❌ {cep_nombre}: {e}")
             errores += 1
 
-    # Protección: no sobreescribir si todos los centros fallaron
+    actividades = list(todas.values())
+    print(f"\nTotal: {len(actividades)} actividades con plazo abierto")
+
     if errores == len(CENTROS_SV):
         print("⚠️  Todos los centros fallaron. No se sobreescribe actividades.json.")
         return
 
-    with open("actividades.json", "w", encoding="utf-8") as f:
-        json.dump(actividades, f, ensure_ascii=False, indent=2)
+    os.makedirs(DATA_DIR, exist_ok=True)
+    datos = {
+        "generado": datetime.now(timezone.utc).isoformat(),
+        "total": len(actividades),
+        "actividades": actividades,
+    }
+    with open(os.path.join(DATA_DIR, "actividades.json"), "w", encoding="utf-8") as f:
+        json.dump(datos, f, ensure_ascii=False, indent=2)
 
-    # Fecha en hora de Madrid (no UTC)
-    tz_madrid = pytz.timezone("Europe/Madrid")
-    fecha = datetime.now(tz_madrid).strftime("%d/%m/%Y %H:%M")
-    with open("ultima_actualizacion.txt", "w", encoding="utf-8") as f:
-        f.write(fecha)
+    print(f"Guardado en {DATA_DIR}/actividades.json")
 
-    print(f"\n✅ Total: {len(actividades)} cursos abiertos encontrados.")
 
 if __name__ == "__main__":
     main()

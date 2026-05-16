@@ -288,8 +288,23 @@ def generar_html(actividades, generado):
       header {{ padding: 0.75rem 1rem; }}
       header img {{ height: 36px; }}
       header h1 {{ font-size: 1rem; }}
-      .controles {{ padding: 0.6rem 1rem; }}
-      .stats {{ display: none; }}
+      .controles {{
+        padding: 0.6rem 1rem;
+        flex-wrap: wrap;
+      }}
+      .controles input[type="search"] {{
+        flex: 1 1 100%;
+      }}
+      .controles select {{
+        flex: 1 1 auto;
+      }}
+      .stats {{
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 0.75rem;
+        padding-top: 0.2rem;
+        border-top: 1px solid #e2e8f0;
+      }}
     }}
   </style>
 </head>

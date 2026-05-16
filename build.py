@@ -336,7 +336,7 @@ def generar_html(actividades, generado):
   </div>
 
   <footer>
-    Datos de la Secretaría Virtual de la Junta de Andalucía · Actualización automática cada hora
+    Datos de la Secretaría Virtual de la Junta de Andalucía · Actualización automática cada día
   </footer>
 
   <script>

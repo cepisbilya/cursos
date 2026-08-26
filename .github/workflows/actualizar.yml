@@ -51,6 +51,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/
+          
+      - name: Prevenir que GitHub deshabilite el workflow
+        uses: gautamkrishnar/keepalive-workflow@v2
 
   deploy:
     runs-on: ubuntu-latest

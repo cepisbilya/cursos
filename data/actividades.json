@@ -1,1 +1,51 @@
-{"generado":"2025-01-01T00:00:00","total":0,"actividades":[]}
+{
+  "generado": "2026-08-27T09:46:24.565540+00:00",
+  "total": 3,
+  "actividades": [
+    {
+      "Código": "274130GE003",
+      "Título": "FORMACIÓN DEL EQUIPO TÉCNICO DE FORMACIÓN DEL CEP DE MAIRENA DEL ALCOR",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Asesorías de formación",
+      "Inicio": "01/09/2026",
+      "Fin": "31/05/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE003/",
+      "Lugar": "CEP de Mairena del Alcor",
+      "Inicio inscripción": "01/06/2026",
+      "Fin inscripción": "01/09/2026",
+      "Horas": "30"
+    },
+    {
+      "Código": "274130INT001",
+      "Título": "JORNADA DE RESOLUCIÓN DE DUDAS PARA LA ACREDITACIÓN ERASMUS 2026",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "15/09/2026",
+      "Fin": "15/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130INT001/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "25/06/2026",
+      "Fin inscripción": "11/09/2026",
+      "Horas": "3"
+    },
+    {
+      "Código": "274130PER001",
+      "Título": "ACOGIDA AL PROFESORADO NOVEL EN LAS ENSEÑANZAS DE EDUCACIÓN PERMANENTE (CEPER/SEP)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "17/09/2026",
+      "Fin": "23/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER001/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "29/06/2026",
+      "Fin inscripción": "10/09/2026",
+      "Horas": "8"
+    }
+  ]
+}

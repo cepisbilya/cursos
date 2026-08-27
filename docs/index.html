@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos CEP – IES Isbilya</title>
+  <link rel="icon" type="image/png" href="logo_isbilya.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f0f4f8;
+      color: #1a1a2e;
+    }
+
+    header {
+      background: #1a1a2e;
+      color: white;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 48px;
+      border-radius: 8px;
+    }
+    header .titulo { flex: 1; }
+    header h1 { font-size: 1.2rem; font-weight: 700; }
+    header a {
+      color: #7dd3fc;
+      font-size: 0.82rem;
+      text-decoration: none;
+      border: 1px solid rgba(125,211,252,0.4);
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      transition: background 0.15s;
+    }
+    header a:hover { background: rgba(125,211,252,0.15); }
+
+    .controles {
+      background: white;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .controles input[type="search"] {
+      flex: 1;
+      min-width: 160px;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      outline-color: #1a1a2e;
+    }
+    .controles select {
+      padding: 0.45rem 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      background: white;
+      cursor: pointer;
+      outline-color: #1a1a2e;
+    }
+    .stats {
+      font-size: 0.78rem;
+      color: #64748b;
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    #contenedor {
+      max-width: 1100px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    /* ── Tarjeta estilo imagen de referencia ── */
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem 1.1rem 0.9rem;
+      border: 1px solid #d1d5db;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: box-shadow 0.15s;
+    }
+    .card:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+    }
+    .card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #1a1a2e;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.28rem;
+      font-size: 0.82rem;
+      color: #374151;
+    }
+    .meta-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .meta-icon {
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      width: 1.2rem;
+      text-align: center;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 0.3rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid #e5e7eb;
+      flex-wrap: wrap;
+    }
+    .badge-abierto {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #166534;
+      background: #dcfce7;
+      border: 1px solid #bbf7d0;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      letter-spacing: 0.02em;
+    }
+    .btn-actividad {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: white;
+      background: #166534;
+      text-decoration: none;
+      padding: 0.3rem 0.75rem;
+      border-radius: 5px;
+      transition: background 0.15s;
+    }
+    .btn-actividad:hover {
+      background: #14532d;
+    }
+
+    #sin-resultados {
+      display: none;
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 3rem;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 700px) {
+      #contenedor {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+      }
+      header { padding: 0.75rem 1rem; }
+      header img { height: 36px; }
+      header h1 { font-size: 1rem; }
+      .controles {
+        padding: 0.6rem 1rem;
+        flex-wrap: wrap;
+      }
+      .controles input[type="search"] {
+        flex: 1 1 100%;
+      }
+      .controles select {
+        flex: 1 1 auto;
+      }
+      .stats {
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 0.75rem;
+        padding-top: 0.2rem;
+        border-top: 1px solid #e2e8f0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo_isbilya.png" alt="Logo IES Isbilya">
+    <div class="titulo">
+      <h1>IES Isbilya · Actividades CEP</h1>
+    </div>
+    <a href="https://educacionadistancia.juntadeandalucia.es/profesorado/" target="_blank" rel="noopener">
+      Aula Virtual
+    </a>
+  </header>
+
+  <div class="controles">
+    <input type="search" id="buscador" placeholder="Buscar actividad..." oninput="aplicarFiltros()">
+    <select id="filtroCEP" onchange="aplicarFiltros()">
+      <option value="TODOS">Todos los CEPs</option>
+        <option value="CEP Mairena del Alcor">CEP Mairena</option>
+
+    </select>
+    <span class="stats">
+      <strong id="totalCursos">3</strong> actividades · Actualizado: <strong>27/08/2026 11:46</strong>
+    </span>
+  </div>
+
+  <div id="contenedor">
+        <div class="card" data-cep="CEP Mairena del Alcor">
+      <h3>ACOGIDA AL PROFESORADO NOVEL EN LAS ENSEÑANZAS DE EDUCACIÓN PERMANENTE (CEPER/SEP)</h3>
+      <div class="meta">
+        <div class="meta-row"><span class="meta-icon">📍</span><span><strong>CEP:</strong> CEP Mairena del Alcor</span></div>
+        <div class="meta-row"><span class="meta-icon">🔢</span><span><strong>Código:</strong> 274130PER001</span></div>
+        <div class="meta-row"><span class="meta-icon">📚</span><span><strong>Modalidad:</strong> Curso</span></div>
+        <div class="meta-row"><span class="meta-icon">📌</span><span><strong>Lugar:</strong> CEP de Sevilla</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Inicio:</strong> 17/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Fin:</strong> 23/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">📝</span><span><strong>Inscripción:</strong> 29/06/2026 → 10/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">⏱</span><span><strong>Horas:</strong> 8</span></div>
+      </div>
+      <div class="card-footer">
+        <span class="badge-abierto">ABIERTO PLAZO SOLICITUDES</span>
+        <a class="btn-actividad" href="https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER001/" target="_blank" rel="noopener">Ver actividad →</a>
+      </div>
+    </div>
+    <div class="card" data-cep="CEP Mairena del Alcor">
+      <h3>JORNADA DE RESOLUCIÓN DE DUDAS PARA LA ACREDITACIÓN ERASMUS 2026</h3>
+      <div class="meta">
+        <div class="meta-row"><span class="meta-icon">📍</span><span><strong>CEP:</strong> CEP Mairena del Alcor</span></div>
+        <div class="meta-row"><span class="meta-icon">🔢</span><span><strong>Código:</strong> 274130INT001</span></div>
+        <div class="meta-row"><span class="meta-icon">📚</span><span><strong>Modalidad:</strong> Jornadas</span></div>
+        <div class="meta-row"><span class="meta-icon">📌</span><span><strong>Lugar:</strong> AVFP</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Inicio:</strong> 15/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Fin:</strong> 15/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">📝</span><span><strong>Inscripción:</strong> 25/06/2026 → 11/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">⏱</span><span><strong>Horas:</strong> 3</span></div>
+      </div>
+      <div class="card-footer">
+        <span class="badge-abierto">ABIERTO PLAZO SOLICITUDES</span>
+        <a class="btn-actividad" href="https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130INT001/" target="_blank" rel="noopener">Ver actividad →</a>
+      </div>
+    </div>
+    <div class="card" data-cep="CEP Mairena del Alcor">
+      <h3>FORMACIÓN DEL EQUIPO TÉCNICO DE FORMACIÓN DEL CEP DE MAIRENA DEL ALCOR</h3>
+      <div class="meta">
+        <div class="meta-row"><span class="meta-icon">📍</span><span><strong>CEP:</strong> CEP Mairena del Alcor</span></div>
+        <div class="meta-row"><span class="meta-icon">🔢</span><span><strong>Código:</strong> 274130GE003</span></div>
+        <div class="meta-row"><span class="meta-icon">📚</span><span><strong>Modalidad:</strong> Curso</span></div>
+        <div class="meta-row"><span class="meta-icon">📌</span><span><strong>Lugar:</strong> CEP de Mairena del Alcor</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Inicio:</strong> 01/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>Fin:</strong> 31/05/2027</span></div>
+        <div class="meta-row"><span class="meta-icon">📝</span><span><strong>Inscripción:</strong> 01/06/2026 → 01/09/2026</span></div>
+        <div class="meta-row"><span class="meta-icon">⏱</span><span><strong>Horas:</strong> 30</span></div>
+      </div>
+      <div class="card-footer">
+        <span class="badge-abierto">ABIERTO PLAZO SOLICITUDES</span>
+        <a class="btn-actividad" href="https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE003/" target="_blank" rel="noopener">Ver actividad →</a>
+      </div>
+    </div>
+    <p id="sin-resultados">No hay actividades con los filtros seleccionados.</p>
+  </div>
+
+  <footer>
+    Datos de la Secretaría Virtual de la Junta de Andalucía · Actualización automática cada día
+  </footer>
+
+  <script>
+    function aplicarFiltros() {
+      const q   = document.getElementById('buscador').value.toLowerCase();
+      const cep = document.getElementById('filtroCEP').value;
+      const cards = document.querySelectorAll('.card');
+      let visibles = 0;
+      cards.forEach(card => {
+        const ok = (cep === 'TODOS' || card.dataset.cep === cep)
+                && (!q || card.textContent.toLowerCase().includes(q));
+        card.style.display = ok ? '' : 'none';
+        if (ok) visibles++;
+      });
+      document.getElementById('totalCursos').textContent = visibles;
+      document.getElementById('sin-resultados').style.display = visibles === 0 ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>

@@ -7,9 +7,9 @@ on:
 
 permissions:
   contents: write
+  actions: write
   pages: write
   id-token: write
-  actions: write
 
 concurrency:
   group: "pages"
@@ -55,6 +55,8 @@ jobs:
           
       - name: Prevenir que GitHub deshabilite el workflow
         uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          use_api: true
 
   deploy:
     runs-on: ubuntu-latest

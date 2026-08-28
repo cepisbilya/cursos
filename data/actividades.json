@@ -1,7 +1,22 @@
 {
-  "generado": "2026-08-28T05:25:03.305313+00:00",
-  "total": 3,
+  "generado": "2026-08-28T18:43:30.667414+00:00",
+  "total": 4,
   "actividades": [
+    {
+      "Código": "274130CS001",
+      "Título": "V CONGRESO DE HISTORIA Y CULTURA DE ALCALÁ DE GUADAÍRA",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Congreso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "11/11/2026",
+      "Fin": "13/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CS001/",
+      "Lugar": "Hotel Oromana",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "30/10/2026",
+      "Horas": "12"
+    },
     {
       "Código": "274130GE003",
       "Título": "FORMACIÓN DEL EQUIPO TÉCNICO DE FORMACIÓN DEL CEP DE MAIRENA DEL ALCOR",

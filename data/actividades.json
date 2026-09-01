@@ -1,7 +1,37 @@
 {
-  "generado": "2026-09-01T10:08:01.428236+00:00",
-  "total": 6,
+  "generado": "2026-09-01T14:54:47.471006+00:00",
+  "total": 8,
   "actividades": [
+    {
+      "Código": "274130ARD002",
+      "Título": "COMPETENCIAS DIGITALES PARA DOCENTES DE CONSERVATORIO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Encuentro",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "23/09/2026",
+      "Fin": "24/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130ARD002/",
+      "Lugar": "CIUDAD DEL CONOCIMIENTO",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "18/09/2026",
+      "Horas": "8"
+    },
+    {
+      "Código": "274130ARD001",
+      "Título": "VI ENCUENTRO DE DOCENTES DE MÚSICA (PRIMARIA Y SECUNDARIA)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Encuentro",
+      "Dirigido a": "Internivelar",
+      "Inicio": "23/09/2026",
+      "Fin": "24/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130ARD001/",
+      "Lugar": "CIUDAD DEL CONOCIMIENTO",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "18/09/2026",
+      "Horas": "8"
+    },
     {
       "Código": "274130CS001",
       "Título": "V CONGRESO DE HISTORIA Y CULTURA DE ALCALÁ DE GUADAÍRA",

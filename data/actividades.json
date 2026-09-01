@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-01T05:10:08.127037+00:00",
-  "total": 4,
+  "generado": "2026-09-01T10:08:01.428236+00:00",
+  "total": 6,
   "actividades": [
     {
       "Código": "274130CS001",
@@ -33,6 +33,21 @@
       "Horas": "30"
     },
     {
+      "Código": "274130GE005",
+      "Título": "ll Jornadas Técnicas para la Familia Profesional de Transporte y Mantenimiento de Vehículos IES Torre de los Herberos.",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "07/09/2026",
+      "Fin": "11/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE005/",
+      "Lugar": "IES Torre de los Herberos.",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "04/09/2026",
+      "Horas": "25"
+    },
+    {
       "Código": "274130INT001",
       "Título": "JORNADA DE RESOLUCIÓN DE DUDAS PARA LA ACREDITACIÓN ERASMUS 2026",
       "CEP": "CEP Mairena del Alcor",
@@ -61,6 +76,21 @@
       "Inicio inscripción": "29/06/2026",
       "Fin inscripción": "10/09/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "274132GE001",
+      "Título": "BIENESTAR EMOCIONAL Y CONVIVENCIA EN LA RESIDENCIA ESCOLAR",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso",
+      "Dirigido a": "Otros",
+      "Inicio": "03/09/2026",
+      "Fin": "17/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE001/",
+      "Lugar": "RESIDENCIA ESCOLAR GREGORIO RODRÍGUEZ NAVARRO",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "02/09/2026",
+      "Horas": "9"
     }
   ]
 }

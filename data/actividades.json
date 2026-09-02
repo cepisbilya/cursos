@@ -1,7 +1,37 @@
 {
-  "generado": "2026-09-02T09:38:51.930929+00:00",
-  "total": 9,
+  "generado": "2026-09-02T14:30:45.457654+00:00",
+  "total": 12,
   "actividades": [
+    {
+      "Código": "274127PER001",
+      "Título": "GESTIÓN ADMINISTRATIVA EN EL INICIO DE CURSO PARA EQUIPOS DIRECTIVOS DE CENTROS DE EDUCACIÓN PERMANENTE Y SECCIONES",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "09/09/2026",
+      "Fin": "09/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER001/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "02/09/2026",
+      "Fin inscripción": "08/09/2026",
+      "Horas": "3"
+    },
+    {
+      "Código": "274127PRI001",
+      "Título": "II JORNADAS Sembrando inclusión: un itinerario para transformar la escuela desde dentro",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/09/2026",
+      "Fin": "26/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI001/",
+      "Lugar": "CEP DE SEVILLA. SALÓN DE ACTOS.",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "11/09/2026",
+      "Horas": "8"
+    },
     {
       "Código": "274130ARD002",
       "Título": "COMPETENCIAS DIGITALES PARA DOCENTES DE CONSERVATORIO",
@@ -46,6 +76,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "30/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274130EPER002",
+      "Título": "ACOGIDA AL PROFESORADO NOVEL EN LAS ENSEÑANZAS DE EDUCACIÓN PERMANENTE  (IES/IPEP/EOI).",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "17/09/2026",
+      "Fin": "23/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130EPER002/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "02/09/2026",
+      "Fin inscripción": "11/09/2026",
+      "Horas": "8"
     },
     {
       "Código": "274130GE003",

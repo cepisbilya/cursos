@@ -1,7 +1,22 @@
 {
-  "generado": "2026-09-03T04:40:25.281547+00:00",
-  "total": 11,
+  "generado": "2026-09-03T09:51:52.709293+00:00",
+  "total": 13,
   "actividades": [
+    {
+      "Código": "274127ARE001",
+      "Título": "LA RADIO ESCOLAR: CONTROL TÉCNICO Y GRABACIÓN DE UN PODCAST (ARE, EPER Y EOI)",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "29/09/2026",
+      "Fin": "06/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE001/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "03/09/2026",
+      "Fin inscripción": "17/09/2026",
+      "Horas": "8"
+    },
     {
       "Código": "274127PER001",
       "Título": "GESTIÓN ADMINISTRATIVA EN EL INICIO DE CURSO PARA EQUIPOS DIRECTIVOS DE CENTROS DE EDUCACIÓN PERMANENTE Y SECCIONES",
@@ -18,8 +33,23 @@
       "Horas": "3"
     },
     {
+      "Código": "274127PER002",
+      "Título": "PRIMEROS PASOS EN ERASMUS PLUS: EPER, EEOOII Y ARE. HORARIO DE MAÑANA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "24/09/2026",
+      "Fin": "01/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER002/",
+      "Lugar": "AULA 3 CEP DE SEVILLA",
+      "Inicio inscripción": "03/09/2026",
+      "Fin inscripción": "17/09/2026",
+      "Horas": "8"
+    },
+    {
       "Código": "274127PRI001",
-      "Título": "II JORNADAS Sembrando inclusión: un itinerario para transformar la escuela desde dentro",
+      "Título": "II JORNADAS SEMBRANDO INCLUSIÓN: UN ITINERARIO PARA TRANSFORMAR LA ESCUELA DESDE DENTRO",
       "CEP": "CEP Sevilla",
       "Modalidad": "Jornadas",
       "Dirigido a": "Internivelar",
@@ -76,6 +106,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "30/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274130CV004",
+      "Título": "SESIÓN DE SENSIBILIZACIÓN PROGRAMA PIIE CON ALBERTO ORTEGA",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Conferencia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "30/09/2026",
+      "Fin": "15/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CV004/",
+      "Lugar": "CIUDAD DEL CONOCIMIENTO",
+      "Inicio inscripción": "03/09/2026",
+      "Fin inscripción": "25/09/2026",
+      "Horas": "2"
     },
     {
       "Código": "274130EPER002",
@@ -151,21 +196,6 @@
       "Inicio inscripción": "29/06/2026",
       "Fin inscripción": "10/09/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "274132GE001",
-      "Título": "BIENESTAR EMOCIONAL Y CONVIVENCIA EN LA RESIDENCIA ESCOLAR",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso",
-      "Dirigido a": "Otros",
-      "Inicio": "03/09/2026",
-      "Fin": "17/09/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE001/",
-      "Lugar": "RESIDENCIA ESCOLAR GREGORIO RODRÍGUEZ NAVARRO",
-      "Inicio inscripción": "01/09/2026",
-      "Fin inscripción": "02/09/2026",
-      "Horas": "9"
     }
   ]
 }

@@ -1,7 +1,22 @@
 {
-  "generado": "2026-09-03T09:51:52.709293+00:00",
-  "total": 13,
+  "generado": "2026-09-03T14:35:27.265496+00:00",
+  "total": 14,
   "actividades": [
+    {
+      "Código": "274127ACS004",
+      "Título": "VIVIR LA EXPERIENCIA AULA DEL FUTURO. CEIP IBARBURU DE DOS HERMANAS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/10/2026",
+      "Fin": "02/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS004/",
+      "Lugar": "Aula del Futuro del CEP de Sevilla",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "07/10/2026",
+      "Horas": "12"
+    },
     {
       "Código": "274127ARE001",
       "Título": "LA RADIO ESCOLAR: CONTROL TÉCNICO Y GRABACIÓN DE UN PODCAST (ARE, EPER Y EOI)",

@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-03T18:40:49.055873+00:00",
-  "total": 14,
+  "generado": "2026-09-03T21:43:29.681230+00:00",
+  "total": 15,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -16,6 +16,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "07/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274127ALI001",
+      "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍAS NOVELES",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "21/09/2026",
+      "Fin": "26/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ALI001/",
+      "Lugar": "CEP SEVILLA",
+      "Inicio inscripción": "03/09/2026",
+      "Fin inscripción": "15/09/2026",
+      "Horas": "15"
     },
     {
       "Código": "274127ARE001",

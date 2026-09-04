@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-04T09:40:41.652894+00:00",
-  "total": 14,
+  "generado": "2026-09-04T14:22:59.040864+00:00",
+  "total": 15,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -16,6 +16,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "07/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274127AFP004",
+      "Título": "FORMACIÓN PARA LA ACCESIBILIDAD UNIVERSAL EN UN SISTEMA INTEGRADO DE FORMACIÓN PROFESIONAL",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "09/09/2026",
+      "Fin": "27/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP004/",
+      "Lugar": "CPIFP LOS VIVEROS / AVFP",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "07/09/2026",
+      "Horas": "16"
     },
     {
       "Código": "274127ALI001",

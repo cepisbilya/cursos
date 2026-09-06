@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-06T14:11:46.255889+00:00",
-  "total": 15,
+  "generado": "2026-09-06T17:04:01.681688+00:00",
+  "total": 16,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -31,6 +31,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "07/09/2026",
       "Horas": "16"
+    },
+    {
+      "Código": "274127AFP005",
+      "Título": "ASESORAMIENTO; ATENCIÓN A LA DIVERSIDAD EN FP_ IES POLITÉCNICO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "08/09/2026",
+      "Fin": "08/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP005/",
+      "Lugar": "IES POLITÉCNICO",
+      "Inicio inscripción": "01/09/2026",
+      "Fin inscripción": "07/09/2026",
+      "Horas": "2"
     },
     {
       "Código": "274127ALI001",

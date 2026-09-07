@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-07T04:43:15.719210+00:00",
-  "total": 16,
+  "generado": "2026-09-07T10:21:29.146335+00:00",
+  "total": 20,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -138,6 +138,21 @@
       "Horas": "8"
     },
     {
+      "Código": "274130AD001",
+      "Título": "GUIA BÁSICA PARA ATENCIÓN AL ALUMNADO EN AULA ESPECÍFICA (I)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "01/10/2026",
+      "Fin": "16/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130AD001/",
+      "Lugar": "",
+      "Inicio inscripción": "07/09/2026",
+      "Fin inscripción": "28/09/2026",
+      "Horas": "30"
+    },
+    {
       "Código": "274130ARD001",
       "Título": "VI ENCUENTRO DE DOCENTES DE MÚSICA (PRIMARIA Y SECUNDARIA)",
       "CEP": "CEP Mairena del Alcor",
@@ -147,10 +162,25 @@
       "Fin": "24/09/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130ARD001/",
-      "Lugar": "CIUDAD DEL CONOCIMIENTO",
-      "Inicio inscripción": "01/09/2026",
-      "Fin inscripción": "18/09/2026",
-      "Horas": "8"
+      "Lugar": "",
+      "Inicio inscripción": "",
+      "Fin inscripción": "",
+      "Horas": ""
+    },
+    {
+      "Código": "274130ARD007",
+      "Título": "USO DE LA BICICLETA COMO RECURSO DIDÁCTICO EN LAS CLASES DE EDUCACIÓN FÍSICA.",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "07/10/2026",
+      "Fin": "28/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130ARD007/",
+      "Lugar": "Colegio San Hermenegildo -carril bici Arco Norte - Parque Dehesa Doña María - Ciudad del Conocimiento",
+      "Inicio inscripción": "07/09/2026",
+      "Fin inscripción": "02/10/2026",
+      "Horas": "12"
     },
     {
       "Código": "274130CS001",
@@ -241,6 +271,36 @@
       "Inicio inscripción": "29/06/2026",
       "Fin inscripción": "10/09/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "274131GE001",
+      "Título": "CUADERNO SÉNECA INFANTIL Y PRIMARIA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "28/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE001/",
+      "Lugar": "CEIP ELIO ANTONIO DE NEBRIJA",
+      "Inicio inscripción": "07/09/2026",
+      "Fin inscripción": "02/10/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "274132GE002",
+      "Título": "FORMACIÓN EN GESTIÓN ECONÓMICA DE CENTROS EDUCATIVOS. NIVEL INICIAL",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "30/09/2026",
+      "Fin": "28/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE002/",
+      "Lugar": "CENTRO DEL PROFESORADO (LORA DEL RÍO)",
+      "Inicio inscripción": "07/09/2026",
+      "Fin inscripción": "25/09/2026",
+      "Horas": "15"
     }
   ]
 }

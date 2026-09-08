@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-08T09:42:52.841373+00:00",
-  "total": 19,
+  "generado": "2026-09-08T14:33:25.087641+00:00",
+  "total": 20,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -120,6 +120,21 @@
       "Lugar": "CIUDAD DEL CONOCIMIENTO",
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "18/09/2026",
+      "Horas": "8"
+    },
+    {
+      "Código": "279927OE005",
+      "Título": "NUEVA MEMORIA DE AUTOEVALUACIÓN. NOVEDADES DEL DECRETO DE MEJORA DEL FUNCIONAMIENTO DEL SISTEMA EDUCATIVO Y DE LA GESTIÓN DE LA ACTIVIDAD DOCENTE EN LA ENSEÑANZA NO UNIVERSITARIA EN ANDALUCÍA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "22/09/2026",
+      "Fin": "22/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927OE005/",
+      "Lugar": "Ciudad del Conocimiento",
+      "Inicio inscripción": "08/09/2026",
+      "Fin inscripción": "15/09/2026",
       "Horas": "8"
     },
     {

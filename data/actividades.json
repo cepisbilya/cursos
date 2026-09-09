@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-09T09:47:46.543944+00:00",
-  "total": 20,
+  "generado": "2026-09-09T14:37:22.797217+00:00",
+  "total": 23,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -30,7 +30,7 @@
       "Lugar": "IES POLITÉCNICO",
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "07/09/2026",
-      "Horas": "2"
+      "Horas": "3"
     },
     {
       "Código": "274127ARE001",
@@ -120,6 +120,21 @@
       "Lugar": "CEP SEVILLA",
       "Inicio inscripción": "03/09/2026",
       "Fin inscripción": "15/09/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "279928PF011",
+      "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍAS NOVELES",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "23/09/2026",
+      "Fin": "21/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928PF011/",
+      "Lugar": "CEP Castilleja de la Cuesta",
+      "Inicio inscripción": "09/09/2026",
+      "Fin inscripción": "16/09/2026",
       "Horas": "15"
     },
     {
@@ -258,6 +273,36 @@
       "Horas": "8"
     },
     {
+      "Código": "274130PER003",
+      "Título": "EDUCACIÓN PERMANENTE: FORMACIÓN EN GESTIÓN ECONÓMICA Y DE LOS RECURSOS DEL CENTRO (SECRETARÍAS NOVELES)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "22/09/2026",
+      "Fin": "27/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER003/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "09/09/2026",
+      "Fin inscripción": "22/09/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "279930EP425",
+      "Título": "INTRODUCCIÓN AL USO DE LA PLATAFORMA MOODLE PARA LAS ENSEÑANZAS DE EDUCACIÓN PERMANENTE EN MODALIDAD NO PRESENCIAL",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "02/10/2026",
+      "Fin": "20/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930EP425/",
+      "Lugar": "",
+      "Inicio inscripción": "09/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "30"
+    },
+    {
       "Código": "279930PF011",
       "Título": "FORMACIÓN EN GESTIÓN ECONÓMICA Y DE LOS RECURSOS DEL CENTRO (SECRETARÍAS NOVELES)",
       "CEP": "CEP Mairena del Alcor",
@@ -267,10 +312,10 @@
       "Fin": "27/10/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930PF011/",
-      "Lugar": "",
-      "Inicio inscripción": "",
-      "Fin inscripción": "",
-      "Horas": ""
+      "Lugar": "CEP",
+      "Inicio inscripción": "09/09/2026",
+      "Fin inscripción": "22/09/2026",
+      "Horas": "15"
     },
     {
       "Código": "274131GE001",
@@ -282,13 +327,13 @@
       "Fin": "28/10/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE001/",
-      "Lugar": "",
-      "Inicio inscripción": "",
-      "Fin inscripción": "",
-      "Horas": ""
+      "Lugar": "CEIP ELIO ANTONIO DE NEBRIJA",
+      "Inicio inscripción": "07/09/2026",
+      "Fin inscripción": "02/10/2026",
+      "Horas": "15"
     },
     {
-      "Código": "274132GE002",
+      "Código": "279932PF011",
       "Título": "FORMACIÓN EN GESTIÓN ECONÓMICA DE CENTROS EDUCATIVOS. NIVEL INICIAL",
       "CEP": "CEP Lora del Río",
       "Modalidad": "Curso",
@@ -296,7 +341,7 @@
       "Inicio": "30/09/2026",
       "Fin": "28/10/2026",
       "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE002/",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932PF011/",
       "Lugar": "CENTRO DEL PROFESORADO (LORA DEL RÍO)",
       "Inicio inscripción": "07/09/2026",
       "Fin inscripción": "25/09/2026",

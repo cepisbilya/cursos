@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-10T04:51:26.029808+00:00",
-  "total": 24,
+  "generado": "2026-09-10T09:45:56.217999+00:00",
+  "total": 25,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -270,6 +270,21 @@
       "Lugar": "CEP de Sevilla",
       "Inicio inscripción": "02/09/2026",
       "Fin inscripción": "21/09/2026",
+      "Horas": "8"
+    },
+    {
+      "Código": "274130INT003",
+      "Título": "ERASMUS DAYS 2026 EXPERIENCIAS QUE TRANSFORMAN CENTROS",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "15/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130INT003/",
+      "Lugar": "CEP de Mairena del Alcor",
+      "Inicio inscripción": "10/09/2026",
+      "Fin inscripción": "07/10/2026",
       "Horas": "8"
     },
     {

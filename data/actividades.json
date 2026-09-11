@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-11T04:42:21.564772+00:00",
-  "total": 25,
+  "generado": "2026-09-11T09:43:06.084665+00:00",
+  "total": 24,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -75,6 +75,21 @@
       "Lugar": "AULA 3 CEP DE SEVILLA",
       "Inicio inscripción": "03/09/2026",
       "Fin inscripción": "17/09/2026",
+      "Horas": "8"
+    },
+    {
+      "Código": "274127PER003",
+      "Título": "PATRIMONIO MUSICAL Y DANZA ESPAÑOLA: INTRODUCCIÓN AL MOVIMIENTO CORPORAL",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "15/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER003/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "11/09/2026",
+      "Fin inscripción": "28/09/2026",
       "Horas": "8"
     },
     {
@@ -153,7 +168,7 @@
       "Horas": "15"
     },
     {
-      "Código": "279929PF001",
+      "Código": "279929PF011",
       "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍAS NOVELES",
       "CEP": "CEP Osuna - Écija",
       "Modalidad": "Curso",
@@ -161,7 +176,7 @@
       "Inicio": "23/09/2026",
       "Fin": "21/10/2026",
       "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929PF001/",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929PF011/",
       "Lugar": "CEP OSUNA-ÉCIJA c/ Huertas 3ºB 1ª planta",
       "Inicio inscripción": "09/09/2026",
       "Fin inscripción": "18/09/2026",
@@ -243,36 +258,6 @@
       "Horas": "2"
     },
     {
-      "Código": "274130EPER002",
-      "Título": "ACOGIDA AL PROFESORADO NOVEL EN LAS ENSEÑANZAS DE EDUCACIÓN PERMANENTE  (IES/IPEP/EOI).",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación Permanente",
-      "Inicio": "17/09/2026",
-      "Fin": "23/09/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130EPER002/",
-      "Lugar": "CEP de Sevilla",
-      "Inicio inscripción": "02/09/2026",
-      "Fin inscripción": "11/09/2026",
-      "Horas": "8"
-    },
-    {
-      "Código": "274130INT001",
-      "Título": "JORNADA DE RESOLUCIÓN DE DUDAS PARA LA ACREDITACIÓN ERASMUS 2026",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "16/09/2026",
-      "Fin": "16/09/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130INT001/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "25/06/2026",
-      "Fin inscripción": "11/09/2026",
-      "Horas": "3"
-    },
-    {
       "Código": "274130INT002",
       "Título": "PRIMEROS PASOS EN ERASMUS PLUS",
       "CEP": "CEP Mairena del Alcor",
@@ -308,7 +293,7 @@
       "CEP": "CEP Mairena del Alcor",
       "Modalidad": "Curso",
       "Dirigido a": "Educación Permanente",
-      "Inicio": "22/09/2026",
+      "Inicio": "29/09/2026",
       "Fin": "27/10/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER003/",

@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-14T06:18:32.980530+00:00",
-  "total": 23,
+  "generado": "2026-09-14T14:04:48.031644+00:00",
+  "total": 28,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -61,6 +61,21 @@
       "Inicio inscripción": "10/09/2026",
       "Fin inscripción": "21/09/2026",
       "Horas": "15"
+    },
+    {
+      "Código": "274127NEE001",
+      "Título": "COMUNICADORES DINÁMICOS BAJO EL PRISMA DEL LENGUAJE NATURAL ASISTIDO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "07/10/2026",
+      "Fin": "28/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127NEE001/",
+      "Lugar": "CEEE VIRGEN MACARENA",
+      "Inicio inscripción": "14/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "12"
     },
     {
       "Código": "274127PER002",
@@ -138,6 +153,21 @@
       "Horas": "15"
     },
     {
+      "Código": "279928PA455",
+      "Título": "COMUNIDADES DE APRENDIZAJE · FASE DE SENSIBILIZACIÓN",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "28/09/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928PA455/",
+      "Lugar": "AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO y CEP CASTILLEJA",
+      "Inicio inscripción": "14/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "30"
+    },
+    {
       "Código": "279928PF011",
       "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍAS NOVELES",
       "CEP": "CEP Castilleja de la Cuesta",
@@ -151,6 +181,21 @@
       "Inicio inscripción": "09/09/2026",
       "Fin inscripción": "16/09/2026",
       "Horas": "15"
+    },
+    {
+      "Código": "279929PA455",
+      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "28/09/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929PA455/",
+      "Lugar": "AVFP Y CEP OSUNA-ÉCIJA",
+      "Inicio inscripción": "14/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "30"
     },
     {
       "Código": "279929PF011",
@@ -173,8 +218,8 @@
       "CEP": "CEP Mairena del Alcor",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
-      "Inicio": "01/10/2026",
-      "Fin": "16/11/2026",
+      "Inicio": "02/10/2026",
+      "Fin": "17/11/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130AD001/",
       "Lugar": "",
@@ -303,6 +348,21 @@
       "Horas": "30"
     },
     {
+      "Código": "279930PA455",
+      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN.",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "28/09/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930PA455/",
+      "Lugar": "CEP MAIRENA  / AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO",
+      "Inicio inscripción": "14/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "30"
+    },
+    {
       "Código": "279930PF011",
       "Título": "FORMACIÓN EN GESTIÓN ECONÓMICA Y DE LOS RECURSOS DEL CENTRO (SECRETARÍAS NOVELES)",
       "CEP": "CEP Mairena del Alcor",
@@ -331,6 +391,21 @@
       "Inicio inscripción": "07/09/2026",
       "Fin inscripción": "02/10/2026",
       "Horas": "15"
+    },
+    {
+      "Código": "279931PA455",
+      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "30/09/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931PA455/",
+      "Lugar": "VIDEO CONFERENCIAS AVFP - PRESENCIAL CEIP DEL CEP LEBRIJA",
+      "Inicio inscripción": "14/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "30"
     },
     {
       "Código": "279932PF011",

@@ -1,7 +1,22 @@
 {
-  "generado": "2026-09-15T07:46:10.179965+00:00",
-  "total": 31,
+  "generado": "2026-09-15T13:34:30.149957+00:00",
+  "total": 32,
   "actividades": [
+    {
+      "Código": "274127ACS003",
+      "Título": "ERASMUS DAY: SESIÓN DE EXPOSICIÓN DE RESULTADOS DEL CONSORCIO ESCOLAR 2025-26 DEL CEP DE SEVILLA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "15/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS003/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "15/09/2026",
+      "Fin inscripción": "01/10/2026",
+      "Horas": "8"
+    },
     {
       "Código": "274127ACS004",
       "Título": "VIVIR LA EXPERIENCIA AULA DEL FUTURO. CEIP IBARBURU DE DOS HERMANAS",
@@ -16,6 +31,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "07/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274127ACS006",
+      "Título": "ERASMUS DAY: SESIÓN DE EXPOSICIÓN DE RESULTADOS DEL CONSORCIO DE ADULTOS 2025-26 DEL CEP DE SEVILLA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "14/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS006/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "15/09/2026",
+      "Fin inscripción": "01/10/2026",
+      "Horas": "4"
     },
     {
       "Código": "274127AFP005",
@@ -138,6 +168,21 @@
       "Horas": "8"
     },
     {
+      "Código": "274127PRI003",
+      "Título": "PREVENCIÓN Y GESTIÓN POSITIVA DE CONFLICTOS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "03/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI003/",
+      "Lugar": "CEP SEVILLA Aula 3",
+      "Inicio inscripción": "15/09/2026",
+      "Fin inscripción": "30/09/2026",
+      "Horas": "12"
+    },
+    {
       "Código": "274130ARD002",
       "Título": "COMPETENCIAS DIGITALES PARA DOCENTES DE CONSERVATORIO",
       "CEP": "CEP Sevilla",
@@ -151,36 +196,6 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "18/09/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "279927OE005",
-      "Título": "NUEVA MEMORIA DE AUTOEVALUACIÓN. NOVEDADES  DEL DECRETO DE MEJORA DEL FUNCIONAMIENTO DEL SISTEMA EDUCATIVO Y DE LA GESTIÓN DE LA ACTIVIDAD DOCENTE EN LA ENSEÑANZA NO UNIVERSITARIA EN ANDALUCÍA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Equipos directivos",
-      "Inicio": "22/09/2026",
-      "Fin": "22/09/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927OE005/",
-      "Lugar": "Ciudad del Conocimiento",
-      "Inicio inscripción": "08/09/2026",
-      "Fin inscripción": "15/09/2026",
-      "Horas": "8"
-    },
-    {
-      "Código": "279927PF001",
-      "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍAS NOVELES",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Equipos directivos",
-      "Inicio": "21/09/2026",
-      "Fin": "26/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927PF001/",
-      "Lugar": "CEP SEVILLA",
-      "Inicio inscripción": "03/09/2026",
-      "Fin inscripción": "15/09/2026",
-      "Horas": "15"
     },
     {
       "Código": "279928PA455",

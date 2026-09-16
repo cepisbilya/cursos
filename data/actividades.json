@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-16T06:03:18.393606+00:00",
-  "total": 32,
+  "generado": "2026-09-16T11:36:46.703715+00:00",
+  "total": 36,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -168,6 +168,21 @@
       "Horas": "8"
     },
     {
+      "Código": "274127PRI002",
+      "Título": "ATENDIENDO A LA DIVERSIDAD EN EL AULA ORDINARIA CEIP SOR ÁNGELA DE LA CRUZ",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "26/10/2026",
+      "Fin": "23/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI002/",
+      "Lugar": "CEIP SOR ÁNGELA DE LA CRUZ",
+      "Inicio inscripción": "15/09/2026",
+      "Fin inscripción": "30/09/2026",
+      "Horas": "9"
+    },
+    {
       "Código": "274127PRI003",
       "Título": "PREVENCIÓN Y GESTIÓN POSITIVA DE CONFLICTOS",
       "CEP": "CEP Sevilla",
@@ -180,6 +195,36 @@
       "Lugar": "CEP SEVILLA Aula 3",
       "Inicio inscripción": "15/09/2026",
       "Fin inscripción": "30/09/2026",
+      "Horas": "12"
+    },
+    {
+      "Código": "274127REL001",
+      "Título": "ACTUALIZACIÓN CIENTÍFICO Y DIDACTICA DEL PROFESORADO DE RELIGIÓN CATÓLICA DE INFANTIL Y PRIMARIA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "20/10/2026",
+      "Fin": "05/06/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL001/",
+      "Lugar": "CEP SEVILLA",
+      "Inicio inscripción": "16/09/2026",
+      "Fin inscripción": "13/10/2026",
+      "Horas": "12"
+    },
+    {
+      "Código": "274127REL002",
+      "Título": "ACTUALIZACIÓN DIDÁCTICA DEL PROFESORADO DE RELIGIÓN CATÓLICA DE SECUNDARIA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/10/2026",
+      "Fin": "05/06/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL002/",
+      "Lugar": "CEP SEVILLA",
+      "Inicio inscripción": "16/09/2026",
+      "Fin inscripción": "13/10/2026",
       "Horas": "12"
     },
     {
@@ -451,6 +496,21 @@
       "Inicio inscripción": "14/09/2026",
       "Fin inscripción": "21/09/2026",
       "Horas": "30"
+    },
+    {
+      "Código": "279931PF011",
+      "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "12/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931PF011/",
+      "Lugar": "Sala de cursos del CEP DE LEBRIJA",
+      "Inicio inscripción": "15/09/2026",
+      "Fin inscripción": "28/09/2026",
+      "Horas": "15"
     },
     {
       "Código": "279932PA455",

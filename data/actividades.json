@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-17T21:28:48.166803+00:00",
-  "total": 33,
+  "generado": "2026-09-18T00:20:49.551032+00:00",
+  "total": 34,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -78,21 +78,6 @@
       "Horas": "15"
     },
     {
-      "Código": "274127ARE001",
-      "Título": "LA RADIO ESCOLAR: CONTROL TÉCNICO Y GRABACIÓN DE UN PODCAST (ARE, EPER Y EOI)",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "29/09/2026",
-      "Fin": "06/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE001/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "03/09/2026",
-      "Fin inscripción": "17/09/2026",
-      "Horas": "8"
-    },
-    {
       "Código": "274127INF001",
       "Título": "ELABORACIÓN DEL PLAN DE MEJORA Y PLAN DE FORMACIÓN",
       "CEP": "CEP Sevilla",
@@ -151,21 +136,6 @@
       "Inicio inscripción": "14/09/2026",
       "Fin inscripción": "21/09/2026",
       "Horas": "30"
-    },
-    {
-      "Código": "274127PER002",
-      "Título": "PRIMEROS PASOS EN ERASMUS PLUS: EPER, EEOOII Y ARE. HORARIO DE MAÑANA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación Permanente",
-      "Inicio": "24/09/2026",
-      "Fin": "01/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER002/",
-      "Lugar": "AULA 3 CEP DE SEVILLA",
-      "Inicio inscripción": "03/09/2026",
-      "Fin inscripción": "17/09/2026",
-      "Horas": "8"
     },
     {
       "Código": "274127PER003",
@@ -462,10 +432,55 @@
       "Fin": "27/10/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930PF011/",
-      "Lugar": "",
-      "Inicio inscripción": "",
-      "Fin inscripción": "",
-      "Horas": ""
+      "Lugar": "CEP",
+      "Inicio inscripción": "09/09/2026",
+      "Fin inscripción": "22/09/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "274131GE001",
+      "Título": "CUADERNO SÉNECA INFANTIL Y PRIMARIA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "28/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE001/",
+      "Lugar": "CEIP ELIO ANTONIO DE NEBRIJA",
+      "Inicio inscripción": "07/09/2026",
+      "Fin inscripción": "02/10/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "279931PA455",
+      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "30/09/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931PA455/",
+      "Lugar": "VIDEO CONFERENCIAS AVFP - PRESENCIAL CEIP DEL CEP LEBRIJA",
+      "Inicio inscripción": "14/09/2026",
+      "Fin inscripción": "21/09/2026",
+      "Horas": "30"
+    },
+    {
+      "Código": "279931PF011",
+      "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "12/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931PF011/",
+      "Lugar": "Sala de cursos del CEP DE LEBRIJA",
+      "Inicio inscripción": "15/09/2026",
+      "Fin inscripción": "28/09/2026",
+      "Horas": "15"
     },
     {
       "Código": "279932PA455",

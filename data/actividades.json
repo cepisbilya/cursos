@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-20T01:11:00.763197+00:00",
-  "total": 31,
+  "generado": "2026-09-20T12:23:18.274032+00:00",
+  "total": 30,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -301,21 +301,6 @@
       "Inicio inscripción": "03/09/2026",
       "Fin inscripción": "25/09/2026",
       "Horas": "2"
-    },
-    {
-      "Código": "274130INT002",
-      "Título": "PRIMEROS PASOS EN ERASMUS PLUS",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "24/09/2026",
-      "Fin": "01/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130INT002/",
-      "Lugar": "CEP de Sevilla",
-      "Inicio inscripción": "02/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "8"
     },
     {
       "Código": "274130INT003",

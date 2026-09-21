@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-21T01:07:15.739433+00:00",
-  "total": 30,
+  "generado": "2026-09-21T06:22:36.985421+00:00",
+  "total": 33,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -391,6 +391,51 @@
       "Inicio inscripción": "07/09/2026",
       "Fin inscripción": "02/10/2026",
       "Horas": "15"
+    },
+    {
+      "Código": "274131GE003",
+      "Título": "DESARROLLO DE HABILIDADES EN RESOLUCIÓN DE PROBLEMAS MATEMÁTICOS EN EDUCACIÓN SECUNDARIA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "20/10/2026",
+      "Fin": "17/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE003/",
+      "Lugar": "Aula Virtual del Profesorado",
+      "Inicio inscripción": "28/09/2026",
+      "Fin inscripción": "13/10/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "274131GE004",
+      "Título": "FUNCIONES EJECUTIVAS Y PROCESOS ATENCIONALES. CÓMO APRENDE Y POR QUÉ SE DISTRAE NUESTRO ALUMNADO. ESTRATEGIAS DE INTERVENCIÓN",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/10/2026",
+      "Fin": "25/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE004/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "21/09/2026",
+      "Fin inscripción": "14/10/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "279931KPF007",
+      "Título": "CREA TU AULA DEL FUTURO. ¡ÚNETE AL RETO! 26-27",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "15/10/2026",
+      "Fin": "17/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF007/",
+      "Lugar": "CEP de Lebrija- Aula Virtual",
+      "Inicio inscripción": "21/09/2026",
+      "Fin inscripción": "05/10/2026",
+      "Horas": "40"
     },
     {
       "Código": "279931PA455",

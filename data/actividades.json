@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-21T06:22:36.985421+00:00",
-  "total": 33,
+  "generado": "2026-09-21T14:10:22.783338+00:00",
+  "total": 27,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -78,21 +78,6 @@
       "Horas": "15"
     },
     {
-      "Código": "274127INF001",
-      "Título": "ELABORACIÓN DEL PLAN DE MEJORA Y PLAN DE FORMACIÓN",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "07/10/2026",
-      "Fin": "21/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127INF001/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "10/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "15"
-    },
-    {
       "Código": "274127INF002",
       "Título": "LAS MATEMÁTICAS EN EL TRABAJO DE AULA EN EDUCACIÓN INFANTIL",
       "CEP": "CEP Sevilla",
@@ -106,21 +91,6 @@
       "Inicio inscripción": "15/09/2026",
       "Fin inscripción": "25/09/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "274127NEE001",
-      "Título": "COMUNICADORES DINÁMICOS BAJO EL PRISMA DEL LENGUAJE NATURAL ASISTIDO",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "07/10/2026",
-      "Fin": "28/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127NEE001/",
-      "Lugar": "CEEE VIRGEN MACARENA",
-      "Inicio inscripción": "14/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "12"
     },
     {
       "Código": "274127PA455",
@@ -213,21 +183,6 @@
       "Horas": "12"
     },
     {
-      "Código": "279928PA455",
-      "Título": "COMUNIDADES DE APRENDIZAJE · FASE DE SENSIBILIZACIÓN",
-      "CEP": "CEP Castilleja de la Cuesta",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "28/09/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928PA455/",
-      "Lugar": "AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO y CEP CASTILLEJA",
-      "Inicio inscripción": "14/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "30"
-    },
-    {
       "Código": "279929PA455",
       "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
       "CEP": "CEP Osuna - Écija",
@@ -288,6 +243,21 @@
       "Horas": "12"
     },
     {
+      "Código": "274130CV001",
+      "Título": "PROGRAMA DE IMPLANTACIÓN DE INTELIGENCIA EMOCIONAL PIIE PARA EP (ALBERTO ORTEGA)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación primaria",
+      "Inicio": "14/10/2026",
+      "Fin": "28/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CV001/",
+      "Lugar": "CIUDAD DEL CONOCIMIENTO",
+      "Inicio inscripción": "21/09/2026",
+      "Fin inscripción": "09/10/2026",
+      "Horas": "12"
+    },
+    {
       "Código": "274130CV004",
       "Título": "SESIÓN DE SENSIBILIZACIÓN PROGRAMA PIIE CON ALBERTO ORTEGA",
       "CEP": "CEP Mairena del Alcor",
@@ -331,36 +301,6 @@
       "Inicio inscripción": "09/09/2026",
       "Fin inscripción": "22/09/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "279930EP425",
-      "Título": "INTRODUCCIÓN AL USO DE LA PLATAFORMA MOODLE PARA LAS ENSEÑANZAS DE EDUCACIÓN PERMANENTE EN MODALIDAD NO PRESENCIAL",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación Permanente",
-      "Inicio": "02/10/2026",
-      "Fin": "20/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930EP425/",
-      "Lugar": "",
-      "Inicio inscripción": "09/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "30"
-    },
-    {
-      "Código": "279930PA455",
-      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN.",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "28/09/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930PA455/",
-      "Lugar": "CEP MAIRENA  / AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO",
-      "Inicio inscripción": "14/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "30"
     },
     {
       "Código": "279930PF011",
@@ -438,21 +378,6 @@
       "Horas": "40"
     },
     {
-      "Código": "279931PA455",
-      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "30/09/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931PA455/",
-      "Lugar": "VIDEO CONFERENCIAS AVFP - PRESENCIAL CEIP COCA DE LA PIÑERA (Utrera)",
-      "Inicio inscripción": "14/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "30"
-    },
-    {
       "Código": "279931PF011",
       "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍA",
       "CEP": "CEP Lebrija",
@@ -466,21 +391,6 @@
       "Inicio inscripción": "15/09/2026",
       "Fin inscripción": "28/09/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "279932PA455",
-      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "28/09/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932PA455/",
-      "Lugar": "AVFP Y CEIP VIRGILIO FERNÁNDEZ PÉREZ (Villanueva del Río y Minas)",
-      "Inicio inscripción": "14/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "30"
     },
     {
       "Código": "279932PF011",

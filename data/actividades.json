@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-22T04:58:09.373585+00:00",
-  "total": 26,
+  "generado": "2026-09-22T09:59:16.761894+00:00",
+  "total": 25,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -91,21 +91,6 @@
       "Inicio inscripción": "15/09/2026",
       "Fin inscripción": "25/09/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "274127PA455",
-      "Título": "COMUNIDADES DE APRENDIZAJE. FASE DE SENSIBILIZACIÓN",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "28/09/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PA455/",
-      "Lugar": "CEP/AVFP",
-      "Inicio inscripción": "14/09/2026",
-      "Fin inscripción": "21/09/2026",
-      "Horas": "30"
     },
     {
       "Código": "274127PER003",
@@ -273,21 +258,6 @@
       "Horas": "8"
     },
     {
-      "Código": "274130PER003",
-      "Título": "EDUCACIÓN PERMANENTE: FORMACIÓN EN GESTIÓN ECONÓMICA Y DE LOS RECURSOS DEL CENTRO (SECRETARÍAS NOVELES)",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación Permanente",
-      "Inicio": "29/09/2026",
-      "Fin": "27/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER003/",
-      "Lugar": "CEP de Sevilla",
-      "Inicio inscripción": "09/09/2026",
-      "Fin inscripción": "22/09/2026",
-      "Horas": "15"
-    },
-    {
       "Código": "279930PF011",
       "Título": "FORMACIÓN EN GESTIÓN ECONÓMICA Y DE LOS RECURSOS DEL CENTRO (SECRETARÍAS NOVELES)",
       "CEP": "CEP Mairena del Alcor",
@@ -345,6 +315,21 @@
       "Lugar": "AVFP",
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "14/10/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "274131GE008",
+      "Título": "LA MEDIACIÓN EN EL CENTRO EDUCATIVO",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "04/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE008/",
+      "Lugar": "IES Maestro Diego Llorente",
+      "Inicio inscripción": "22/09/2026",
+      "Fin inscripción": "06/10/2026",
       "Horas": "15"
     },
     {

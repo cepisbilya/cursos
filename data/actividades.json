@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-23T11:38:49.188629+00:00",
-  "total": 25,
+  "generado": "2026-09-23T17:01:02.867248+00:00",
+  "total": 26,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -181,6 +181,21 @@
       "Inicio inscripción": "16/09/2026",
       "Fin inscripción": "13/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274129INT01",
+      "Título": "MEDIACIÓN ESCOLAR Y PROMOCIÓN DE LA CONVIVENCIA POSITIVA",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "15/10/2026",
+      "Fin": "12/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT01/",
+      "Lugar": "CEP Osuna- Écija",
+      "Inicio inscripción": "23/09/2026",
+      "Fin inscripción": "07/10/2026",
+      "Horas": "25"
     },
     {
       "Código": "274130AD001",

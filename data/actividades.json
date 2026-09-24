@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-24T04:52:57.495644+00:00",
-  "total": 25,
+  "generado": "2026-09-24T10:02:49.547534+00:00",
+  "total": 27,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -166,6 +166,36 @@
       "Inicio inscripción": "16/09/2026",
       "Fin inscripción": "13/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274128KPF420",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL A1",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "09/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128KPF420/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "24/09/2026",
+      "Fin inscripción": "04/10/2026",
+      "Horas": "40"
+    },
+    {
+      "Código": "274128KPF429",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "09/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128KPF429/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "24/09/2026",
+      "Fin inscripción": "04/10/2026",
+      "Horas": "70"
     },
     {
       "Código": "274129INT01",

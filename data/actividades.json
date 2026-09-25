@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-25T07:50:11.532978+00:00",
-  "total": 28,
+  "generado": "2026-09-25T13:49:05.620787+00:00",
+  "total": 35,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -168,6 +168,36 @@
       "Horas": "12"
     },
     {
+      "Código": "274128CDD001",
+      "Título": "HERRAMIENTAS DIGITALES PARA DOCENTES: GOOGLE SHEETS Y EXCEL - NIVEL BÁSICO",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "09/10/2026",
+      "Fin": "03/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128CDD001/",
+      "Lugar": "",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "04/10/2026",
+      "Horas": "40"
+    },
+    {
+      "Código": "274128CDD002",
+      "Título": "HERRAMIENTAS DIGITALES PARA DOCENTES: EXCEL NIVEL AVANZADO",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "09/10/2026",
+      "Fin": "09/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128CDD002/",
+      "Lugar": "",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "04/10/2026",
+      "Horas": "45"
+    },
+    {
       "Código": "274128KPF420",
       "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL A1",
       "CEP": "CEP Castilleja de la Cuesta",
@@ -196,6 +226,66 @@
       "Inicio inscripción": "24/09/2026",
       "Fin inscripción": "04/10/2026",
       "Horas": "70"
+    },
+    {
+      "Código": "274128KPF555",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL · EDUCACIÓN  INFANTIL Y PRIMARIA",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "09/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128KPF555/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "05/10/2026",
+      "Horas": "50"
+    },
+    {
+      "Código": "274128QPF555",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL · EDUCACIÓN SECUNDARIA",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "08/10/2026",
+      "Fin": "09/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128QPF555/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "05/10/2026",
+      "Horas": "50"
+    },
+    {
+      "Código": "279928KPF493",
+      "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (INFANTIL Y PRIMARIA)",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "16/10/2026",
+      "Fin": "04/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928KPF493/",
+      "Lugar": "",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "09/10/2026",
+      "Horas": "40"
+    },
+    {
+      "Código": "279928KPF494",
+      "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (SECUNDARIA)",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "16/10/2026",
+      "Fin": "04/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928KPF494/",
+      "Lugar": "",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "09/10/2026",
+      "Horas": "40"
     },
     {
       "Código": "274129INT01",
@@ -243,6 +333,36 @@
       "Horas": "12"
     },
     {
+      "Código": "274130CC001",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL (INFANTIL Y PRIMARIA)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/10/2026",
+      "Fin": "15/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CC001/",
+      "Lugar": "",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "13/10/2026",
+      "Horas": "50"
+    },
+    {
+      "Código": "274130CC002",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL (SECUNDARIA Y BACHILLERATO)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "19/10/2026",
+      "Fin": "14/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CC002/",
+      "Lugar": "",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "09/10/2026",
+      "Horas": "50"
+    },
+    {
       "Código": "274130CS001",
       "Título": "V CONGRESO DE HISTORIA Y CULTURA DE ALCALÁ DE GUADAÍRA",
       "CEP": "CEP Mairena del Alcor",
@@ -271,21 +391,6 @@
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "09/10/2026",
       "Horas": "12"
-    },
-    {
-      "Código": "274130CV004",
-      "Título": "SESIÓN DE SENSIBILIZACIÓN PROGRAMA PIIE CON ALBERTO ORTEGA",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Conferencia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "30/09/2026",
-      "Fin": "15/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CV004/",
-      "Lugar": "CIUDAD DEL CONOCIMIENTO",
-      "Inicio inscripción": "03/09/2026",
-      "Fin inscripción": "25/09/2026",
-      "Horas": "2"
     },
     {
       "Código": "274130INT003",

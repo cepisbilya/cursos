@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-25T01:31:48.039384+00:00",
-  "total": 27,
+  "generado": "2026-09-25T07:50:11.532978+00:00",
+  "total": 28,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -316,6 +316,21 @@
       "Inicio inscripción": "07/09/2026",
       "Fin inscripción": "02/10/2026",
       "Horas": "15"
+    },
+    {
+      "Código": "274131GE002",
+      "Título": "JORNADAS COORDINACIONES DE GT Y FC PARA LA ELABORACIÓN DEL PROYECTO 26-27",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "05/10/2026",
+      "Fin": "05/10/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE002/",
+      "Lugar": "AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO",
+      "Inicio inscripción": "25/09/2026",
+      "Fin inscripción": "02/10/2026",
+      "Horas": "2"
     },
     {
       "Código": "274131GE003",

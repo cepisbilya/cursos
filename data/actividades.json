@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-28T06:55:55.390348+00:00",
-  "total": 33,
+  "generado": "2026-09-28T15:29:51.402912+00:00",
+  "total": 36,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -31,6 +31,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "07/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274127ACS005",
+      "Título": "HISTORIA Y SIMBOLOGÍA DE LA NAVIDAD: DEL SINCRETISMO PAGANO AL IMAGINARIO CONTEMPORÁNEO EN EL AULA DE GEOGRAFÍA E HISTORIA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "26/11/2026",
+      "Fin": "10/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS005/",
+      "Lugar": "CEP SEVILLA",
+      "Inicio inscripción": "29/09/2026",
+      "Fin inscripción": "12/11/2026",
+      "Horas": "9"
     },
     {
       "Código": "274127ACS006",
@@ -166,6 +181,21 @@
       "Inicio inscripción": "16/09/2026",
       "Fin inscripción": "13/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "279927CI001",
+      "Título": "JORNADAS PROVINCIALES SOBRE DETECCIÓN E INTERVENCIÓN ANTE EL ACOSO ESCOLAR Y EL CIBERACOSO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Jornadas",
+      "Dirigido a": "Internivelar",
+      "Inicio": "05/11/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927CI001/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "29/09/2026",
+      "Fin inscripción": "13/10/2026",
+      "Horas": "8"
     },
     {
       "Código": "274128CDD001",
@@ -450,6 +480,21 @@
       "Lugar": "AVFP",
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "14/10/2026",
+      "Horas": "15"
+    },
+    {
+      "Código": "274131GE005",
+      "Título": "ESCUELAS QUE INCLUYEN, DOCENTES QUE TRANSFORMAN. INFANTIL - PRIMARIA.",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Educación primaria",
+      "Inicio": "22/10/2026",
+      "Fin": "05/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE005/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "28/09/2026",
+      "Fin inscripción": "18/10/2026",
       "Horas": "15"
     },
     {

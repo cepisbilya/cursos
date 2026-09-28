@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-28T00:48:35.040061+00:00",
-  "total": 35,
+  "generado": "2026-09-28T06:55:55.390348+00:00",
+  "total": 33,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -303,21 +303,6 @@
       "Horas": "25"
     },
     {
-      "Código": "274130AD001",
-      "Título": "GUIA BÁSICA PARA LA ATENCIÓN AL ALUMNADO EN EL AULA ESPECÍFICA (I)",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "02/10/2026",
-      "Fin": "17/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130AD001/",
-      "Lugar": "",
-      "Inicio inscripción": "07/09/2026",
-      "Fin inscripción": "28/09/2026",
-      "Horas": "30"
-    },
-    {
       "Código": "274130ARD007",
       "Título": "USO DE LA BICICLETA COMO RECURSO DIDÁCTICO EN LAS CLASES DE EDUCACIÓN FÍSICA.",
       "CEP": "CEP Mairena del Alcor",
@@ -510,21 +495,6 @@
       "Lugar": "Sala de cursos del CEP DE LEBRIJA",
       "Inicio inscripción": "15/09/2026",
       "Fin inscripción": "28/09/2026",
-      "Horas": "15"
-    },
-    {
-      "Código": "279932PF011",
-      "Título": "FORMACIÓN EN GESTIÓN ECONÓMICA DE CENTROS EDUCATIVOS. NIVEL INICIAL",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "30/09/2026",
-      "Fin": "28/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932PF011/",
-      "Lugar": "CENTRO DEL PROFESORADO (LORA DEL RÍO)",
-      "Inicio inscripción": "07/09/2026",
-      "Fin inscripción": "25/09/2026",
       "Horas": "15"
     }
   ]

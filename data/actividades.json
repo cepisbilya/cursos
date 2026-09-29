@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-29T08:33:18.284574+00:00",
-  "total": 35,
+  "generado": "2026-09-29T15:53:06.508385+00:00",
+  "total": 37,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -318,6 +318,21 @@
       "Horas": "25"
     },
     {
+      "Código": "274130AD002",
+      "Título": "ESPACIOS VISUALES PARA LA ADQUISICIÓN DEL APRENDIZAJE Y SU PRÁCTICA EN EL ÁMBITO ESCOLAR",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "05/11/2026",
+      "Fin": "26/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130AD002/",
+      "Lugar": "CIUDAD DEL CONOCIMIENTO (DOS HERMANAS).",
+      "Inicio inscripción": "29/09/2026",
+      "Fin inscripción": "26/10/2026",
+      "Horas": "12"
+    },
+    {
       "Código": "274130ARD007",
       "Título": "USO DE LA BICICLETA COMO RECURSO DIDÁCTICO EN LAS CLASES DE EDUCACIÓN FÍSICA.",
       "CEP": "CEP Mairena del Alcor",
@@ -526,6 +541,21 @@
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "05/10/2026",
       "Horas": "40"
+    },
+    {
+      "Código": "279932KPF555",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "29/09/2026",
+      "Fin": "29/09/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF555/",
+      "Lugar": "",
+      "Inicio inscripción": "30/09/2026",
+      "Fin inscripción": "09/10/2026",
+      "Horas": "50"
     }
   ]
 }

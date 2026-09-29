@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-28T22:02:22.040471+00:00",
-  "total": 36,
+  "generado": "2026-09-29T01:58:39.303293+00:00",
+  "total": 35,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -526,21 +526,6 @@
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "05/10/2026",
       "Horas": "40"
-    },
-    {
-      "Código": "279931KPF011",
-      "Título": "GESTIÓN ECONÓMICA PARA SECRETARÍAS NOVELES",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "08/10/2026",
-      "Fin": "12/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF011/",
-      "Lugar": "Sala de cursos del CEP DE LEBRIJA",
-      "Inicio inscripción": "15/09/2026",
-      "Fin inscripción": "28/09/2026",
-      "Horas": "15"
     }
   ]
 }

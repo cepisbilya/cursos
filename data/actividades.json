@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-29T15:53:06.508385+00:00",
-  "total": 37,
+  "generado": "2026-09-29T20:48:16.954271+00:00",
+  "total": 38,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -271,6 +271,21 @@
       "Inicio inscripción": "25/09/2026",
       "Fin inscripción": "05/10/2026",
       "Horas": "50"
+    },
+    {
+      "Código": "279927KPF580",
+      "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/10/2026",
+      "Fin": "11/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF580/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "05/10/2026",
+      "Fin inscripción": "16/10/2026",
+      "Horas": "10"
     },
     {
       "Código": "279928KPF493",

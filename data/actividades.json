@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-29T01:58:39.303293+00:00",
+  "generado": "2026-09-29T08:33:18.284574+00:00",
   "total": 35,
   "actividades": [
     {
@@ -106,21 +106,6 @@
       "Inicio inscripción": "15/09/2026",
       "Fin inscripción": "25/09/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "274127PER003",
-      "Título": "PATRIMONIO MUSICAL Y DANZA ESPAÑOLA: INTRODUCCIÓN AL MOVIMIENTO CORPORAL",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "08/10/2026",
-      "Fin": "15/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER003/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "11/09/2026",
-      "Fin inscripción": "28/09/2026",
-      "Horas": "8"
     },
     {
       "Código": "274127PRI002",
@@ -405,6 +390,21 @@
       "Lugar": "CIUDAD DEL CONOCIMIENTO",
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "09/10/2026",
+      "Horas": "12"
+    },
+    {
+      "Código": "274130CV002",
+      "Título": "PROGRAMA DE IMPLANTACIÓN DE INTELIGENCIA EMOCIONAL PIIE PARA ESO (ALBERTO ORTEGA)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "04/11/2026",
+      "Fin": "18/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CV002/",
+      "Lugar": "CIUDAD DEL CONOCIMIENTO",
+      "Inicio inscripción": "29/09/2026",
+      "Fin inscripción": "30/10/2026",
       "Horas": "12"
     },
     {

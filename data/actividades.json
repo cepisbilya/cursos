@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-30T13:45:06.980049+00:00",
-  "total": 46,
+  "generado": "2026-09-30T19:21:28.261977+00:00",
+  "total": 47,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -226,6 +226,21 @@
       "Inicio inscripción": "29/09/2026",
       "Fin inscripción": "13/10/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "279927KPF590",
+      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "04/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF590/",
+      "Lugar": "",
+      "Inicio inscripción": "30/09/2026",
+      "Fin inscripción": "12/10/2026",
+      "Horas": "10"
     },
     {
       "Código": "274128CDD001",

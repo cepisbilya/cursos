@@ -1,6 +1,6 @@
 {
-  "generado": "2026-09-30T00:28:41.435676+00:00",
-  "total": 38,
+  "generado": "2026-09-30T06:44:42.787158+00:00",
+  "total": 39,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -331,6 +331,21 @@
       "Inicio inscripción": "23/09/2026",
       "Fin inscripción": "07/10/2026",
       "Horas": "25"
+    },
+    {
+      "Código": "279929KPF590",
+      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "14/10/2026",
+      "Fin": "04/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929KPF590/",
+      "Lugar": "AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO",
+      "Inicio inscripción": "30/09/2026",
+      "Fin inscripción": "12/10/2026",
+      "Horas": "10"
     },
     {
       "Código": "274130AD002",

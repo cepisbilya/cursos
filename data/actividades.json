@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-01T05:56:25.042440+00:00",
-  "total": 47,
+  "generado": "2026-10-01T13:17:43.479074+00:00",
+  "total": 44,
   "actividades": [
     {
       "Código": "274127ACS003",
@@ -78,36 +78,6 @@
       "Horas": "9"
     },
     {
-      "Código": "274127AFP005",
-      "Título": "ASESORAMIENTO; ATENCIÓN A LA DIVERSIDAD EN FP_ IES POLITÉCNICO",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Form. profesional y art. plast. y diseño",
-      "Inicio": "08/09/2026",
-      "Fin": "08/09/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP005/",
-      "Lugar": "IES POLITÉCNICO",
-      "Inicio inscripción": "01/09/2026",
-      "Fin inscripción": "07/09/2026",
-      "Horas": "3"
-    },
-    {
-      "Código": "274127INF002",
-      "Título": "LAS MATEMÁTICAS EN EL TRABAJO DE AULA EN EDUCACIÓN INFANTIL",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación infantil",
-      "Inicio": "15/10/2026",
-      "Fin": "12/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127INF002/",
-      "Lugar": "CEIP PAZ Y AMISTAD",
-      "Inicio inscripción": "15/09/2026",
-      "Fin inscripción": "25/09/2026",
-      "Horas": "15"
-    },
-    {
       "Código": "274127NEE002",
       "Título": "AUTISMO EN FEMENINO",
       "CEP": "CEP Sevilla",
@@ -121,36 +91,6 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "274127PRI002",
-      "Título": "ATENDIENDO A LA DIVERSIDAD EN EL AULA ORDINARIA CEIP SOR ÁNGELA DE LA CRUZ",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "26/10/2026",
-      "Fin": "23/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI002/",
-      "Lugar": "CEIP SOR ÁNGELA DE LA CRUZ",
-      "Inicio inscripción": "15/09/2026",
-      "Fin inscripción": "30/09/2026",
-      "Horas": "9"
-    },
-    {
-      "Código": "274127PRI003",
-      "Título": "PREVENCIÓN Y GESTIÓN POSITIVA DE CONFLICTOS",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "03/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI003/",
-      "Lugar": "CEP SEVILLA Aula 3",
-      "Inicio inscripción": "15/09/2026",
-      "Fin inscripción": "30/09/2026",
-      "Horas": "12"
     },
     {
       "Código": "274127REL001",
@@ -364,7 +304,7 @@
     },
     {
       "Código": "279928KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Castilleja de la Cuesta",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
@@ -393,8 +333,23 @@
       "Horas": "25"
     },
     {
+      "Código": "274129KPF555",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "15/10/2026",
+      "Fin": "15/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129KPF555/",
+      "Lugar": "Aula Virtual de Formación del Profesorado",
+      "Inicio inscripción": "01/10/2026",
+      "Fin inscripción": "13/10/2026",
+      "Horas": "50"
+    },
+    {
       "Código": "279929KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Osuna - Écija",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
@@ -529,7 +484,7 @@
     },
     {
       "Código": "279930KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Mairena del Alcor",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
@@ -664,7 +619,7 @@
     },
     {
       "Código": "279931KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Lebrija",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
@@ -694,7 +649,7 @@
     },
     {
       "Código": "279932KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Lora del Río",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",

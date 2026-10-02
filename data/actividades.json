@@ -1,22 +1,7 @@
 {
-  "generado": "2026-10-02T05:39:16.149105+00:00",
-  "total": 44,
+  "generado": "2026-10-02T12:37:09.017898+00:00",
+  "total": 42,
   "actividades": [
-    {
-      "Código": "274127ACS003",
-      "Título": "ERASMUS DAY: SESIÓN DE EXPOSICIÓN DE RESULTADOS DEL CONSORCIO ESCOLAR 2025-26 DEL CEP DE SEVILLA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "15/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS003/",
-      "Lugar": "CEP de Sevilla",
-      "Inicio inscripción": "15/09/2026",
-      "Fin inscripción": "01/10/2026",
-      "Horas": "8"
-    },
     {
       "Código": "274127ACS004",
       "Título": "VIVIR LA EXPERIENCIA AULA DEL FUTURO. CEIP IBARBURU DE DOS HERMANAS",
@@ -46,21 +31,6 @@
       "Inicio inscripción": "29/09/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "274127ACS006",
-      "Título": "ERASMUS DAY: SESIÓN DE EXPOSICIÓN DE RESULTADOS DEL CONSORCIO DE ADULTOS 2025-26 DEL CEP DE SEVILLA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "14/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS006/",
-      "Lugar": "CEP de Sevilla",
-      "Inicio inscripción": "15/09/2026",
-      "Fin inscripción": "01/10/2026",
-      "Horas": "4"
     },
     {
       "Código": "274127ACT004",
@@ -378,21 +348,6 @@
       "Horas": "12"
     },
     {
-      "Código": "274130ARD007",
-      "Título": "USO DE LA BICICLETA COMO RECURSO DIDÁCTICO EN LAS CLASES DE EDUCACIÓN FÍSICA.",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "07/10/2026",
-      "Fin": "28/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130ARD007/",
-      "Lugar": "Colegio San Hermenegildo -carril bici Arco Norte - Parque Dehesa Doña María - Ciudad del Conocimiento",
-      "Inicio inscripción": "07/09/2026",
-      "Fin inscripción": "02/10/2026",
-      "Horas": "12"
-    },
-    {
       "Código": "274130CC001",
       "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL (INFANTIL Y PRIMARIA)",
       "CEP": "CEP Mairena del Alcor",
@@ -513,21 +468,6 @@
       "Horas": "15"
     },
     {
-      "Código": "274131GE002",
-      "Título": "JORNADAS COORDINACIONES DE GT Y FC PARA LA ELABORACIÓN DEL PROYECTO 26-27",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "05/10/2026",
-      "Fin": "05/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE002/",
-      "Lugar": "AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO",
-      "Inicio inscripción": "25/09/2026",
-      "Fin inscripción": "02/10/2026",
-      "Horas": "2"
-    },
-    {
       "Código": "274131GE003",
       "Título": "DESARROLLO DE HABILIDADES EN RESOLUCIÓN DE PROBLEMAS MATEMÁTICOS EN EDUCACIÓN SECUNDARIA",
       "CEP": "CEP Lebrija",
@@ -633,6 +573,36 @@
       "Horas": "10"
     },
     {
+      "Código": "274132GE002",
+      "Título": "AULA DEL FUTURO: ÚNETE AL RETO",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "19/10/2026",
+      "Fin": "03/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE002/",
+      "Lugar": "CEP DE LORA DEL RÍO y aula virtual de formación del profesorado",
+      "Inicio inscripción": "02/10/2026",
+      "Fin inscripción": "13/10/2026",
+      "Horas": "30"
+    },
+    {
+      "Código": "274132GE004",
+      "Título": "MEJORA DE LA COMPETENCIA MATEMÁTICA EN SECUNDARIA",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "16/10/2026",
+      "Fin": "16/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE004/",
+      "Lugar": "Aula Virtual de formación del profesorado. Videoconferencia",
+      "Inicio inscripción": "02/10/2026",
+      "Fin inscripción": "12/10/2026",
+      "Horas": "9"
+    },
+    {
       "Código": "279932KPF555",
       "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL",
       "CEP": "CEP Lora del Río",
@@ -649,7 +619,7 @@
     },
     {
       "Código": "279932KPF590",
-      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Lora del Río",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",

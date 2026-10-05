@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-04T21:27:08.213499+00:00",
-  "total": 42,
+  "generado": "2026-10-05T00:56:27.792838+00:00",
+  "total": 40,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -196,21 +196,6 @@
       "Inicio inscripción": "24/09/2026",
       "Fin inscripción": "04/10/2026",
       "Horas": "40"
-    },
-    {
-      "Código": "274128KPF429",
-      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
-      "CEP": "CEP Castilleja de la Cuesta",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "08/10/2026",
-      "Fin": "09/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128KPF429/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "24/09/2026",
-      "Fin inscripción": "04/10/2026",
-      "Horas": "70"
     },
     {
       "Código": "274128KPF555",
@@ -451,21 +436,6 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
       "Horas": "10"
-    },
-    {
-      "Código": "274131GE001",
-      "Título": "CUADERNO SÉNECA INFANTIL Y PRIMARIA",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso con Seguimiento",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "28/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE001/",
-      "Lugar": "CEIP ELIO ANTONIO DE NEBRIJA",
-      "Inicio inscripción": "07/09/2026",
-      "Fin inscripción": "02/10/2026",
-      "Horas": "15"
     },
     {
       "Código": "274131GE003",

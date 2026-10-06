@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-06T02:59:48.550133+00:00",
-  "total": 46,
+  "generado": "2026-10-06T10:21:11.243937+00:00",
+  "total": 45,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -319,7 +319,7 @@
     },
     {
       "Código": "279929KPF590",
-      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
+      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
       "CEP": "CEP Osuna - Écija",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
@@ -513,36 +513,6 @@
       "Horas": "18"
     },
     {
-      "Código": "274131GE008",
-      "Título": "LA MEDIACIÓN EN EL CENTRO EDUCATIVO",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso con Seguimiento",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "04/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE008/",
-      "Lugar": "IES Maestro Diego Llorente",
-      "Inicio inscripción": "22/09/2026",
-      "Fin inscripción": "06/10/2026",
-      "Horas": "15"
-    },
-    {
-      "Código": "279931KPF007",
-      "Título": "CREA TU AULA DEL FUTURO. ¡ÚNETE AL RETO! 26-27",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "15/10/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF007/",
-      "Lugar": "CEP de Lebrija- Aula Virtual",
-      "Inicio inscripción": "21/09/2026",
-      "Fin inscripción": "05/10/2026",
-      "Horas": "40"
-    },
-    {
       "Código": "279931KPF580",
       "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
       "CEP": "CEP Lebrija",
@@ -630,6 +600,21 @@
       "Lugar": "Aula Virtual de formación del profesorado. Videoconferencia",
       "Inicio inscripción": "02/10/2026",
       "Fin inscripción": "12/10/2026",
+      "Horas": "9"
+    },
+    {
+      "Código": "274132GE005",
+      "Título": "COMPETENCIA LINGÜÍSTICA EN EDUCACIÓN PRIMARIA.",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Educación primaria",
+      "Inicio": "26/10/2026",
+      "Fin": "04/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE005/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "06/10/2026",
+      "Fin inscripción": "19/10/2026",
       "Horas": "9"
     },
     {

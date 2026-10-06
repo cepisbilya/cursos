@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-06T10:21:11.243937+00:00",
-  "total": 45,
+  "generado": "2026-10-06T17:12:22.040060+00:00",
+  "total": 48,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -196,6 +196,21 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "279927KPI461",
+      "Título": "GESTIÓN ADMINISTRATIVA Y ECONÓMICA DE PROYECTOS ERASMUS+",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "22/10/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPI461/",
+      "Lugar": "",
+      "Inicio inscripción": "06/10/2026",
+      "Fin inscripción": "18/10/2026",
+      "Horas": "30"
     },
     {
       "Código": "279928KPF493",
@@ -408,6 +423,21 @@
       "Horas": "12"
     },
     {
+      "Código": "274130GE004",
+      "Título": "CICLO DE AUTOEVALUACIÓN: EL ANÁLISIS DIAGNÓSTICO DEL CENTRO EDUCATIVO. PLANES DE MEJORA Y FORMACIÓN.",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Internivelar",
+      "Inicio": "20/10/2026",
+      "Fin": "16/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE004/",
+      "Lugar": "Ciudad del Conocimiento",
+      "Inicio inscripción": "06/10/2026",
+      "Fin inscripción": "16/10/2026",
+      "Horas": "30"
+    },
+    {
       "Código": "274130INT003",
       "Título": "ERASMUS DAYS 2026 EXPERIENCIAS QUE TRANSFORMAN CENTROS",
       "CEP": "CEP Mairena del Alcor",
@@ -421,6 +451,21 @@
       "Inicio inscripción": "10/09/2026",
       "Fin inscripción": "07/10/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "274130KPF429",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "20/10/2026",
+      "Fin": "04/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130KPF429/",
+      "Lugar": "",
+      "Inicio inscripción": "06/10/2026",
+      "Fin inscripción": "15/10/2026",
+      "Horas": "70"
     },
     {
       "Código": "279930KPF580",

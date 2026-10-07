@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-07T01:33:27.733379+00:00",
-  "total": 48,
+  "generado": "2026-10-07T08:40:52.180408+00:00",
+  "total": 47,
   "actividades": [
     {
       "Código": "274127ACS004",
@@ -273,21 +273,6 @@
       "Horas": "10"
     },
     {
-      "Código": "274129INT01",
-      "Título": "MEDIACIÓN ESCOLAR Y PROMOCIÓN DE LA CONVIVENCIA POSITIVA",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "15/10/2026",
-      "Fin": "12/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT01/",
-      "Lugar": "CEP Osuna- Écija",
-      "Inicio inscripción": "23/09/2026",
-      "Fin inscripción": "07/10/2026",
-      "Horas": "25"
-    },
-    {
       "Código": "274129KPF555",
       "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL",
       "CEP": "CEP Osuna - Écija",
@@ -438,21 +423,6 @@
       "Horas": "30"
     },
     {
-      "Código": "274130INT003",
-      "Título": "ERASMUS DAYS 2026 EXPERIENCIAS QUE TRANSFORMAN CENTROS",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "15/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130INT003/",
-      "Lugar": "CEP de Mairena del Alcor",
-      "Inicio inscripción": "10/09/2026",
-      "Fin inscripción": "07/10/2026",
-      "Horas": "8"
-    },
-    {
       "Código": "274130KPF429",
       "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
       "CEP": "CEP Mairena del Alcor",
@@ -556,6 +526,21 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "27/10/2026",
       "Horas": "18"
+    },
+    {
+      "Código": "279931KPF429",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "19/10/2026",
+      "Fin": "14/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF429/",
+      "Lugar": "",
+      "Inicio inscripción": "07/10/2026",
+      "Fin inscripción": "14/10/2026",
+      "Horas": "70"
     },
     {
       "Código": "279931KPF580",

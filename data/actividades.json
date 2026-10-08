@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-08T01:56:54.714854+00:00",
-  "total": 46,
+  "generado": "2026-10-08T08:59:53.373523+00:00",
+  "total": 48,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -256,6 +256,21 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "274129KPF429",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "19/10/2026",
+      "Fin": "15/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129KPF429/",
+      "Lugar": "AVFP. Aula Virtual de Formación del Profesorado",
+      "Inicio inscripción": "08/10/2026",
+      "Fin inscripción": "16/10/2026",
+      "Horas": "70"
     },
     {
       "Código": "274129KPF555",
@@ -614,7 +629,7 @@
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE004/",
       "Lugar": "Aula Virtual de formación del profesorado. Videoconferencia",
       "Inicio inscripción": "02/10/2026",
-      "Fin inscripción": "12/10/2026",
+      "Fin inscripción": "13/10/2026",
       "Horas": "9"
     },
     {
@@ -646,6 +661,21 @@
       "Inicio inscripción": "05/10/2026",
       "Fin inscripción": "13/10/2026",
       "Horas": "9"
+    },
+    {
+      "Código": "279932KPF429",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "20/10/2026",
+      "Fin": "18/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF429/",
+      "Lugar": "AULA VIRTUAL DEL PROFESORADO",
+      "Inicio inscripción": "08/10/2026",
+      "Fin inscripción": "14/10/2026",
+      "Horas": "70"
     },
     {
       "Código": "279932KPF555",

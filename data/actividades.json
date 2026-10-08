@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-08T08:59:53.373523+00:00",
-  "total": 48,
+  "generado": "2026-10-08T16:29:57.595163+00:00",
+  "total": 50,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -46,6 +46,21 @@
       "Inicio inscripción": "21/09/2026",
       "Fin inscripción": "09/10/2026",
       "Horas": "16"
+    },
+    {
+      "Código": "274127KPF429",
+      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/10/2026",
+      "Fin": "16/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127KPF429/",
+      "Lugar": "Aula Virtual de Formación del Profesorado",
+      "Inicio inscripción": "08/10/2026",
+      "Fin inscripción": "16/10/2026",
+      "Horas": "70"
     },
     {
       "Código": "274127NEE002",
@@ -629,7 +644,7 @@
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE004/",
       "Lugar": "Aula Virtual de formación del profesorado. Videoconferencia",
       "Inicio inscripción": "02/10/2026",
-      "Fin inscripción": "13/10/2026",
+      "Fin inscripción": "14/10/2026",
       "Horas": "9"
     },
     {
@@ -638,14 +653,14 @@
       "CEP": "CEP Lora del Río",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Educación primaria",
-      "Inicio": "26/10/2026",
+      "Inicio": "29/10/2026",
       "Fin": "04/12/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE005/",
       "Lugar": "AVFP",
       "Inicio inscripción": "06/10/2026",
       "Fin inscripción": "19/10/2026",
-      "Horas": "9"
+      "Horas": "12"
     },
     {
       "Código": "274132GE006",
@@ -706,6 +721,21 @@
       "Inicio inscripción": "05/10/2026",
       "Fin inscripción": "16/10/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "279932KPF582",
+      "Título": "GENERADOR DE SITUACIONES DE APRENDIZAJE A TRAVÉS DE INTELIGENCIA ARTIFICIAL",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "30/10/2026",
+      "Fin": "04/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF582/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "08/10/2026",
+      "Fin inscripción": "23/10/2026",
+      "Horas": "40"
     },
     {
       "Código": "279932KPF590",

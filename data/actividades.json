@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-09T09:06:27.625210+00:00",
-  "total": 48,
+  "generado": "2026-10-09T16:14:09.083829+00:00",
+  "total": 49,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -720,6 +720,21 @@
       "Lugar": "",
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
+      "Horas": "10"
+    },
+    {
+      "Código": "279932PF001",
+      "Título": "FORMACIÓN DEL PERSONAL FUNCIONARIO EN PRÁCTICAS 2026-27. FASE PRESENCIAL (TODAS LAS RESOLUCIONES).  SESIONES DE TARDE",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "20/10/2026",
+      "Fin": "19/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932PF001/",
+      "Lugar": "",
+      "Inicio inscripción": "09/10/2026",
+      "Fin inscripción": "09/10/2026",
       "Horas": "10"
     }
   ]

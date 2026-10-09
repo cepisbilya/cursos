@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-09T02:11:19.232011+00:00",
-  "total": 50,
+  "generado": "2026-10-09T09:06:27.625210+00:00",
+  "total": 48,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -213,36 +213,6 @@
       "Horas": "30"
     },
     {
-      "Código": "279928KPF493",
-      "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (INFANTIL Y PRIMARIA)",
-      "CEP": "CEP Castilleja de la Cuesta",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Equipos directivos",
-      "Inicio": "16/10/2026",
-      "Fin": "04/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928KPF493/",
-      "Lugar": "",
-      "Inicio inscripción": "25/09/2026",
-      "Fin inscripción": "09/10/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279928KPF494",
-      "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (SECUNDARIA)",
-      "CEP": "CEP Castilleja de la Cuesta",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Equipos directivos",
-      "Inicio": "16/10/2026",
-      "Fin": "04/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928KPF494/",
-      "Lugar": "",
-      "Inicio inscripción": "25/09/2026",
-      "Fin inscripción": "09/10/2026",
-      "Horas": "40"
-    },
-    {
       "Código": "279928KPF580",
       "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
       "CEP": "CEP Castilleja de la Cuesta",
@@ -393,21 +363,6 @@
       "Horas": "12"
     },
     {
-      "Código": "274130CV001",
-      "Título": "PROGRAMA DE IMPLANTACIÓN DE INTELIGENCIA EMOCIONAL PIIE PARA EP (ALBERTO ORTEGA)",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación primaria",
-      "Inicio": "14/10/2026",
-      "Fin": "28/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CV001/",
-      "Lugar": "CIUDAD DEL CONOCIMIENTO",
-      "Inicio inscripción": "21/09/2026",
-      "Fin inscripción": "09/10/2026",
-      "Horas": "12"
-    },
-    {
       "Código": "274130CV002",
       "Título": "PROGRAMA DE IMPLANTACIÓN DE INTELIGENCIA EMOCIONAL PIIE PARA ESO (ALBERTO ORTEGA)",
       "CEP": "CEP Mairena del Alcor",
@@ -451,6 +406,21 @@
       "Inicio inscripción": "06/10/2026",
       "Fin inscripción": "15/10/2026",
       "Horas": "70"
+    },
+    {
+      "Código": "279930KPF544",
+      "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (EEOOII)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "26/10/2026",
+      "Fin": "22/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930KPF544/",
+      "Lugar": "",
+      "Inicio inscripción": "09/10/2026",
+      "Fin inscripción": "21/10/2026",
+      "Horas": "40"
     },
     {
       "Código": "279930KPF580",

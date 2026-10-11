@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-11T01:55:18.472145+00:00",
+  "generado": "2026-10-11T08:53:16.756597+00:00",
   "total": 49,
   "actividades": [
     {
@@ -513,6 +513,21 @@
       "Horas": "18"
     },
     {
+      "Código": "279931KPF248",
+      "Título": "FORMACIÓN MENTORA PARA LA DIRECCIÓN Y JEFATURA DE ESTUDIOS NOVEL",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "04/11/2026",
+      "Fin": "27/05/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF248/",
+      "Lugar": "CEP LEBRIJA",
+      "Inicio inscripción": "05/10/2026",
+      "Fin inscripción": "22/10/2026",
+      "Horas": "30"
+    },
+    {
       "Código": "279931KPF429",
       "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
       "CEP": "CEP Lebrija",
@@ -556,21 +571,6 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
       "Horas": "10"
-    },
-    {
-      "Código": "279931PF248",
-      "Título": "FORMACIÓN MENTORA PARA LA DIRECCIÓN Y JEFATURA DE ESTUDIOS NOVEL",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "04/11/2026",
-      "Fin": "27/05/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931PF248/",
-      "Lugar": "CEP LEBRIJA",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "22/10/2026",
-      "Horas": "30"
     },
     {
       "Código": "274132GE002",

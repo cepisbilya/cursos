@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-13T00:41:42.894398+00:00",
-  "total": 48,
+  "generado": "2026-10-13T07:43:48.710331+00:00",
+  "total": 43,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -183,21 +183,6 @@
       "Horas": "10"
     },
     {
-      "Código": "279927KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "04/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF590/",
-      "Lugar": "",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "12/10/2026",
-      "Horas": "10"
-    },
-    {
       "Código": "279927KPI461",
       "Título": "GESTIÓN ADMINISTRATIVA Y ECONÓMICA DE PROYECTOS ERASMUS+",
       "CEP": "CEP Sevilla",
@@ -258,21 +243,6 @@
       "Horas": "70"
     },
     {
-      "Código": "274129KPF555",
-      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "15/10/2026",
-      "Fin": "15/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129KPF555/",
-      "Lugar": "Aula Virtual de Formación del Profesorado",
-      "Inicio inscripción": "01/10/2026",
-      "Fin inscripción": "12/10/2026",
-      "Horas": "50"
-    },
-    {
       "Código": "279929KPF248",
       "Título": "FORMACIÓN MENTORA PARA LA DIRECCIÓN Y JEFATURA DE ESTUDIOS NOVEL",
       "CEP": "CEP Osuna - Écija",
@@ -303,21 +273,6 @@
       "Horas": "10"
     },
     {
-      "Código": "279929KPF590",
-      "Título": "PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "04/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929KPF590/",
-      "Lugar": "AULA VIRTUAL DE FORMACIÓN DEL PROFESORADO",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "12/10/2026",
-      "Horas": "10"
-    },
-    {
       "Código": "274130CC001",
       "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL (INFANTIL Y PRIMARIA)",
       "CEP": "CEP Mairena del Alcor",
@@ -344,7 +299,7 @@
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CC002/",
       "Lugar": "",
       "Inicio inscripción": "25/09/2026",
-      "Fin inscripción": "09/10/2026",
+      "Fin inscripción": "13/10/2026",
       "Horas": "50"
     },
     {
@@ -435,21 +390,6 @@
       "Lugar": "",
       "Inicio inscripción": "05/10/2026",
       "Fin inscripción": "16/10/2026",
-      "Horas": "10"
-    },
-    {
-      "Código": "279930KPF590",
-      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "04/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930KPF590/",
-      "Lugar": "",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "12/10/2026",
       "Horas": "10"
     },
     {
@@ -555,21 +495,6 @@
       "Lugar": "AVFP",
       "Inicio inscripción": "05/10/2026",
       "Fin inscripción": "16/10/2026",
-      "Horas": "10"
-    },
-    {
-      "Código": "279931KPF590",
-      "Título": "590. PROTECCIÓN DE DATOS PERSONALES EN LOS CENTROS EDUCATIVOS",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "14/10/2026",
-      "Fin": "04/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF590/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "12/10/2026",
       "Horas": "10"
     },
     {

@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-14T06:09:46.494007+00:00",
-  "total": 46,
+  "generado": "2026-10-14T11:54:30.992989+00:00",
+  "total": 40,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -48,21 +48,6 @@
       "Horas": "9"
     },
     {
-      "Código": "274127AFP009",
-      "Título": "FORMACIÓN PRÁCTICA: INTRODUCCIÓN AL DISEÑO DIGITAL EN PRÓTESIS DENTAL",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Form. profesional y art. plast. y diseño",
-      "Inicio": "19/10/2026",
-      "Fin": "26/10/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP009/",
-      "Lugar": "IES ALBERT EINSTEIN",
-      "Inicio inscripción": "21/09/2026",
-      "Fin inscripción": "09/10/2026",
-      "Horas": "16"
-    },
-    {
       "Código": "274127KPF429",
       "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
       "CEP": "CEP Sevilla",
@@ -91,6 +76,21 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/10/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "274127PRI004",
+      "Título": "ENTORNO Y CONTEXTO EDUCATIVO DEL POLÍGONO SUR: CLAVES Y HERRAMIENTAS PARA EL PROFESORADO NOVEL",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "20/10/2026",
+      "Fin": "02/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI004/",
+      "Lugar": "Aula ATECA del IES Polígono Sur",
+      "Inicio inscripción": "13/10/2026",
+      "Fin inscripción": "16/10/2026",
+      "Horas": "12"
     },
     {
       "Código": "274127REL001",
@@ -151,21 +151,6 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "279927CI001",
-      "Título": "JORNADAS PROVINCIALES SOBRE DETECCIÓN E INTERVENCIÓN ANTE EL ACOSO ESCOLAR Y EL CIBERACOSO",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Jornadas",
-      "Dirigido a": "Internivelar",
-      "Inicio": "05/11/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927CI001/",
-      "Lugar": "CEP de Sevilla",
-      "Inicio inscripción": "29/09/2026",
-      "Fin inscripción": "13/10/2026",
-      "Horas": "8"
     },
     {
       "Código": "279927KPF248",
@@ -333,21 +318,6 @@
       "Horas": "15"
     },
     {
-      "Código": "274130CC002",
-      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL (SECUNDARIA Y BACHILLERATO)",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "19/10/2026",
-      "Fin": "14/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CC002/",
-      "Lugar": "",
-      "Inicio inscripción": "25/09/2026",
-      "Fin inscripción": "13/10/2026",
-      "Horas": "50"
-    },
-    {
       "Código": "274130CS001",
       "Título": "V CONGRESO DE HISTORIA Y CULTURA DE ALCALÁ DE GUADAÍRA",
       "CEP": "CEP Mairena del Alcor",
@@ -453,21 +423,6 @@
       "Horas": "10"
     },
     {
-      "Código": "274131GE004",
-      "Título": "FUNCIONES EJECUTIVAS Y PROCESOS ATENCIONALES. CÓMO APRENDE Y POR QUÉ SE DISTRAE NUESTRO ALUMNADO. ESTRATEGIAS DE INTERVENCIÓN",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "25/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE004/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "21/09/2026",
-      "Fin inscripción": "14/10/2026",
-      "Horas": "15"
-    },
-    {
       "Código": "274131GE005",
       "Título": "ESCUELAS QUE INCLUYEN, DOCENTES QUE TRANSFORMAN. INFANTIL - PRIMARIA.",
       "CEP": "CEP Lebrija",
@@ -513,21 +468,6 @@
       "Horas": "30"
     },
     {
-      "Código": "279931KPF429",
-      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "19/10/2026",
-      "Fin": "14/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF429/",
-      "Lugar": "",
-      "Inicio inscripción": "07/10/2026",
-      "Fin inscripción": "14/10/2026",
-      "Horas": "70"
-    },
-    {
       "Código": "279931KPF580",
       "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
       "CEP": "CEP Lebrija",
@@ -555,21 +495,6 @@
       "Lugar": "AVFP por videoconferencia",
       "Inicio inscripción": "05/10/2026",
       "Fin inscripción": "16/10/2026",
-      "Horas": "9"
-    },
-    {
-      "Código": "274132GE004",
-      "Título": "MEJORA DE LA COMPETENCIA MATEMÁTICA EN SECUNDARIA",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "16/10/2026",
-      "Fin": "16/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE004/",
-      "Lugar": "Aula Virtual de formación del profesorado. Videoconferencia",
-      "Inicio inscripción": "02/10/2026",
-      "Fin inscripción": "14/10/2026",
       "Horas": "9"
     },
     {
@@ -616,21 +541,6 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "22/10/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "279932KPF429",
-      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/10/2026",
-      "Fin": "18/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF429/",
-      "Lugar": "AULA VIRTUAL DEL PROFESORADO",
-      "Inicio inscripción": "08/10/2026",
-      "Fin inscripción": "14/10/2026",
-      "Horas": "70"
     },
     {
       "Código": "279932KPF580",

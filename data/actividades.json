@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-14T11:54:30.992989+00:00",
+  "generado": "2026-10-14T17:11:49.826185+00:00",
   "total": 40,
   "actividades": [
     {
@@ -78,6 +78,21 @@
       "Horas": "8"
     },
     {
+      "Código": "274127PER004",
+      "Título": "EDUCACIÓN EMOCIONAL: SENSIBILIZACIÓN PROGRAMA PIIE PARA EPER, ARE Y EEOOII",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "04/11/2026",
+      "Fin": "12/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER004/",
+      "Lugar": "AULA 3 CEP DE SEVILLA",
+      "Inicio inscripción": "14/10/2026",
+      "Fin inscripción": "26/10/2026",
+      "Horas": "8"
+    },
+    {
       "Código": "274127PRI004",
       "Título": "ENTORNO Y CONTEXTO EDUCATIVO DEL POLÍGONO SUR: CLAVES Y HERRAMIENTAS PARA EL PROFESORADO NOVEL",
       "CEP": "CEP Sevilla",
@@ -90,36 +105,6 @@
       "Lugar": "Aula ATECA del IES Polígono Sur",
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "16/10/2026",
-      "Horas": "12"
-    },
-    {
-      "Código": "274127REL001",
-      "Título": "ACTUALIZACIÓN CIENTÍFICO Y DIDACTICA DEL PROFESORADO DE RELIGIÓN CATÓLICA DE INFANTIL Y PRIMARIA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/10/2026",
-      "Fin": "05/06/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL001/",
-      "Lugar": "CEP SEVILLA",
-      "Inicio inscripción": "16/09/2026",
-      "Fin inscripción": "13/10/2026",
-      "Horas": "12"
-    },
-    {
-      "Código": "274127REL002",
-      "Título": "ACTUALIZACIÓN DIDÁCTICA DEL PROFESORADO DE RELIGIÓN CATÓLICA DE SECUNDARIA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "05/06/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL002/",
-      "Lugar": "CEP SEVILLA",
-      "Inicio inscripción": "16/09/2026",
-      "Fin inscripción": "13/10/2026",
       "Horas": "12"
     },
     {
@@ -331,6 +316,21 @@
       "Inicio inscripción": "01/09/2026",
       "Fin inscripción": "30/10/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274130CT001",
+      "Título": "DESCUBRIENDO EL MAGNETISMO. UN PROYECTO STEAM EN EL AULA.",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Internivelar",
+      "Inicio": "17/11/2026",
+      "Fin": "19/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CT001/",
+      "Lugar": "CEP MAIRENA DEL ALCOR",
+      "Inicio inscripción": "14/10/2026",
+      "Fin inscripción": "10/11/2026",
+      "Horas": "20"
     },
     {
       "Código": "274130CV002",

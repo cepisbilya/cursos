@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-15T04:41:13.556719+00:00",
-  "total": 40,
+  "generado": "2026-10-15T09:56:32.606792+00:00",
+  "total": 39,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -363,21 +363,6 @@
       "Horas": "30"
     },
     {
-      "Código": "274130KPF429",
-      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/10/2026",
-      "Fin": "04/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130KPF429/",
-      "Lugar": "",
-      "Inicio inscripción": "06/10/2026",
-      "Fin inscripción": "15/10/2026",
-      "Horas": "70"
-    },
-    {
       "Código": "279930KPF544",
       "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (EEOOII)",
       "CEP": "CEP Mairena del Alcor",
@@ -597,7 +582,7 @@
       "Fin": "19/01/2027",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932PF001/",
-      "Lugar": "",
+      "Lugar": "CENTRO DE USOS MÚLTIPLES",
       "Inicio inscripción": "09/10/2026",
       "Fin inscripción": "09/10/2026",
       "Horas": "10"

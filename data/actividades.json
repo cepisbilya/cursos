@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-16T01:22:06.732024+00:00",
-  "total": 39,
+  "generado": "2026-10-16T07:11:20.024892+00:00",
+  "total": 37,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -136,21 +136,6 @@
       "Inicio inscripción": "30/09/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "279927KPF248",
-      "Título": "FORMACIÓN MENTORA PARA LA DIRECCIÓN Y JEFATURA DE ESTUDIOS NOVEL",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Equipos directivos",
-      "Inicio": "04/11/2026",
-      "Fin": "31/05/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF248/",
-      "Lugar": "",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "15/10/2026",
-      "Horas": "30"
     },
     {
       "Código": "279927KPF580",
@@ -346,21 +331,6 @@
       "Inicio inscripción": "29/09/2026",
       "Fin inscripción": "30/10/2026",
       "Horas": "12"
-    },
-    {
-      "Código": "274130GE004",
-      "Título": "CICLO DE AUTOEVALUACIÓN: EL ANÁLISIS DIAGNÓSTICO DEL CENTRO EDUCATIVO. PLANES DE MEJORA Y FORMACIÓN.",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso con Seguimiento",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/10/2026",
-      "Fin": "16/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE004/",
-      "Lugar": "Ciudad del Conocimiento",
-      "Inicio inscripción": "06/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "30"
     },
     {
       "Código": "279930KPF544",

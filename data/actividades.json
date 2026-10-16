@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-16T07:11:20.024892+00:00",
-  "total": 37,
+  "generado": "2026-10-16T12:26:35.062896+00:00",
+  "total": 34,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -46,21 +46,6 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "02/11/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "274127KPF429",
-      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "16/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127KPF429/",
-      "Lugar": "Aula Virtual de Formación del Profesorado",
-      "Inicio inscripción": "08/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "70"
     },
     {
       "Código": "274127NEE002",
@@ -138,19 +123,19 @@
       "Horas": "9"
     },
     {
-      "Código": "279927KPF580",
-      "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
+      "Código": "274127REL008",
+      "Título": "XXI ENCUENTRO DEL PROFESORADO DE ERE ANDALUCÍA",
       "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
+      "Modalidad": "Curso Semipresencial",
       "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "11/11/2026",
+      "Inicio": "20/11/2026",
+      "Fin": "21/11/2026",
       "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF580/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "10"
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL008/",
+      "Lugar": "Hotel Silken Antequera Hills/AVFP",
+      "Inicio inscripción": "20/10/2026",
+      "Fin inscripción": "15/11/2026",
+      "Horas": "16"
     },
     {
       "Código": "279927KPF640",
@@ -226,21 +211,6 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "23/10/2026",
       "Horas": "10"
-    },
-    {
-      "Código": "274129KPF429",
-      "Título": "COMPETENCIA DIGITAL DOCENTE NIVEL B2",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "19/10/2026",
-      "Fin": "15/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129KPF429/",
-      "Lugar": "AVFP. Aula Virtual de Formación del Profesorado",
-      "Inicio inscripción": "08/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "70"
     },
     {
       "Código": "279929KPF248",
@@ -333,6 +303,21 @@
       "Horas": "12"
     },
     {
+      "Código": "274130PER004",
+      "Título": "EVALUACIÓN Y SEGUIMIENTO DEL APRENDIZAJE EN LA EDUCACIÓN PERMANENTE IES(SECCIÓN ADULTOS), IPEP Y ESCUELAS OFICIALES DE IDIOMAS",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Educación Permanente",
+      "Inicio": "03/11/2026",
+      "Fin": "16/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER004/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "16/10/2026",
+      "Fin inscripción": "28/10/2026",
+      "Horas": "50"
+    },
+    {
       "Código": "279930KPF544",
       "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (EEOOII)",
       "CEP": "CEP Mairena del Alcor",
@@ -346,21 +331,6 @@
       "Inicio inscripción": "09/10/2026",
       "Fin inscripción": "21/10/2026",
       "Horas": "40"
-    },
-    {
-      "Código": "279930KPF580",
-      "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "11/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930KPF580/",
-      "Lugar": "",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "10"
     },
     {
       "Código": "279930KPF641",
@@ -423,21 +393,6 @@
       "Horas": "30"
     },
     {
-      "Código": "279931KPF580",
-      "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "11/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF580/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "10"
-    },
-    {
       "Código": "274132GE003",
       "Título": "MEJORA DE LA COMPETENCIA MATEMÁTICA EN EDUCACIÓN PRIMARIA",
       "CEP": "CEP Lora del Río",
@@ -483,6 +438,21 @@
       "Horas": "9"
     },
     {
+      "Código": "274132GE009",
+      "Título": "TALLER DE RADIO ESCOLAR.",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "04/11/2026",
+      "Fin": "04/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE009/",
+      "Lugar": "AdF DEL CEP DE LORA DEL RÍO",
+      "Inicio inscripción": "16/10/2026",
+      "Fin inscripción": "27/10/2026",
+      "Horas": "10"
+    },
+    {
       "Código": "274132GE012",
       "Título": "XVII JORNADAS PROVINCIALES DE DIRECCIONES DE IES: HACIA UN BUEN MODELO DE DIRECCIÓN.",
       "CEP": "CEP Lora del Río",
@@ -496,21 +466,6 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "22/10/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "279932KPF580",
-      "Título": "FORMACIÓN SOBRE RIESGOS Y EMERGENCIAS DE PROTECCIÓN CIVIL",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "21/10/2026",
-      "Fin": "11/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF580/",
-      "Lugar": "",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "10"
     },
     {
       "Código": "279932KPF582",

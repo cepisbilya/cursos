@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-18T20:45:18.970427+00:00",
-  "total": 32,
+  "generado": "2026-10-18T23:13:46.962984+00:00",
+  "total": 30,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -78,21 +78,6 @@
       "Horas": "8"
     },
     {
-      "Código": "274127PRI004",
-      "Título": "ENTORNO Y CONTEXTO EDUCATIVO DEL POLÍGONO SUR: CLAVES Y HERRAMIENTAS PARA EL PROFESORADO NOVEL",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/10/2026",
-      "Fin": "02/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI004/",
-      "Lugar": "Aula ATECA del IES Polígono Sur",
-      "Inicio inscripción": "13/10/2026",
-      "Fin inscripción": "16/10/2026",
-      "Horas": "12"
-    },
-    {
       "Código": "274127REL003",
       "Título": "ESCUCHAR EL DOLOR, EDUCAR LA ESPERANZA.ESTRATEGIAS DE ESCUCHA Y ACOMPAÑAMIENTO AL ALUMNADO.",
       "CEP": "CEP Sevilla",
@@ -151,21 +136,6 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "23/10/2026",
       "Horas": "10"
-    },
-    {
-      "Código": "279927KPI461",
-      "Título": "GESTIÓN ADMINISTRATIVA Y ECONÓMICA DE PROYECTOS ERASMUS+",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "22/10/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPI461/",
-      "Lugar": "",
-      "Inicio inscripción": "06/10/2026",
-      "Fin inscripción": "18/10/2026",
-      "Horas": "30"
     },
     {
       "Código": "274128LIN003",

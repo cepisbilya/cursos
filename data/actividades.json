@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-20T06:01:52.052436+00:00",
-  "total": 26,
+  "generado": "2026-10-20T11:39:00.025146+00:00",
+  "total": 27,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -168,6 +168,21 @@
       "Horas": "10"
     },
     {
+      "Código": "274129KPF582",
+      "Título": "GENERADOR DE SdA (CON PE y ACS) A TRAVÉS DE IA (INFANTIL Y PRIMARIA)",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "04/11/2026",
+      "Fin": "14/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129KPF582/",
+      "Lugar": "",
+      "Inicio inscripción": "20/10/2026",
+      "Fin inscripción": "29/10/2026",
+      "Horas": "40"
+    },
+    {
       "Código": "279929KPF616",
       "Título": "INTRODUCCIÓN A LA INTELIGENCIA ARTIFICIAL CON COPILOT",
       "CEP": "CEP Osuna - Écija",
@@ -273,6 +288,21 @@
       "Horas": "18"
     },
     {
+      "Código": "274131GE009",
+      "Título": "CUADERNO SÉNECA INFANTIL Y PRIMARIA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Internivelar",
+      "Inicio": "12/11/2026",
+      "Fin": "25/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE009/",
+      "Lugar": "CEIP SAN JUAN BAUTISTA (Las Cabezas de San Juan)",
+      "Inicio inscripción": "19/10/2026",
+      "Fin inscripción": "05/11/2026",
+      "Horas": "15"
+    },
+    {
       "Código": "279931KPF248",
       "Título": "FORMACIÓN MENTORA PARA LA DIRECCIÓN Y JEFATURA DE ESTUDIOS NOVEL",
       "CEP": "CEP Lebrija",
@@ -286,21 +316,6 @@
       "Inicio inscripción": "05/10/2026",
       "Fin inscripción": "22/10/2026",
       "Horas": "30"
-    },
-    {
-      "Código": "274132GE005",
-      "Título": "COMPETENCIA LINGÜÍSTICA EN EDUCACIÓN PRIMARIA.",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación primaria",
-      "Inicio": "29/10/2026",
-      "Fin": "04/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE005/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "06/10/2026",
-      "Fin inscripción": "19/10/2026",
-      "Horas": "12"
     },
     {
       "Código": "274132GE006",

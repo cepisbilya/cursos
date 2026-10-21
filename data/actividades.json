@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-21T10:10:35.808616+00:00",
-  "total": 30,
+  "generado": "2026-10-21T15:15:54.023476+00:00",
+  "total": 29,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -31,21 +31,6 @@
       "Inicio inscripción": "19/10/2026",
       "Fin inscripción": "08/11/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "274127ACT004",
-      "Título": "EDUCAR PARA TRANSFORMAR: EL ANILLO VERDE Y AZUL DE SEVILLA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "29/10/2026",
-      "Fin": "12/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACT004/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "23/09/2026",
-      "Fin inscripción": "19/10/2026",
-      "Horas": "9"
     },
     {
       "Código": "274127ACT005",
@@ -428,7 +413,7 @@
       "CEP": "CEP Lora del Río",
       "Modalidad": "Curso a Distancia",
       "Dirigido a": "Internivelar",
-      "Inicio": "02/11/2026",
+      "Inicio": "03/11/2026",
       "Fin": "30/11/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF639/",

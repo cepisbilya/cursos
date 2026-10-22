@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-21T19:20:55.784868+00:00",
-  "total": 29,
+  "generado": "2026-10-22T15:18:06.403405+00:00",
+  "total": 28,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -273,6 +273,21 @@
       "Horas": "10"
     },
     {
+      "Código": "279930PF003",
+      "Título": "NOCIONES BÁSICAS SOBRE LA OBSERVACIÓN ENTRE PARES",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Otros",
+      "Dirigido a": "Internivelar",
+      "Inicio": "19/11/2026",
+      "Fin": "19/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930PF003/",
+      "Lugar": "",
+      "Inicio inscripción": "22/10/2026",
+      "Fin inscripción": "12/11/2026",
+      "Horas": "3"
+    },
+    {
       "Código": "274131GE006",
       "Título": "HACIA UNA ESCUELA INCLUSIVA: DERRIBANDO BARRERAS. SECUNDARIA.",
       "CEP": "CEP Lebrija",
@@ -316,21 +331,6 @@
       "Inicio inscripción": "19/10/2026",
       "Fin inscripción": "05/11/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "279931KPF248",
-      "Título": "FORMACIÓN MENTORA PARA LA DIRECCIÓN Y JEFATURA DE ESTUDIOS NOVEL",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "04/11/2026",
-      "Fin": "27/05/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931KPF248/",
-      "Lugar": "CEP LEBRIJA",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "22/10/2026",
-      "Horas": "30"
     },
     {
       "Código": "274132GE006",
@@ -420,21 +420,6 @@
       "Lugar": "",
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "23/10/2026",
-      "Horas": "10"
-    },
-    {
-      "Código": "279932PF001",
-      "Título": "FORMACIÓN DEL PERSONAL FUNCIONARIO EN PRÁCTICAS 2026-27. FASE PRESENCIAL (TODAS LAS RESOLUCIONES).  SESIONES DE TARDE",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/10/2026",
-      "Fin": "19/01/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932PF001/",
-      "Lugar": "CENTRO DE USOS MÚLTIPLES",
-      "Inicio inscripción": "09/10/2026",
-      "Fin inscripción": "09/10/2026",
       "Horas": "10"
     }
   ]

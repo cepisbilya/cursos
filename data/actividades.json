@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-23T10:05:02.472055+00:00",
+  "generado": "2026-10-23T15:05:12.998079+00:00",
   "total": 26,
   "actividades": [
     {
@@ -78,21 +78,6 @@
       "Horas": "8"
     },
     {
-      "Código": "274127REL003",
-      "Título": "ESCUCHAR EL DOLOR, EDUCAR LA ESPERANZA.ESTRATEGIAS DE ESCUCHA Y ACOMPAÑAMIENTO AL ALUMNADO.",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "09/11/2026",
-      "Fin": "15/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL003/",
-      "Lugar": "Sede de la Asociación Escucha",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "23/10/2026",
-      "Horas": "12"
-    },
-    {
       "Código": "274127REL005",
       "Título": "EL PATRIMONIO RELIGIOSO SEVILLANO COMO FUSIÓN DE FE-CULTURA",
       "CEP": "CEP Sevilla",
@@ -166,6 +151,21 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "23/10/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "274129ES01",
+      "Título": "METODOLOGÍAS ACTIVAS EN LA PRÁCTICA DOCENTE",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "03/11/2026",
+      "Fin": "14/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129ES01/",
+      "Lugar": "IES PROF. JUAN ANTONIO CARRILLO SALCEDO Y AVFP",
+      "Inicio inscripción": "23/10/2026",
+      "Fin inscripción": "30/10/2026",
+      "Horas": "30"
     },
     {
       "Código": "274129KPF582",

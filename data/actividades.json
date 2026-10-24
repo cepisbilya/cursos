@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-24T05:55:35.033940+00:00",
-  "total": 25,
+  "generado": "2026-10-24T11:02:47.138122+00:00",
+  "total": 22,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -106,21 +106,6 @@
       "Inicio inscripción": "20/10/2026",
       "Fin inscripción": "15/11/2026",
       "Horas": "16"
-    },
-    {
-      "Código": "279927KPF640",
-      "Título": "ACADEMIA GEMINI PARA EDUCADORES - NIVEL EDUCACIÓN PRIMARIA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "03/11/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF640/",
-      "Lugar": "",
-      "Inicio inscripción": "13/10/2026",
-      "Fin inscripción": "23/10/2026",
-      "Horas": "10"
     },
     {
       "Código": "274128LIN003",
@@ -243,21 +228,6 @@
       "Horas": "50"
     },
     {
-      "Código": "279930KPF641",
-      "Título": "ACADEMIA GEMINI PARA EDUCADORES - NIVEL ESO, BACHILLERATO Y FP",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "03/11/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930KPF641/",
-      "Lugar": "Aula Virtual de Formación del Profesorado",
-      "Inicio inscripción": "13/10/2026",
-      "Fin inscripción": "23/10/2026",
-      "Horas": "10"
-    },
-    {
       "Código": "279930PF003",
       "Título": "NOCIONES BÁSICAS SOBRE LA OBSERVACIÓN ENTRE PARES",
       "CEP": "CEP Mairena del Alcor",
@@ -360,21 +330,6 @@
       "Lugar": "AdF DEL CEP DE LORA DEL RÍO",
       "Inicio inscripción": "16/10/2026",
       "Fin inscripción": "27/10/2026",
-      "Horas": "10"
-    },
-    {
-      "Código": "279932KPF639",
-      "Título": "ACADEMIA GEMINI PARA EDUCADORES - NIVEL EDUCACIÓN INFANTIL",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "03/11/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF639/",
-      "Lugar": "",
-      "Inicio inscripción": "13/10/2026",
-      "Fin inscripción": "23/10/2026",
       "Horas": "10"
     }
   ]

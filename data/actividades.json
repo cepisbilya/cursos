@@ -1,7 +1,22 @@
 {
-  "generado": "2026-10-26T13:14:02.081676+00:00",
-  "total": 22,
+  "generado": "2026-10-26T19:21:42.360101+00:00",
+  "total": 23,
   "actividades": [
+    {
+      "Código": "274127AAD003",
+      "Título": "CREACIÓN DE MOLDES Y USO DEL HORNO. CONTINUACIÓN",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "10/11/2026",
+      "Fin": "10/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD003/",
+      "Lugar": "IES MIGUEL DE CERVANTES",
+      "Inicio inscripción": "26/10/2026",
+      "Fin inscripción": "06/11/2026",
+      "Horas": "15"
+    },
     {
       "Código": "274127ACS005",
       "Título": "HISTORIA Y SIMBOLOGÍA DE LA NAVIDAD: DEL SINCRETISMO PAGANO AL IMAGINARIO CONTEMPORÁNEO EN EL AULA DE GEOGRAFÍA E HISTORIA",

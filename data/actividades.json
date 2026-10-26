@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-26T06:15:39.042508+00:00",
-  "total": 21,
+  "generado": "2026-10-26T13:14:02.081676+00:00",
+  "total": 22,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -63,6 +63,21 @@
       "Horas": "20"
     },
     {
+      "Código": "274127ALI007",
+      "Título": "LABORATORIO DE LINGÜÍSTICA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "23/11/2026",
+      "Fin": "30/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ALI007/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "26/10/2026",
+      "Fin inscripción": "16/11/2026",
+      "Horas": "9"
+    },
+    {
       "Código": "274127PER004",
       "Título": "EDUCACIÓN EMOCIONAL: SENSIBILIZACIÓN PROGRAMA PIIE PARA EPER, ARE Y EEOOII",
       "CEP": "CEP Sevilla",
@@ -108,21 +123,6 @@
       "Horas": "16"
     },
     {
-      "Código": "274128LIN003",
-      "Título": "METODOLOGÍA Y EVALUACIÓN PARA LA DOCENCIA EN EL PROGRAMA BACHIBAC",
-      "CEP": "CEP Castilleja de la Cuesta",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "03/11/2026",
-      "Fin": "12/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128LIN003/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "13/10/2026",
-      "Fin inscripción": "26/10/2026",
-      "Horas": "10"
-    },
-    {
       "Código": "274129ES01",
       "Título": "METODOLOGÍAS ACTIVAS EN LA PRÁCTICA DOCENTE",
       "CEP": "CEP Osuna - Écija",
@@ -136,6 +136,21 @@
       "Inicio inscripción": "23/10/2026",
       "Fin inscripción": "30/10/2026",
       "Horas": "30"
+    },
+    {
+      "Código": "274129INT02",
+      "Título": "PRIMEROS AUXILIOS EN CENTROS EDUCATIVOS",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "11/11/2026",
+      "Fin": "18/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT02/",
+      "Lugar": "Edificio CREAR. Escuela Universitaria Osuna",
+      "Inicio inscripción": "26/10/2026",
+      "Fin inscripción": "06/11/2026",
+      "Horas": "8"
     },
     {
       "Código": "274129KPF582",

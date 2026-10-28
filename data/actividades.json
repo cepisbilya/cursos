@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-28T08:34:17.154208+00:00",
-  "total": 23,
+  "generado": "2026-10-28T16:04:25.984048+00:00",
+  "total": 22,
   "actividades": [
     {
       "Código": "274127AAD003",
@@ -93,6 +93,21 @@
       "Horas": "9"
     },
     {
+      "Código": "274127PER008",
+      "Título": "CURSO DE PRIMEROS AUXILIOS Y MANEJO DEL DESFIBRILADOR EXTERNO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "12/11/2026",
+      "Fin": "25/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER008/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "28/10/2026",
+      "Fin inscripción": "06/11/2026",
+      "Horas": "9"
+    },
+    {
       "Código": "274127REL005",
       "Título": "EL PATRIMONIO RELIGIOSO SEVILLANO COMO FUSIÓN DE FE-CULTURA",
       "CEP": "CEP Sevilla",
@@ -147,10 +162,10 @@
       "Fin": "25/11/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129ES02/",
-      "Lugar": "IES FRANCISCO RODRÍGUEZ MARÍN",
-      "Inicio inscripción": "27/10/2026",
-      "Fin inscripción": "05/11/2026",
-      "Horas": "9"
+      "Lugar": "",
+      "Inicio inscripción": "",
+      "Fin inscripción": "",
+      "Horas": ""
     },
     {
       "Código": "274129INT02",
@@ -243,21 +258,6 @@
       "Horas": "12"
     },
     {
-      "Código": "274130PER004",
-      "Título": "EVALUACIÓN Y SEGUIMIENTO DEL APRENDIZAJE EN LA EDUCACIÓN PERMANENTE IES(SECCIÓN ADULTOS), IPEP Y ESCUELAS OFICIALES DE IDIOMAS",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación Permanente",
-      "Inicio": "03/11/2026",
-      "Fin": "16/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130PER004/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "16/10/2026",
-      "Fin inscripción": "28/10/2026",
-      "Horas": "50"
-    },
-    {
       "Código": "279930PF003",
       "Título": "NOCIONES BÁSICAS SOBRE LA OBSERVACIÓN ENTRE PARES",
       "CEP": "CEP Mairena del Alcor",
@@ -286,21 +286,6 @@
       "Inicio inscripción": "21/10/2026",
       "Fin inscripción": "04/11/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "274131GE007",
-      "Título": "CUADERNO SÉNECA SECUNDARIA",
-      "CEP": "CEP Lebrija",
-      "Modalidad": "Curso con Seguimiento",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "04/11/2026",
-      "Fin": "03/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE007/",
-      "Lugar": "IES TORRE DEL ÁGUILA",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "27/10/2026",
-      "Horas": "18"
     },
     {
       "Código": "274131GE009",

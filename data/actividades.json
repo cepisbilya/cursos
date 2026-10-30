@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-30T07:08:05.317708+00:00",
-  "total": 21,
+  "generado": "2026-10-30T14:10:00.400428+00:00",
+  "total": 18,
   "actividades": [
     {
       "Código": "274127AAD003",
@@ -138,21 +138,6 @@
       "Horas": "16"
     },
     {
-      "Código": "274129ES01",
-      "Título": "METODOLOGÍAS ACTIVAS EN LA PRÁCTICA DOCENTE",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "03/11/2026",
-      "Fin": "14/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129ES01/",
-      "Lugar": "IES PROF. JUAN ANTONIO CARRILLO SALCEDO Y AVFP",
-      "Inicio inscripción": "23/10/2026",
-      "Fin inscripción": "30/10/2026",
-      "Horas": "30"
-    },
-    {
       "Código": "274129ES02",
       "Título": "EDUCACIÓN EMOCIONAL PARA DOCENTES",
       "CEP": "CEP Osuna - Écija",
@@ -198,21 +183,6 @@
       "Horas": "25"
     },
     {
-      "Código": "274130CS001",
-      "Título": "V CONGRESO DE HISTORIA Y CULTURA DE ALCALÁ DE GUADAÍRA",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Congreso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "11/11/2026",
-      "Fin": "13/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CS001/",
-      "Lugar": "Hotel Oromana",
-      "Inicio inscripción": "01/09/2026",
-      "Fin inscripción": "30/10/2026",
-      "Horas": "12"
-    },
-    {
       "Código": "274130CT001",
       "Título": "DESCUBRIENDO EL MAGNETISMO. UN PROYECTO STEAM EN EL AULA.",
       "CEP": "CEP Mairena del Alcor",
@@ -226,21 +196,6 @@
       "Inicio inscripción": "14/10/2026",
       "Fin inscripción": "10/11/2026",
       "Horas": "20"
-    },
-    {
-      "Código": "274130CV002",
-      "Título": "PROGRAMA DE IMPLANTACIÓN DE INTELIGENCIA EMOCIONAL PIIE PARA ESO (ALBERTO ORTEGA)",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "04/11/2026",
-      "Fin": "18/01/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CV002/",
-      "Lugar": "CIUDAD DEL CONOCIMIENTO",
-      "Inicio inscripción": "29/09/2026",
-      "Fin inscripción": "30/10/2026",
-      "Horas": "12"
     },
     {
       "Código": "279930PF003",

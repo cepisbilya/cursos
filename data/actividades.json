@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-01T19:41:26.259373+00:00",
-  "total": 18,
+  "generado": "2026-11-01T23:36:47.451995+00:00",
+  "total": 19,
   "actividades": [
     {
       "Código": "274127AAD003",
@@ -61,6 +61,21 @@
       "Inicio inscripción": "13/10/2026",
       "Fin inscripción": "02/11/2026",
       "Horas": "9"
+    },
+    {
+      "Código": "274127AFP019",
+      "Título": "FORMACIÓN PRÁCTICA: MÉTODOS Y PRODUCTOS CARTOGRÁFICOS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "17/11/2026",
+      "Fin": "26/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP019/",
+      "Lugar": "IES ALBERT EINSTEIN",
+      "Inicio inscripción": "26/10/2026",
+      "Fin inscripción": "09/11/2026",
+      "Horas": "30"
     },
     {
       "Código": "274127ALI007",

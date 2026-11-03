@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-03T06:49:15.106303+00:00",
-  "total": 19,
+  "generado": "2026-11-03T15:09:23.125801+00:00",
+  "total": 20,
   "actividades": [
     {
       "Código": "274127AAD003",
@@ -53,7 +53,7 @@
       "CEP": "CEP Sevilla",
       "Modalidad": "Curso",
       "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "11/11/2026",
+      "Inicio": "10/11/2026",
       "Fin": "25/11/2026",
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACT005/",
@@ -120,6 +120,21 @@
       "Lugar": "CEP DE SEVILLA",
       "Inicio inscripción": "28/10/2026",
       "Fin inscripción": "06/11/2026",
+      "Horas": "9"
+    },
+    {
+      "Código": "274127PER014",
+      "Título": "CURSO DE PRIMEROS AUXILIOS Y MANEJO DEL DESFIBRILADOR EXTERNO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "10/02/2027",
+      "Fin": "24/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER014/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "13/01/2027",
+      "Fin inscripción": "28/01/2027",
       "Horas": "9"
     },
     {

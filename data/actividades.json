@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-04T09:14:30.803898+00:00",
-  "total": 19,
+  "generado": "2026-11-04T17:18:05.276500+00:00",
+  "total": 18,
   "actividades": [
     {
       "Código": "274127AAD003",
@@ -271,21 +271,6 @@
       "Inicio inscripción": "19/10/2026",
       "Fin inscripción": "05/11/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "274132GE006",
-      "Título": "COMPETENCIA LINGÜÍSTICA EN EDUCACIÓN: LECTURA, ESCRITURA PARA SECUNDARIA",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "22/10/2026",
-      "Fin": "03/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE006/",
-      "Lugar": "avfp",
-      "Inicio inscripción": "05/10/2026",
-      "Fin inscripción": "13/10/2026",
-      "Horas": "9"
     }
   ]
 }

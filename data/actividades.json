@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-06T02:27:09.717953+00:00",
-  "total": 34,
+  "generado": "2026-11-06T10:54:12.558581+00:00",
+  "total": 32,
   "actividades": [
     {
       "Código": "274127AAD003",
@@ -105,21 +105,6 @@
       "Lugar": "CEP DE SEVILLA",
       "Inicio inscripción": "27/10/2026",
       "Fin inscripción": "13/11/2026",
-      "Horas": "9"
-    },
-    {
-      "Código": "274127PER008",
-      "Título": "CURSO DE PRIMEROS AUXILIOS Y MANEJO DEL DESFIBRILADOR EXTERNO",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "12/11/2026",
-      "Fin": "25/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER008/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "28/10/2026",
-      "Fin inscripción": "06/11/2026",
       "Horas": "9"
     },
     {
@@ -271,21 +256,6 @@
       "Inicio inscripción": "27/10/2026",
       "Fin inscripción": "05/11/2026",
       "Horas": "9"
-    },
-    {
-      "Código": "274129INT02",
-      "Título": "PRIMEROS AUXILIOS EN CENTROS EDUCATIVOS",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "11/11/2026",
-      "Fin": "18/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT02/",
-      "Lugar": "Edificio CREAR. Escuela Universitaria Osuna",
-      "Inicio inscripción": "26/10/2026",
-      "Fin inscripción": "06/11/2026",
-      "Horas": "8"
     },
     {
       "Código": "274129INT03",

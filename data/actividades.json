@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-08T15:13:58.033756+00:00",
+  "generado": "2026-11-08T19:43:18.841779+00:00",
   "total": 31,
   "actividades": [
     {
@@ -463,9 +463,9 @@
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF627/",
       "Lugar": "",
-      "Inicio inscripción": "",
-      "Fin inscripción": "",
-      "Horas": ""
+      "Inicio inscripción": "05/11/2026",
+      "Fin inscripción": "12/11/2026",
+      "Horas": "40"
     }
   ]
 }

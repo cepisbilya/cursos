@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-09T06:31:53.405017+00:00",
-  "total": 29,
+  "generado": "2026-11-09T17:30:21.355196+00:00",
+  "total": 31,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -18,19 +18,19 @@
       "Horas": "9"
     },
     {
-      "Código": "274127ACT005",
-      "Título": "COMPUTACIÓN Y ROBÓTICA CON MICRO:BIT. NIVEL INICIAL",
+      "Código": "274127ACS014",
+      "Título": "LA RADIO ESCOLAR: CONTROL TÉCNICO Y GRABACIÓN DE UN PODCAST",
       "CEP": "CEP Sevilla",
       "Modalidad": "Curso",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "10/11/2026",
-      "Fin": "25/11/2026",
+      "Dirigido a": "Internivelar",
+      "Inicio": "03/12/2026",
+      "Fin": "10/12/2026",
       "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACT005/",
-      "Lugar": "IES Murillo",
-      "Inicio inscripción": "13/10/2026",
-      "Fin inscripción": "02/11/2026",
-      "Horas": "9"
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS014/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "09/11/2026",
+      "Fin inscripción": "24/11/2026",
+      "Horas": "8"
     },
     {
       "Código": "274127AFP019",
@@ -213,6 +213,21 @@
       "Horas": "40"
     },
     {
+      "Código": "274129ES03",
+      "Título": "RECURSOS DIGITALES AVANZADOS PARA LA PRÁCTICA DOCENTE",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "12/11/2026",
+      "Fin": "10/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129ES03/",
+      "Lugar": "IES AGUILAR Y CANO",
+      "Inicio inscripción": "09/11/2026",
+      "Fin inscripción": "12/11/2026",
+      "Horas": "15"
+    },
+    {
       "Código": "274129INT03",
       "Título": "NEUROEDUCACIÓN Y GESTIÓN EMOCIONAL EN EL AULA",
       "CEP": "CEP Osuna - Écija",
@@ -391,6 +406,21 @@
       "Inicio inscripción": "05/11/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "40"
+    },
+    {
+      "Código": "274132GE015",
+      "Título": "GESTIÓN DE BIBLIOTECAS ESCOLARES CON BIBLIOWEB SÉNECA",
+      "CEP": "CEP Lora del Río",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Internivelar",
+      "Inicio": "01/12/2026",
+      "Fin": "14/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE015/",
+      "Lugar": "AVFP",
+      "Inicio inscripción": "09/11/2026",
+      "Fin inscripción": "20/11/2026",
+      "Horas": "15"
     },
     {
       "Código": "279932KPF625",

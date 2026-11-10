@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-10T09:51:57.467563+00:00",
-  "total": 31,
+  "generado": "2026-11-10T17:51:24.995719+00:00",
+  "total": 29,
   "actividades": [
     {
       "Código": "274127ACS005",
@@ -31,21 +31,6 @@
       "Inicio inscripción": "09/11/2026",
       "Fin inscripción": "24/11/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "274127AFP019",
-      "Título": "FORMACIÓN PRÁCTICA: MÉTODOS Y PRODUCTOS CARTOGRÁFICOS",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Form. profesional y art. plast. y diseño",
-      "Inicio": "17/11/2026",
-      "Fin": "26/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP019/",
-      "Lugar": "IES ALBERT EINSTEIN",
-      "Inicio inscripción": "26/10/2026",
-      "Fin inscripción": "09/11/2026",
-      "Horas": "30"
     },
     {
       "Código": "274127ALI007",
@@ -286,21 +271,6 @@
       "Inicio inscripción": "05/11/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "40"
-    },
-    {
-      "Código": "274130CT001",
-      "Título": "DESCUBRIENDO EL MAGNETISMO. UN PROYECTO STEAM EN EL AULA.",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso con Seguimiento",
-      "Dirigido a": "Internivelar",
-      "Inicio": "17/11/2026",
-      "Fin": "19/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130CT001/",
-      "Lugar": "CEP MAIRENA DEL ALCOR",
-      "Inicio inscripción": "14/10/2026",
-      "Fin inscripción": "10/11/2026",
-      "Horas": "20"
     },
     {
       "Código": "279930KPF625",

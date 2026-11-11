@@ -1,7 +1,22 @@
 {
-  "generado": "2026-11-11T06:23:21.460247+00:00",
-  "total": 29,
+  "generado": "2026-11-11T15:13:36.966923+00:00",
+  "total": 28,
   "actividades": [
+    {
+      "Código": "274127AAD001",
+      "Título": "CONVIVENCIA POSITIVA, MEDIACIÓN Y SOCIOGRAMAS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "13/01/2027",
+      "Fin": "03/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD001/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "11/11/2026",
+      "Fin inscripción": "14/12/2026",
+      "Horas": "12"
+    },
     {
       "Código": "274127ACS005",
       "Título": "HISTORIA Y SIMBOLOGÍA DE LA NAVIDAD: DEL SINCRETISMO PAGANO AL IMAGINARIO CONTEMPORÁNEO EN EL AULA DE GEOGRAFÍA E HISTORIA",
@@ -213,21 +228,6 @@
       "Horas": "15"
     },
     {
-      "Código": "274129INT03",
-      "Título": "NEUROEDUCACIÓN Y GESTIÓN EMOCIONAL EN EL AULA",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Internivelar",
-      "Inicio": "18/11/2026",
-      "Fin": "21/01/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT03/",
-      "Lugar": "CEP Osuna- Écija",
-      "Inicio inscripción": "27/10/2026",
-      "Fin inscripción": "11/11/2026",
-      "Horas": "25"
-    },
-    {
       "Código": "279929KPF625",
       "Título": "625. CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN INFANTIL",
       "CEP": "CEP Osuna - Écija",
@@ -316,21 +316,6 @@
       "Inicio inscripción": "05/11/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "40"
-    },
-    {
-      "Código": "279930PF003",
-      "Título": "NOCIONES BÁSICAS SOBRE LA OBSERVACIÓN ENTRE PARES",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Otros",
-      "Dirigido a": "Internivelar",
-      "Inicio": "19/11/2026",
-      "Fin": "19/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930PF003/",
-      "Lugar": "",
-      "Inicio inscripción": "22/10/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "3"
     },
     {
       "Código": "279931KPF625",

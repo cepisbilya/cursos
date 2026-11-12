@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-12T03:00:06.833563+00:00",
-  "total": 28,
+  "generado": "2026-11-12T11:13:04.655572+00:00",
+  "total": 29,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -48,6 +48,21 @@
       "Horas": "8"
     },
     {
+      "Código": "274127AFP007",
+      "Título": "DEL AULA A LA EMPRESA, NOVATRANS : HERRAMIENTAS ACTUALES PARA TRANSPORTE Y LOGÍSTICA.",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "26/11/2026",
+      "Fin": "27/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP007/",
+      "Lugar": "CPIFP LOS VIVEROS",
+      "Inicio inscripción": "26/10/2026",
+      "Fin inscripción": "19/11/2026",
+      "Horas": "10"
+    },
+    {
       "Código": "274127ALI007",
       "Título": "LABORATORIO DE LINGÜÍSTICA",
       "CEP": "CEP Sevilla",
@@ -61,6 +76,21 @@
       "Inicio inscripción": "26/10/2026",
       "Fin inscripción": "16/11/2026",
       "Horas": "9"
+    },
+    {
+      "Código": "274127ARE003",
+      "Título": "DRAMATURGIA APLICADA A LA CREACIÓN COREOGRÁFICA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "14/12/2026",
+      "Fin": "17/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE003/",
+      "Lugar": "CPD ANTONIO RUIZ SOLER",
+      "Inicio inscripción": "12/11/2026",
+      "Fin inscripción": "26/11/2026",
+      "Horas": "12"
     },
     {
       "Código": "274127NEE003",
@@ -211,21 +241,6 @@
       "Inicio inscripción": "05/11/2026",
       "Fin inscripción": "12/11/2026",
       "Horas": "40"
-    },
-    {
-      "Código": "274129ES03",
-      "Título": "RECURSOS DIGITALES AVANZADOS PARA LA PRÁCTICA DOCENTE",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso Semipresencial",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "12/11/2026",
-      "Fin": "10/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129ES03/",
-      "Lugar": "IES AGUILAR Y CANO",
-      "Inicio inscripción": "09/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "15"
     },
     {
       "Código": "279929KPF625",

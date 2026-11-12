@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-12T11:13:04.655572+00:00",
+  "generado": "2026-11-12T18:57:21.243809+00:00",
   "total": 29,
   "actividades": [
     {
@@ -16,6 +16,21 @@
       "Inicio inscripción": "11/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274127AAD004",
+      "Título": "CREACIÓN DE MOLDES Y USO DEL HORNO. INICIACIÓN",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "12/01/2027",
+      "Fin": "09/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD004/",
+      "Lugar": "IES MIGUEL DE CERVANTES",
+      "Inicio inscripción": "12/11/2026",
+      "Fin inscripción": "14/12/2026",
+      "Horas": "17"
     },
     {
       "Código": "274127ACS005",
@@ -120,21 +135,6 @@
       "Lugar": "CEP DE SEVILLA",
       "Inicio inscripción": "13/01/2027",
       "Fin inscripción": "28/01/2027",
-      "Horas": "9"
-    },
-    {
-      "Código": "274127REL005",
-      "Título": "EL PATRIMONIO RELIGIOSO SEVILLANO COMO FUSIÓN DE FE-CULTURA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "26/11/2026",
-      "Fin": "10/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127REL005/",
-      "Lugar": "CEP SEVILLA",
-      "Inicio inscripción": "30/09/2026",
-      "Fin inscripción": "12/11/2026",
       "Horas": "9"
     },
     {

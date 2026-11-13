@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-13T07:59:29.836216+00:00",
-  "total": 18,
+  "generado": "2026-11-13T16:25:35.886478+00:00",
+  "total": 11,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -16,6 +16,21 @@
       "Inicio inscripción": "11/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "12"
+    },
+    {
+      "Código": "274127AAD002",
+      "Título": "GESTIÓN DEL AULA: LOS PROBLEMAS COMO OPORTUNIDADES",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "20/01/2027",
+      "Fin": "28/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD002/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "13/11/2026",
+      "Fin inscripción": "14/12/2026",
+      "Horas": "9"
     },
     {
       "Código": "274127AAD004",
@@ -46,6 +61,21 @@
       "Inicio inscripción": "09/11/2026",
       "Fin inscripción": "24/11/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "274127ACT036",
+      "Título": "CUADERNO DE CLASE DE SÉNECA PARA LA EVALUACIÓN COMPETENCIAL. SECUNDARIA Y BACHILLERATO. IES DOMÍNGUEZ ORTÍZ",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "19/11/2026",
+      "Fin": "02/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACT036/",
+      "Lugar": "IES Antonio Domínguez Ortiz",
+      "Inicio inscripción": "13/11/2026",
+      "Fin inscripción": "18/11/2026",
+      "Horas": "9"
     },
     {
       "Código": "274127AFP007",
@@ -123,111 +153,6 @@
       "Horas": "16"
     },
     {
-      "Código": "279927KPF625",
-      "Título": "CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN INFANTIL",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación infantil",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF625/",
-      "Lugar": "",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279927KPF626",
-      "Título": "CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN PRIMARIA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación primaria",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF626/",
-      "Lugar": "Aula Virtual de Formación del Profesorado",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279927KPF627",
-      "Título": "CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN SECUNDARIA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF627/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279928KPF625",
-      "Título": "625. CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN INFANTIL",
-      "CEP": "CEP Castilleja de la Cuesta",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación infantil",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279928KPF625/",
-      "Lugar": "",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279929KPF625",
-      "Título": "625. CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN INFANTIL",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación infantil",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929KPF625/",
-      "Lugar": "",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279929KPF626",
-      "Título": "626. CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN PRIMARIA",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación primaria",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929KPF626/",
-      "Lugar": "",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279929KPF627",
-      "Título": "627. CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN SECUNDARIA",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación secundaria obligatoria",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279929KPF627/",
-      "Lugar": "",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
       "Código": "274132GE015",
       "Título": "GESTIÓN DE BIBLIOTECAS ESCOLARES CON BIBLIOWEB SÉNECA",
       "CEP": "CEP Lora del Río",
@@ -241,36 +166,6 @@
       "Inicio inscripción": "09/11/2026",
       "Fin inscripción": "20/11/2026",
       "Horas": "15"
-    },
-    {
-      "Código": "279932KPF625",
-      "Título": "CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN INFANTIL",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Educación infantil",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF625/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
-    },
-    {
-      "Código": "279932KPF627",
-      "Título": "CTRL + ALT + FUTURO PARA EL PROFESORADO DE EDUCACIÓN SECUNDARIA",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "20/11/2026",
-      "Fin": "17/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279932KPF627/",
-      "Lugar": "",
-      "Inicio inscripción": "05/11/2026",
-      "Fin inscripción": "12/11/2026",
-      "Horas": "40"
     }
   ]
 }

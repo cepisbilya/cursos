@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-16T09:45:53.231779+00:00",
-  "total": 10,
+  "generado": "2026-11-16T20:30:06.538882+00:00",
+  "total": 12,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -46,6 +46,21 @@
       "Inicio inscripción": "12/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "17"
+    },
+    {
+      "Código": "274127AAD012",
+      "Título": "MUSICOTERAPIA EN EL AULA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "11/01/2027",
+      "Fin": "27/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD012/",
+      "Lugar": "CEP de Sevilla",
+      "Inicio inscripción": "16/11/2026",
+      "Fin inscripción": "14/12/2026",
+      "Horas": "10"
     },
     {
       "Código": "274127ACS014",
@@ -136,6 +151,21 @@
       "Inicio inscripción": "13/01/2027",
       "Fin inscripción": "28/01/2027",
       "Horas": "9"
+    },
+    {
+      "Código": "274129INT06",
+      "Título": "APROXIMACIÓN A LA INCLUSIÓN DEL ALUMNADO TEA EN EL AULA ORDINARIA",
+      "CEP": "CEP Osuna - Écija",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "25/11/2026",
+      "Fin": "10/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT06/",
+      "Lugar": "Centro del profesorado de Osuna-Écija",
+      "Inicio inscripción": "16/11/2026",
+      "Fin inscripción": "23/11/2026",
+      "Horas": "8"
     },
     {
       "Código": "274132GE015",

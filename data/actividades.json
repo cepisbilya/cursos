@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-17T03:55:06.278002+00:00",
-  "total": 12,
+  "generado": "2026-11-17T13:28:37.568757+00:00",
+  "total": 14,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -94,7 +94,7 @@
     },
     {
       "Código": "274127AFP007",
-      "Título": "DEL AULA A LA EMPRESA, NOVATRANS : HERRAMIENTAS ACTUALES PARA TRANSPORTE Y LOGÍSTICA.",
+      "Título": "GESTIÓN Y ACTUALIZACIÓN DE NOVATRANS WEB: FORMACIÓN PARA DOCENTES DE TRANSPORTE Y LOGÍSTICA",
       "CEP": "CEP Sevilla",
       "Modalidad": "Curso",
       "Dirigido a": "Form. profesional y art. plast. y diseño",
@@ -106,6 +106,21 @@
       "Inicio inscripción": "26/10/2026",
       "Fin inscripción": "19/11/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "274127AFP011",
+      "Título": "FERMENTACIONES, ALIMENTOS VIVOS Y PROCESOS DE MADURACIÓN EN LA COCINA CONTEMPORÁNEA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "09/12/2026",
+      "Fin": "10/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP011/",
+      "Lugar": "IES HELIÓPOLIS",
+      "Inicio inscripción": "13/11/2026",
+      "Fin inscripción": "23/11/2026",
+      "Horas": "8"
     },
     {
       "Código": "274127ALI007",
@@ -148,9 +163,24 @@
       "Estado": "Abierto plazo solicitudes",
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PER014/",
       "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "13/01/2027",
+      "Inicio inscripción": "09/11/2026",
       "Fin inscripción": "28/01/2027",
       "Horas": "9"
+    },
+    {
+      "Código": "279927KPF543",
+      "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (CONSERVATORIOS)",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Equipos directivos",
+      "Inicio": "12/01/2027",
+      "Fin": "02/03/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279927KPF543/",
+      "Lugar": "",
+      "Inicio inscripción": "17/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "40"
     },
     {
       "Código": "274129INT06",

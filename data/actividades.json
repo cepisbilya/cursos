@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-18T04:22:20.767231+00:00",
-  "total": 14,
+  "generado": "2026-11-18T13:59:35.381375+00:00",
+  "total": 18,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -48,6 +48,21 @@
       "Horas": "17"
     },
     {
+      "Código": "274127AAD008",
+      "Título": "ACTIVIDADES FÍSICAS CON ACOMPAÑAMIENTO MUSICAL",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "19/01/2027",
+      "Fin": "09/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD008/",
+      "Lugar": "POR DETERMINAR",
+      "Inicio inscripción": "18/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "16"
+    },
+    {
       "Código": "274127AAD012",
       "Título": "MUSICOTERAPIA EN EL AULA",
       "CEP": "CEP Sevilla",
@@ -61,6 +76,21 @@
       "Inicio inscripción": "16/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "274127ACS002",
+      "Título": "JORNADAS TDE",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "26/11/2026",
+      "Fin": "26/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS002/",
+      "Lugar": "Aula Virtual de Formación del Profesorado",
+      "Inicio inscripción": "18/11/2026",
+      "Fin inscripción": "24/11/2026",
+      "Horas": "2"
     },
     {
       "Código": "274127ACS014",
@@ -91,6 +121,21 @@
       "Inicio inscripción": "13/11/2026",
       "Fin inscripción": "18/11/2026",
       "Horas": "9"
+    },
+    {
+      "Código": "274127AFP002",
+      "Título": "ACONDICIONAMIENTO FÍSICO CON SOPORTE MUSICAL",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "19/01/2027",
+      "Fin": "09/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP002/",
+      "Lugar": "POR DETERMINAR",
+      "Inicio inscripción": "18/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "16"
     },
     {
       "Código": "274127AFP007",
@@ -195,6 +240,21 @@
       "Lugar": "Centro del profesorado de Osuna-Écija",
       "Inicio inscripción": "16/11/2026",
       "Fin inscripción": "23/11/2026",
+      "Horas": "8"
+    },
+    {
+      "Código": "274130GE007",
+      "Título": "USO DE SIMULADOR DE PINTURA EN CARROCERIA EN EL IES TORRE DE LOS HERBEROS",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "24/11/2026",
+      "Fin": "24/11/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE007/",
+      "Lugar": "Taller de pintura y reparación del IES Torre de los Herberos",
+      "Inicio inscripción": "09/11/2026",
+      "Fin inscripción": "18/11/2026",
       "Horas": "8"
     },
     {

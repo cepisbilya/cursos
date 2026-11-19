@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-19T03:29:22.694506+00:00",
-  "total": 17,
+  "generado": "2026-11-19T13:10:03.962587+00:00",
+  "total": 16,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -59,7 +59,7 @@
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD008/",
       "Lugar": "POR DETERMINAR",
       "Inicio inscripción": "18/11/2026",
-      "Fin inscripción": "10/12/2026",
+      "Fin inscripción": "08/12/2026",
       "Horas": "16"
     },
     {
@@ -151,21 +151,6 @@
       "Inicio inscripción": "13/11/2026",
       "Fin inscripción": "23/11/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "274127ALI007",
-      "Título": "LABORATORIO DE LINGÜÍSTICA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "23/11/2026",
-      "Fin": "30/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ALI007/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "26/10/2026",
-      "Fin inscripción": "16/11/2026",
-      "Horas": "9"
     },
     {
       "Código": "274127ARE003",

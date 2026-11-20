@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-20T11:53:50.738286+00:00",
-  "total": 16,
+  "generado": "2026-11-20T20:22:30.060818+00:00",
+  "total": 14,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -123,21 +123,6 @@
       "Horas": "16"
     },
     {
-      "Código": "274127AFP007",
-      "Título": "GESTIÓN Y ACTUALIZACIÓN DE NOVATRANS WEB: FORMACIÓN PARA DOCENTES DE TRANSPORTE Y LOGÍSTICA",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Form. profesional y art. plast. y diseño",
-      "Inicio": "26/11/2026",
-      "Fin": "27/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AFP007/",
-      "Lugar": "CPIFP LOS VIVEROS",
-      "Inicio inscripción": "26/10/2026",
-      "Fin inscripción": "19/11/2026",
-      "Horas": "10"
-    },
-    {
       "Código": "274127AFP011",
       "Título": "FERMENTACIONES, ALIMENTOS VIVOS Y PROCESOS DE MADURACIÓN EN LA COCINA CONTEMPORÁNEA",
       "CEP": "CEP Sevilla",
@@ -226,21 +211,6 @@
       "Inicio inscripción": "09/11/2026",
       "Fin inscripción": "18/11/2026",
       "Horas": "8"
-    },
-    {
-      "Código": "274132GE015",
-      "Título": "GESTIÓN DE BIBLIOTECAS ESCOLARES CON BIBLIOWEB SÉNECA",
-      "CEP": "CEP Lora del Río",
-      "Modalidad": "Curso a Distancia",
-      "Dirigido a": "Internivelar",
-      "Inicio": "01/12/2026",
-      "Fin": "14/01/2027",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274132GE015/",
-      "Lugar": "AVFP",
-      "Inicio inscripción": "09/11/2026",
-      "Fin inscripción": "20/11/2026",
-      "Horas": "15"
     }
   ]
 }

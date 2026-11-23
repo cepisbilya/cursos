@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-23T02:45:44.781524+00:00",
-  "total": 14,
+  "generado": "2026-11-23T12:44:07.117153+00:00",
+  "total": 18,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -138,6 +138,36 @@
       "Horas": "8"
     },
     {
+      "Código": "274127ALI006",
+      "Título": "ENTRENAR EL PENSAMIENTO CRÍTICO, LA ATENCIÓN Y EL CUIDADO DEL ALUMNADO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "11/01/2027",
+      "Fin": "20/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ALI006/",
+      "Lugar": "Aula Virtual del Profesorado",
+      "Inicio inscripción": "24/11/2026",
+      "Fin inscripción": "15/12/2026",
+      "Horas": "12"
+    },
+    {
+      "Código": "274127ARE002",
+      "Título": "PEDAGOGÍA DEL INSTRUMENTO. ATENCIÓN PLENA, REGULACIÓN EMOCIONAL Y CONCIENCIA CORPORAL.",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso con Seguimiento",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "14/01/2027",
+      "Fin": "30/03/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE002/",
+      "Lugar": "CEP DE SEVILLA",
+      "Inicio inscripción": "16/11/2026",
+      "Fin inscripción": "16/12/2026",
+      "Horas": "18"
+    },
+    {
       "Código": "274127ARE003",
       "Título": "DRAMATURGIA APLICADA A LA CREACIÓN COREOGRÁFICA",
       "CEP": "CEP Sevilla",
@@ -150,6 +180,36 @@
       "Lugar": "CPD ANTONIO RUIZ SOLER",
       "Inicio inscripción": "12/11/2026",
       "Fin inscripción": "26/11/2026",
+      "Horas": "12"
+    },
+    {
+      "Código": "274127ARE012",
+      "Título": "GUÍA PARA LA ENSEÑANZA DEL PIANO EN LOS PRIMEROS CURSOS: CREATIVIDAD, IMPROVISACIÓN Y MUSICALIDAD EN EL AULA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "26/01/2027",
+      "Fin": "27/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE012/",
+      "Lugar": "CPM FRANCISCO GUERRERO",
+      "Inicio inscripción": "23/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "8"
+    },
+    {
+      "Código": "274127ARE024",
+      "Título": "HOJAS DE CÁLCULO, DATOS E IA PARA ENSEÑANZAS ARTÍSTICAS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "15/01/2027",
+      "Fin": "05/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE024/",
+      "Lugar": "WEBEX",
+      "Inicio inscripción": "23/11/2026",
+      "Fin inscripción": "10/12/2026",
       "Horas": "12"
     },
     {
@@ -168,6 +228,21 @@
       "Horas": "9"
     },
     {
+      "Código": "274127PRI024",
+      "Título": "DRAMA FOR SCIENCE TEACHERS IN BILINGUAL CONTEXTS",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "02/02/2027",
+      "Fin": "17/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127PRI024/",
+      "Lugar": "CEP SEVILLA.",
+      "Inicio inscripción": "23/11/2026",
+      "Fin inscripción": "11/01/2027",
+      "Horas": "10"
+    },
+    {
       "Código": "279927KPF543",
       "Título": "JEFATURA DE ESTUDIOS: ORGANIZACIÓN Y FUNCIONAMIENTO (CONSERVATORIOS)",
       "CEP": "CEP Sevilla",
@@ -183,34 +258,19 @@
       "Horas": "40"
     },
     {
-      "Código": "274129INT06",
-      "Título": "APROXIMACIÓN A LA INCLUSIÓN DEL ALUMNADO TEA EN EL AULA ORDINARIA",
-      "CEP": "CEP Osuna - Écija",
-      "Modalidad": "Curso Semipresencial",
+      "Código": "274131GE010",
+      "Título": "ASESORAMIENTO CEIP ANA JOSEFA MATEOS GÓMEZ: PODCAST EDUCATIVOS EN EL AULA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Otros",
       "Dirigido a": "Internivelar",
-      "Inicio": "25/11/2026",
-      "Fin": "10/12/2026",
+      "Inicio": "30/11/2026",
+      "Fin": "15/12/2026",
       "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274129INT06/",
-      "Lugar": "Centro del profesorado de Osuna-Écija",
-      "Inicio inscripción": "16/11/2026",
-      "Fin inscripción": "23/11/2026",
-      "Horas": "8"
-    },
-    {
-      "Código": "274130GE007",
-      "Título": "USO DE SIMULADOR DE PINTURA EN CARROCERIA EN EL IES TORRE DE LOS HERBEROS",
-      "CEP": "CEP Mairena del Alcor",
-      "Modalidad": "Curso",
-      "Dirigido a": "Form. profesional y art. plast. y diseño",
-      "Inicio": "24/11/2026",
-      "Fin": "24/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE007/",
-      "Lugar": "Taller de pintura y reparación del IES Torre de los Herberos",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274131GE010/",
+      "Lugar": "CEIP ANA JOSEFA MATEOS GÓMEZ (EL CUERVO)",
       "Inicio inscripción": "09/11/2026",
-      "Fin inscripción": "18/11/2026",
-      "Horas": "8"
+      "Fin inscripción": "26/11/2026",
+      "Horas": "6"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-24T10:55:56.860206+00:00",
-  "total": 18,
+  "generado": "2026-11-24T21:11:48.888173+00:00",
+  "total": 20,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -198,8 +198,23 @@
       "Horas": "8"
     },
     {
+      "Código": "274127ARE013",
+      "Título": "TÉCNICA DE VARÓN EN LA ENSEÑANZA DE LA DANZA CLÁSICA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "13/01/2027",
+      "Fin": "15/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE013/",
+      "Lugar": "CPD ANTONIO RUIZ SOLER",
+      "Inicio inscripción": "23/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "12"
+    },
+    {
       "Código": "274127ARE024",
-      "Título": "HOJAS DE CÁLCULO, DATOS E IA PARA ENSEÑANZAS ARTÍSTICAS",
+      "Título": "HOJAS DE CÁLCULO, DATOS E IA PARA ENSEÑANZAS ARTÍSTICAS, EOI Y EPER",
       "CEP": "CEP Sevilla",
       "Modalidad": "Curso",
       "Dirigido a": "Enseñanzas de regimen especial",
@@ -210,7 +225,22 @@
       "Lugar": "WEBEX",
       "Inicio inscripción": "23/11/2026",
       "Fin inscripción": "10/12/2026",
-      "Horas": "12"
+      "Horas": "8"
+    },
+    {
+      "Código": "274127ARE029",
+      "Título": "ENCUENTRO PROVINCIAL DE PROFESORADO DE CUERDA FROTADA",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "18/01/2027",
+      "Fin": "25/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ARE029/",
+      "Lugar": "WEBEX",
+      "Inicio inscripción": "23/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "8"
     },
     {
       "Código": "274127PER014",

@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-24T21:11:48.888173+00:00",
-  "total": 20,
+  "generado": "2026-11-25T04:12:39.059472+00:00",
+  "total": 21,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -301,6 +301,21 @@
       "Inicio inscripción": "09/11/2026",
       "Fin inscripción": "26/11/2026",
       "Horas": "6"
+    },
+    {
+      "Código": "279931CI437",
+      "Título": "LA COORDINACIÓN DEL BIENESTAR Y PROTECCIÓN DEL ALUMNADO EN CENTROS DOCENTES DE ANDALUCÍA",
+      "CEP": "CEP Lebrija",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Otros",
+      "Inicio": "17/12/2026",
+      "Fin": "25/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279931CI437/",
+      "Lugar": "",
+      "Inicio inscripción": "25/11/2026",
+      "Fin inscripción": "09/12/2026",
+      "Horas": "30"
     }
   ]
 }

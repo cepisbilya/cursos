@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-25T14:24:14.006384+00:00",
+  "generado": "2026-11-25T23:37:57.519724+00:00",
   "total": 22,
   "actividades": [
     {
@@ -59,7 +59,7 @@
       "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD006/",
       "Lugar": "IES SAN JERÓNIMO",
       "Inicio inscripción": "25/11/2026",
-      "Fin inscripción": "07/12/2026",
+      "Fin inscripción": "08/12/2026",
       "Horas": "3"
     },
     {
@@ -91,21 +91,6 @@
       "Inicio inscripción": "16/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "10"
-    },
-    {
-      "Código": "274127ACS002",
-      "Título": "JORNADAS TDE",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "26/11/2026",
-      "Fin": "26/11/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS002/",
-      "Lugar": "Aula Virtual de Formación del Profesorado",
-      "Inicio inscripción": "18/11/2026",
-      "Fin inscripción": "24/11/2026",
-      "Horas": "2"
     },
     {
       "Código": "274127AFP002",
@@ -301,6 +286,21 @@
       "Inicio inscripción": "25/11/2026",
       "Fin inscripción": "02/12/2026",
       "Horas": "16"
+    },
+    {
+      "Código": "274130GE009",
+      "Título": "METODOLOGÍAS ACTIVAS EN EEOOII: GAMIFICACIÓN Y LUDIFICACIÓN, APRENDER EN MOVIMEINTO",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso a Distancia",
+      "Dirigido a": "Enseñanzas de regimen especial",
+      "Inicio": "11/12/2026",
+      "Fin": "05/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130GE009/",
+      "Lugar": "",
+      "Inicio inscripción": "25/11/2026",
+      "Fin inscripción": "04/12/2026",
+      "Horas": "8"
     },
     {
       "Código": "274131GE010",

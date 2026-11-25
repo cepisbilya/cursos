@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-25T04:12:39.059472+00:00",
-  "total": 21,
+  "generado": "2026-11-25T14:24:14.006384+00:00",
+  "total": 22,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -48,6 +48,21 @@
       "Horas": "17"
     },
     {
+      "Código": "274127AAD006",
+      "Título": "ASESORAMIENTO EN IES SAN JERÓNIMO: ILUMINACIÓN Y SONIDO",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Otros",
+      "Dirigido a": "Educación secundaria obligatoria",
+      "Inicio": "15/12/2026",
+      "Fin": "15/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127AAD006/",
+      "Lugar": "IES SAN JERÓNIMO",
+      "Inicio inscripción": "25/11/2026",
+      "Fin inscripción": "07/12/2026",
+      "Horas": "3"
+    },
+    {
       "Código": "274127AAD008",
       "Título": "ACTIVIDADES FÍSICAS CON ACOMPAÑAMIENTO MUSICAL",
       "CEP": "CEP Sevilla",
@@ -91,21 +106,6 @@
       "Inicio inscripción": "18/11/2026",
       "Fin inscripción": "24/11/2026",
       "Horas": "2"
-    },
-    {
-      "Código": "274127ACS014",
-      "Título": "LA RADIO ESCOLAR: CONTROL TÉCNICO Y GRABACIÓN DE UN PODCAST",
-      "CEP": "CEP Sevilla",
-      "Modalidad": "Curso",
-      "Dirigido a": "Internivelar",
-      "Inicio": "03/12/2026",
-      "Fin": "10/12/2026",
-      "Estado": "Abierto plazo solicitudes",
-      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS014/",
-      "Lugar": "CEP DE SEVILLA",
-      "Inicio inscripción": "09/11/2026",
-      "Fin inscripción": "24/11/2026",
-      "Horas": "8"
     },
     {
       "Código": "274127AFP002",
@@ -286,6 +286,21 @@
       "Inicio inscripción": "17/11/2026",
       "Fin inscripción": "10/12/2026",
       "Horas": "40"
+    },
+    {
+      "Código": "274130FP001",
+      "Título": "JORNADAS DE FORMACIÓN PROFESIONAL: LA FASE DE FORMACIÓN EN EMPRESA U ORGANISMO EQUIPARADO Y LA EVALUACIÓN. NIVEL INICIAL",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "09/12/2026",
+      "Fin": "10/12/2026",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274130FP001/",
+      "Lugar": "CEP de Mairena del Alcor",
+      "Inicio inscripción": "25/11/2026",
+      "Fin inscripción": "02/12/2026",
+      "Horas": "16"
     },
     {
       "Código": "274131GE010",

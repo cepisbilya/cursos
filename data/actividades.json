@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-26T08:19:40.369363+00:00",
-  "total": 21,
+  "generado": "2026-11-26T19:01:21.097722+00:00",
+  "total": 23,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -91,6 +91,21 @@
       "Inicio inscripción": "16/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "274127ACT026",
+      "Título": "SOPORTE VITAL BÁSICO Y MANEJO DEL DESFIBRILADOR PARA CENTROS EDUCATIVOS (IES). ZONA ASE",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "13/01/2027",
+      "Fin": "27/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACT026/",
+      "Lugar": "IES V Centenario",
+      "Inicio inscripción": "26/11/2026",
+      "Fin inscripción": "09/12/2026",
+      "Horas": "9"
     },
     {
       "Código": "274127AFP002",
@@ -256,6 +271,21 @@
       "Inicio inscripción": "17/11/2026",
       "Fin inscripción": "10/12/2026",
       "Horas": "40"
+    },
+    {
+      "Código": "274128ACT004",
+      "Título": "DESARROLLO DE LA COMPETENCIA MATEMÁTICA. INFANTIL Y PRIMARIA",
+      "CEP": "CEP Castilleja de la Cuesta",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "12/01/2027",
+      "Fin": "23/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274128ACT004/",
+      "Lugar": "MAIRENA DEL ALJARAFE",
+      "Inicio inscripción": "26/11/2026",
+      "Fin inscripción": "21/12/2026",
+      "Horas": "12"
     },
     {
       "Código": "274130FP001",

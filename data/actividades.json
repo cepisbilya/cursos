@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-26T19:01:21.097722+00:00",
-  "total": 23,
+  "generado": "2026-11-27T02:10:50.140184+00:00",
+  "total": 25,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -316,6 +316,36 @@
       "Inicio inscripción": "25/11/2026",
       "Fin inscripción": "04/12/2026",
       "Horas": "8"
+    },
+    {
+      "Código": "279930KFP496",
+      "Título": "PROYECTOS ERASMUS+ DE CORTA DURACIÓN KA122-VET 2027  (SECTOR FORMACIÓN PROFESIONAL).",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Form. profesional y art. plast. y diseño",
+      "Inicio": "21/12/2026",
+      "Fin": "15/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930KFP496/",
+      "Lugar": "",
+      "Inicio inscripción": "26/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "30"
+    },
+    {
+      "Código": "279930KPI546",
+      "Título": "PROYECTOS ERASMUS+ NO ACREDITADOS 2027 (SECTOR ESCOLAR Y ADULTOS)",
+      "CEP": "CEP Mairena del Alcor",
+      "Modalidad": "Curso Semipresencial",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/12/2026",
+      "Fin": "15/02/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/279930KPI546/",
+      "Lugar": "",
+      "Inicio inscripción": "26/11/2026",
+      "Fin inscripción": "10/12/2026",
+      "Horas": "30"
     },
     {
       "Código": "274131GE010",

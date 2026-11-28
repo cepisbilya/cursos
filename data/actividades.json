@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-28T02:41:58.898734+00:00",
-  "total": 24,
+  "generado": "2026-11-28T11:47:21.597385+00:00",
+  "total": 25,
   "actividades": [
     {
       "Código": "274127AAD001",
@@ -91,6 +91,21 @@
       "Inicio inscripción": "16/11/2026",
       "Fin inscripción": "14/12/2026",
       "Horas": "10"
+    },
+    {
+      "Código": "274127ACS011",
+      "Título": "EUROPA EN EL AULA DE GEOGRAFÍA E HISTORIA: DE LAS INSTITUCIONES A LA INNOVACIÓN",
+      "CEP": "CEP Sevilla",
+      "Modalidad": "Curso",
+      "Dirigido a": "Internivelar",
+      "Inicio": "21/01/2027",
+      "Fin": "28/01/2027",
+      "Estado": "Abierto plazo solicitudes",
+      "URL": "https://secretariavirtual.juntadeandalucia.es/secretariavirtual/consultaCEP/actividad/274127ACS011/",
+      "Lugar": "CEP SEVILLA",
+      "Inicio inscripción": "30/11/2026",
+      "Fin inscripción": "12/01/2027",
+      "Horas": "9"
     },
     {
       "Código": "274127ACT026",
